@@ -1,6 +1,10 @@
 .title {
     font-family:'Film P3';
-    color: brown;
-    font-size: 54px;
+    color: black;
+    font-size: 64px;
+    font-weight: 700;
     text-align: center;
-}
+    letter-spacing: 0.3em;
+    line-height: 1.07;
+    }
+
