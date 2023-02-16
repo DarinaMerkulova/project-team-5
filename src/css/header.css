@@ -1,0 +1,194 @@
+@import url(../css/reset.css);
+
+/* BASE */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    background-color: var(--main-bkg-color);
+}
+:root{
+    --gold: #F3C653;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 414px;
+  
+    padding-left: 16px;
+    padding-right: 16px;
+  
+    margin-left: auto;
+    margin-right: auto;
+  }
+@media screen and (min-width: 1024px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+@media screen and (min-width: 1280px) {
+    .container {
+      max-width: 1140px;
+    }
+}
+
+
+.logo {
+    display: block;
+    font-family: 'Film P3', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.083;
+    letter-spacing: 0.3em;
+    color: tomato;
+}
+
+.site-item{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+}
+
+.header-phone{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.02em;
+    color: tomato;
+}
+
+.location{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: tomato;
+}
+
+.header-container{
+    position: absolute;
+}  
+/* HEADER ТЕЛЕФОН */
+     
+
+    .header-nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        margin-right: 52px;
+    }
+    .site-nav{
+        display: flex;
+    }
+    .current-restoraunt{
+        display: flex;
+    }
+
+    .worker-soc-link{
+        display: inline-block;;
+        margin-left: 12px;
+        margin-right: 28px;
+        fill: #F3C653;
+    }
+
+    .header-phone{
+        display: none;
+    }
+
+
+    .auth-list{
+        display:flex;
+        margin-top: 642px;
+        
+    }
+    .site-soc-link{
+        margin-right: 23px;
+        fill: #F3C653;
+    }
+
+
+    .location{
+        width: 210px;
+        height: 47px;
+
+        margin-top: 16px;
+        margin-left: 189px;
+        margin-right: 16px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+    .location-item{
+        display: flex;
+        align-items: center;
+        margin-left: 19px;
+        margin-top: 8px;
+    }
+
+    .location-icon{
+        fill: #F3C653;
+    }
+
+@media screen and (min-width: 1024px) {
+    .logo {
+    font-size: 40px;
+    line-height: 1.075;
+
+    margin-left: 47px;
+    margin-right: 207px;
+    }
+
+    .site-item{
+    font-size: 20px;
+    line-height: 1.2;
+    }
+
+    .location{
+    font-size: 16px;
+    line-height: 1.25;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+    .logo {
+    font-size: 40px;
+    line-height: 1.075;
+
+
+    margin-left: 85px;
+    margin-right: 135px;
+    }
+
+    .site-item{
+    font-size: 20px;
+    line-height: 1.2;
+    }
+
+    .location{
+    font-size: 16px;
+    line-height: 1.25;
+    }
+
+    
+}
