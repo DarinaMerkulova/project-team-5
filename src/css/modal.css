@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+a {
+  color: #2e2f42;
+}
+.modal-container{
+    width: 414px;
+    padding-top: 60px;
+    height: 430px;
+    padding-bottom: 60px;
+    background-color: #F0ECD6;
+}
+.modal-title{
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 27.6px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.modal-form-input{
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    padding-left: 12px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 273px;
+}
