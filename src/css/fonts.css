@@ -4,11 +4,8 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: local('Montserrat Light'), local('Montserrat-Light'),
-
-      url('../fonts/montserrat-300/Montserrat-Light.woff2') format('woff2'),
-      url('../fonts/montserrat-300/Montserrat-Light.woff') format('woff'),
-
+    src: url('../fonts/montserrat-300/Montserrat-Light.woff2'),
+      url('../fonts/montserrat-300/Montserrat-Light.woff');
   }
   
   /* Montserrat 400 */
@@ -21,7 +18,7 @@
       local('Montserrat-Regular'),
 
       url('../fonts/montserrat-400/Montserrat-Regular.woff2') format('woff2'),
-      url('../fonts/montserrat-400/Montserrat-Regular.woff') format('woff'),
+      url('../fonts/montserrat-400/Montserrat-Regular.woff') format('woff');
 
   }
   
@@ -34,7 +31,7 @@
     src: local('Montserrat Medium'), local('Montserrat-Medium'),
 
       url('../fonts/montserrat-500/Montserrat-Medium.woff2') format('woff2'),
-      url('../fonts/montserrat-500/Montserrat-Medium.woff') format('woff'),
+      url('../fonts/montserrat-500/Montserrat-Medium.woff') format('woff');
 
   }
   
@@ -47,7 +44,7 @@
     src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
 
       url('../fonts/montserrat-600/Montserrat-SemiBold.woff2') format('woff2'),
-      url('../fonts/montserrat-600/Montserrat-SemiBold.woff') format('woff'),
+      url('../fonts/montserrat-600/Montserrat-SemiBold.woff') format('woff');
 
   }
   
@@ -60,7 +57,7 @@
     src: local('Montserrat Bold'), local('Montserrat-Bold'),
 
       url('../fonts/montserrat-700/Montserrat-Bold.woff') format('woff2'),
-      url('../fonts/montserrat-700/Montserrat-Bold.woff') format('woff'),
+      url('../fonts/montserrat-700/Montserrat-Bold.woff') format('woff');
 
   }
   
@@ -76,7 +73,7 @@
       url('../fonts/timesNewRoman-regular/TimesNewRomanMTStd.woff2')
         format('woff2'),
       url('../fonts/timesNewRoman-regular/TimesNewRomanMTStd.woff')
-        format('woff'),
+        format('woff');
 
   }
   
@@ -89,7 +86,7 @@
     src: local('Times New Roman Bold'), local('Times-New-Roman-Bold'),
 
       url('../fonts/timesNewRoman-bold/TimesNewRomanMTStd-Bold.woff2') format('woff2'),
-      url('../fonts/timesNewRoman-bold/TimesNewRomanMTStd-Bold.woff') format('woff'),
+      url('../fonts/timesNewRoman-bold/TimesNewRomanMTStd-Bold.woff') format('woff');
 
   }
   
@@ -99,9 +96,8 @@
     font-style: normal;
     font-weight: bold;
     font-display: swap;
-    src: local('Film P3 Bold'), local('Film-P3-Bold'),    
-      url('../fonts/filmP3-bold/FilmP3NarrowLight.woff2') format('woff2'),
-      url('../fonts/filmP3-bold/filmP3-bold.ttf') format('truetype')
-      url('../fonts/filmP3-bold/FilmP3Bold.woff') format('woff'),     
+    src: local('Film P3 Bold'), local('Film-P3-Bold'), 
+      url('../fonts/filmP3-bold/FilmP3Bold.woff2') format('woff2'),
+      url('../fonts/filmP3-bold/FilmP3Bold.woff') format('woff');     
   }
   
