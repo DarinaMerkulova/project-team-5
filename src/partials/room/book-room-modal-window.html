@@ -1,23 +1,201 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/fonts.css">
-    <link rel="stylesheet" href="/src/css/base.css">
-    <link rel="stylesheet" href="/src/css/modal.css">
-    <title>Modal Win1</title>
+    <title>Modal Window Example</title>
+    <link rel="stylesheet" href="/src/css/fonts.css" />
+    <style>
+      /* Style for modal background */
+      .body {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+      }
+      .modal-form {
+        padding-bottom: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        width: 384px;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      /* Style for modal content */
+      .modal-content {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        width: 414px;
+        height: 668px;
+        background-color: #fffdee;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+      }
+
+      /* Style for close button */
+      .close {
+        float: right;
+        font-size: 34px;
+        font-weight: 400;
+        height: 40px;
+		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* Style for close button on hover */
+      .close:hover,
+      .close:focus {
+        color: #f3c653;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .modal-title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+      .modal-input {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: large;
+        height: 54px;
+        background-color: #fffdee;
+        border: 1px solid #c79002;
+        border-radius: 2px;
+        padding-left: 12px;
+        color: #808080;
+      }
+
+      .question-desc {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: 0.02em;
+
+        /* Brown */
+        margin-left: 12px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        color: #c79002;
+      }
+      /* Style for submit button */
+      .submit {
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        /* White */
+
+        color: #ffffff;
+        border: 2px solid black;
+        padding: 20px 43px;
+        cursor: pointer;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* Style for submit button on hover and focus */
+      .submit:hover,
+      .submit:focus {
+        color: black;
+        background-color: #f3c653;
+        border: 2px solid #f3c653;
+      }
+    </style>
   </head>
-    <div class="modal-container">
-      <section class="container">
-        <form action="">
-            <h2 class="modal-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
-            <label class="">
-                <span class="modal-form-item">
-                  <input type="text" name="name" placeholder="Ваше ім’я" class="modal-form-input">
-                </span>
-              </label>
-            </form>
-      </section>
+  <body>
+    <!-- Button to open the modal -->
+    <button onclick="openModal()">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div class="modal-form">
+          <h2 class="modal-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+          <input
+            class="modal-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше ім’я"
+          />
+          <p class="question-desc">На кого забронювати столик?</p>
+
+          <input
+            class="modal-input"
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="+38 (___) ___-__-__"
+          />
+          <p class="question-desc">Номер телефону</p>
+
+          <select class="modal-input" id="select1" name="select1">
+            <option value="option1">1</option>
+            <option value="option2">2</option>
+            <option value="option3">3</option>
+            <option value="option1">4</option>
+            <option value="option2">5</option>
+            <option value="option1">6</option>
+            <option value="option2">7</option>
+            <option value="option1">8</option>
+            <option value="option2">9</option>
+            <option value="option1">Party(more then 10)</option>
+          </select>
+          <p class="question-desc">Столик на яку кількість осіб?</p>
+
+          <input class="modal-input" type="date" id="date" name="date" placeholder="Сьогодні" />
+          <p class="question-desc" style="margin-bottom: 40px">
+            На яку дату бронювати?
+          </p>
+
+          <button class="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </div>
+      </div>
     </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById('myBtn');
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName('close')[0];
+
+      // Function to open the modal
+      function openModal() {
+        modal.style.display = 'block';
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        modal.style.display = 'none';
+      }
+
+      // Close the modal when user clicks outside of it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+  </body>
 </html>
