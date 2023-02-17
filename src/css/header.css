@@ -16,13 +16,14 @@ body {
 .container {
     min-width: 320px;
     max-width: 414px;
-  
+
     padding-left: 16px;
     padding-right: 16px;
-  
-    margin-left: auto;
-    margin-right: auto;
+
+    margin: 0 auto;
   }
+
+
 @media screen and (min-width: 1024px) {
     .container {
       max-width: 960px;
@@ -76,7 +77,7 @@ body {
     position: absolute;
 }  
 /* HEADER ТЕЛЕФОН */
-     
+
 
     .header-nav{
         display: flex;
@@ -108,7 +109,7 @@ body {
     .auth-list{
         display:flex;
         margin-top: 642px;
-        
+
     }
     .site-soc-link{
         margin-right: 23px;
@@ -139,44 +140,17 @@ body {
     }
 
 @media screen and (min-width: 1024px) {
+    .header-nav{
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+    }
+
     .logo {
     font-size: 40px;
     line-height: 1.075;
 
     margin-left: 47px;
-    margin-right: 207px;
-    }
-
-    .site-item{
-    font-size: 20px;
-    line-height: 1.2;
-    }
-
-    .location{
-    font-size: 16px;
-    line-height: 1.25;
-    }
-
-    
-
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1280px) {
-    .logo {
-    font-size: 40px;
-    line-height: 1.075;
-
-
-    margin-left: 85px;
     margin-right: 135px;
     }
 
@@ -190,5 +164,178 @@ body {
     line-height: 1.25;
     }
 
+    .current-restoraunt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .current-hotel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-link{
+        margin-left: 72px;
+        margin-right: 32px;
+    }
+
+    .header-phone{
+        display: flex;
+
+        width: 155px;
+        height: 40px;
+
+        padding-top: 12px;
+        padding-left: 36px;
+        padding-bottom: 12px;
+        padding-right: 8px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+
+    .worker-soc-link{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .restoraunt-link{
+        position: absolute;
+        left: 540px;
+        top: 36px;
+    }
     
+    .hotel-link{
+        position: absolute;
+        left: 870px;
+        top: 36px;
+    }
+
+    .location{
+        width: 285px;
+        height: 56px;
+        margin-left: 47px;
+        margin-top: 533px;
+
+
+    }
+
+    .location-text
+    {
+        margin-left: 16px;   
+    }
+
+    .auth-list{
+        margin-left: 47px;
+        margin-top: 25px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+    .header-nav{
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .logo {
+    font-size: 40px;
+    line-height: 1.075;
+
+    margin-left: 85px;
+    margin-right: 63px;
+    }
+
+    .site-item{
+    font-size: 20px;
+    line-height: 1.2;
+    }
+
+    .location{
+    font-size: 16px;
+    line-height: 1.25;
+    }
+
+    .current-restoraunt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .current-hotel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-link{
+        margin-left: 72px;
+        margin-right: 32px;
+    }
+
+    .header-phone{
+        display: flex;
+
+
+
+        padding-top: 12px;
+        padding-left: 36px;
+        padding-bottom: 12px;
+        padding-right: 8px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+
+    .worker-soc-link{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .restoraunt-link{
+        position: absolute;
+        left: 507px;
+        top: 36px;
+    }
+    
+    .hotel-link{
+        position: absolute;
+        left: 835px;
+        top: 36px;
+    }
+
+    .location{
+        position: absolute;
+        width: 285px;
+        height: 56px;
+        left: 85px;
+        top: 600px;
+
+        margin: 0;
+    }
+
+    .location-text
+    {
+        margin-left: 16px;   
+    }
+
+    .auth-list{
+        position: absolute;
+        left: 1083px;
+        top: 10px;
+    }
 }
