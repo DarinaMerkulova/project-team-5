@@ -1,0 +1,44 @@
+.rest-info {
+    background-color: #545050;
+}
+
+.rest-info-container {
+
+}
+
+.container {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+.rest-info-mimino {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.rest-info-title {}
+
+.rest-info-text {}
+
+.rest-info-slider {}
+
+.rest-info-list {
+    display: flex;
+    gap: 20px;
+}
+
+.list {}
+
+.rest-info-items {}
+
+.rest-info-button {}
+
+.rest-info-btn {}
