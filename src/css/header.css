@@ -92,8 +92,15 @@ body {
     }
     .current-restoraunt{
         display: flex;
+        align-items: center;
     }
 
+    .current-hotel{
+        display: flex;
+        align-items: center;
+    }
+    
+    
     .worker-soc-link{
         display: inline-block;;
         margin-left: 12px;
@@ -118,6 +125,7 @@ body {
 
 
     .location{
+        
         width: 210px;
         height: 47px;
 
@@ -129,12 +137,22 @@ body {
         border-radius: 2px;
     }
     .location-item{
-        display: flex;
         align-items: center;
-        margin-left: 19px;
-        margin-top: 8px;
     }
 
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
+
+    .location-text{
+        padding-left: 8px;
+        width: 179px;
+        height: 30px;
+    }
+    
     .location-icon{
         fill: #F3C653;
     }
@@ -166,12 +184,12 @@ body {
 
     .current-restoraunt{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
     }
     .current-hotel{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -222,9 +240,17 @@ body {
 
     }
 
-    .location-text
-    {
-        margin-left: 16px;   
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
+
+    .location-text{
+        padding-left: 8px;
+        width: 233px;
+        height: 40px;
     }
 
     .auth-list{
@@ -272,12 +298,13 @@ body {
 
     .current-restoraunt{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
     }
+
     .current-hotel{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -327,10 +354,17 @@ body {
 
         margin: 0;
     }
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
 
-    .location-text
-    {
-        margin-left: 16px;   
+    .location-text{
+        padding-left: 8px;
+        width: 233px;
+        height: 40px;
     }
 
     .auth-list{
