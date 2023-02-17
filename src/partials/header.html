@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/header.css">
-</head>
-<body>
     <header>  
     <div class="container header-container"> 
         <nav class="header-nav">
@@ -19,7 +9,9 @@
             <ul class="site-nav">
                 <li class="current-restoraunt">
                     <a href="../restoraunt.html" class="site-item header-link">Ресторан</a>
-                    <li class="header-phone"><a href="tel:+380955559533" >095 555 95 33</a></li>                         
+                    <!-- <li class="header-phone"> -->
+                    <a href="tel:+380955559533" class="header-phone">095 555 95 33</a>
+                    <!-- </li>                          -->
                     <a href="" class="worker-soc-link restoraunt-link">
                         <svg class="phone-icon" width="20" height="20" >
                             <use href="../img/icon.svg#icon-phone"></use>
@@ -28,7 +20,9 @@
                 </li>  
                 <li class="current-hotel">
                     <a href="../hotel.html" class="site-item header-link">Готель</a>
-                    <li class="header-phone"><a href="tel:+380668491089">066 849 10 89</a></li>
+                    <!-- <li class="header-phone"> -->
+                        <a href="tel:+380668491089" class="header-phone">066 849 10 89</a>
+                    <!-- </li> -->
                     <a href="" class="worker-soc-link hotel-link">
                         <svg class="phone-icon" width="20" height="20" >
                             <use href="../img/icon.svg#icon-phone"></use>
@@ -39,7 +33,7 @@
         </nav> 
         <div class="location">
             <!-- ЛОКАЦИЯ -->
-            <div class="location-item">
+            <!-- <div class="location-item">
                 <a href="" class="location-link">
                     <svg class="location-icon" width="20" height="20" >
                         <use href="../img/icon.svg#icon-location"></use>
@@ -49,7 +43,18 @@
                     Україна, м. Полтава,
                     вул. Маршала Бірюзова, 15
                 </p>
-            </div>
+            </div> -->
+            <address>
+                <a href="https://goo.gl/maps/QnbdGXvFcmA7h6zF9" class="location-link">
+                    <svg class="location-icon" width="20" height="20" >
+                        <use href="../img/icon.svg#icon-location"></use>
+                    </svg>
+                    <span class="location-text">
+                        Україна, м. Полтава,
+                        вул. Маршала Бірюзова, 15
+                    </span>
+                </a>
+            </address>
         </div>
          <!-- СОЦ-СЕТИ  -->
         <ul class="auth-list">
@@ -77,5 +82,3 @@
         </ul>
     </div>
 </header>
-</body>
-</html>
