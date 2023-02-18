@@ -43,7 +43,7 @@ body {
     font-size: 36px;
     line-height: 1.083;
     letter-spacing: 0.3em;
-    color: tomato;
+    color: #fff;
 }
 
 .site-item{
@@ -61,7 +61,7 @@ body {
     font-size: 14px;
     line-height: 1.214;
     letter-spacing: 0.02em;
-    color: tomato;
+    color: #fff;
 }
 
 .location{
@@ -70,7 +70,7 @@ body {
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.01em;
-    color: tomato;
+    color: #fff;
 }
 
 .header-container{
