@@ -1,0 +1,205 @@
+/* ==========================Restourant About====================== */
+.restorant-about, .about-restourant {
+    padding-top: 16px;
+    padding-bottom: 72px;
+    background-color: #FFFDEE;
+    outline: 1px solid rgb(31, 92, 35);
+  }
+  .restorant-about>.container, .about-restourant>.container{
+    outline: 1px solid rgb(236, 130, 9);
+  }
+  .restorant-about-thumb {
+  }
+  .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .restorant-about-pretitle, .about-restourant-pretitle {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #b4b4b4;
+  
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  .restorant-about-name, .about-restourant-name {
+    font-family: "Film P3";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #494848;
+  
+    margin-bottom: 12px;
+  }
+  .restorant-about-text-first, .about-restourant-text-first {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #7a7a7a;
+    margin-bottom: 28px;
+    max-width: 258px;
+  }
+  
+  .restorant-about-image,.about-restourant-image {
+    margin-left: auto;
+    margin-bottom: 32px;
+  }
+  
+  .restorant-about-thumb-second,.about-restourant-thumb-second {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  
+  .restorant-about-img, .about-restourant-img {
+    flex-shrink: 0;
+  }
+  
+  .restorant-about-text-second, .about-restourant-text-second {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #c79002;
+    max-width: 163px;
+  }
+  
+  .slider-restourant-about, .slider-about-restourant {
+    display: flex;
+    gap: 20px;
+    margin-left: 69px;
+  }
+  @media screen and (max-width: 413px){
+  .slider-img-width {
+    width: 145px;
+    flex-shrink: 0;
+  }
+  }
+  /*================= mobile version================ */
+  @media screen and (min-width: 414px) {
+    .slider-img-width {
+      flex-shrink: 0;
+    }
+  }
+  
+  /*================= tablet version restourant================ */
+  @media screen and (min-width: 1024px) {
+    .restorant-about>.container, .about-restourant>.container {
+      position: relative;
+      padding-left: 15px;
+      padding-right: 28px;
+    }
+  
+    .restorant-about, .about-restourant {
+      padding-top: 120px;
+      padding-bottom: 262px;
+      
+    }
+     .restorant-about-thumb, .about-restourant-thumb {
+      position: relative;
+    }
+    
+    .restorant-about-pretitle, .about-restourant-pretitle {
+      font-size: 32px;
+      margin-bottom: 4px;
+    }
+    
+    
+    .restorant-about-name, .about-restourant-name {
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
+    .restorant-about-text-first, .about-restourant-text-first {
+      font-size: 16px;
+      line-height: 1.22;
+  
+      margin-bottom: 142px;
+      max-width: 439px;
+    }
+    
+    .restorant-about-image,.about-restourant-image {
+      position: absolute;
+      top: -152px;
+      right: 52px;
+      overflow: visible;
+      margin-bottom:  0;
+    }
+    
+    .restorant-about-thumb-second,.about-restourant-thumb-second {
+  
+      gap: 48px;
+      margin-bottom: 0;
+    }
+    
+    .restorant-about-text-second, .about-restourant-text-second {
+      font-size: 16px;
+      line-height: 1.21;
+      max-width: 312px;
+    }
+    
+    .slider-restourant-about, .slider-about-restourant {
+      position: absolute;
+      bottom: -166px;
+      right: 28px;
+      gap: 40px;
+      margin-left: 0;
+    }
+  } 
+  
+  /*================= desktop version restourant================ */
+  
+  @media screen and (min-width: 1280px) {
+    .restorant-about>.container, .about-restourant>.container {
+      position: relative;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .restorant-about {
+      padding-bottom: 225px;
+      
+    }
+    .about-restourant {
+      padding-bottom: 207px;
+      
+    }
+     
+    .restorant-about-text-first, .about-restourant-text-first {
+      margin-bottom: 162px;
+      max-width: 518px;
+    }
+    
+    .restorant-about-image,.about-restourant-image {
+      right: 95px;
+    }
+    
+    .restorant-about-thumb-second,.about-restourant-thumb-second {
+      gap: 32px;
+    }
+  
+    .slider-restourant-about {
+      bottom: -107px;
+      right: 0;
+    }
+    .slider-about-restourant {
+      bottom: -103px;
+      right: 0;
+    }
+  } 

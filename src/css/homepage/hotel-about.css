@@ -1,0 +1,193 @@
+.about-hotel {
+    padding-top: 18px;
+    padding-bottom: 72px;
+    background-color: #FFFDEE;
+    outline: 1px solid rgb(31, 92, 35);
+  }
+  .about-hotel>.container {
+    outline: 1px solid rgb(236, 130, 9);
+  }
+  .about-hotel-thumb {
+  }
+  .about-hotel-pretitle {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #b4b4b4;
+  
+    margin-bottom: 6px;
+    text-align: right;
+  }
+  .about-hotel-name {
+    font-family: "Film P3";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #494848;
+  
+    margin-bottom: 16px;
+    text-align: right;
+  }
+  .about-hotel-text-first {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #7a7a7a;
+  
+    margin-left: auto;
+    margin-bottom: 28px;
+    max-width: 242px;
+  }
+  .about-hotel-image {
+  }
+  .about-hotel-thumb-second {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .about-hotel-text-second {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #c79002;
+    max-width: 163px;
+  }
+  .about-hotel-img {
+    flex-shrink: 0;
+  }
+  .slider-about-hotel {
+    display: flex;
+    gap: 20px;
+    margin-right: 69px;
+    flex-direction: row-reverse;
+    margin-bottom: 54px;
+  }
+  @media screen and (max-width: 413px){
+    .slider-about-hotel {
+     margin-right: 53px;
+    }
+    }
+    
+    @media screen and (min-width: 414px) {
+      .slider-img-width {
+        flex-shrink: 0;
+      }
+    }
+  /*================= tablet version hotel================ */
+  @media screen and (min-width: 1024px) {
+    .about-hotel>.container {
+      position: relative;
+      width: 1024px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .about-hotel {
+      padding-top: 120px;
+      padding-bottom: 262px;
+      outline: 1px solid rgb(31, 92, 35);
+    }
+     .about-hotel-thumb {
+      position: relative;
+      margin-bottom: 142px;
+    }
+    
+    .about-hotel-pretitle {
+      font-size: 32px;
+      margin-bottom: 4px;
+    }
+    
+    .about-hotel-name {
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
+    .about-hotel-text-first {
+      font-size: 16px;
+      line-height: 1.22;
+  
+      margin-bottom: 142px;
+      max-width: 419px;
+    }
+    
+    .about-hotel-image{
+      position: absolute;
+      top: -152px;
+      left: 20px;
+      overflow: visible;
+      margin-bottom:  0;
+    }
+    
+    .about-hotel-thumb-second  {
+      gap: 48px;
+      margin-bottom: 0;
+      margin-left: 220px;
+    }
+    
+    .about-hotel-text-second {
+      font-size: 16px;
+      line-height: 1.21;
+      max-width: 312px;
+    }
+    
+    .slider-about-hotel {
+      position: absolute;
+      bottom: -166px;
+      left: 47px;
+      gap: 40px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  } 
+  
+  /*================= desktop version hotel ================ */
+  
+  @media screen and (min-width: 1280px) {
+    .about-hotel>.container {
+      position: relative;
+      width: 1280px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .about-hotel {
+      padding-bottom: 197px;
+    }
+    .about-hotel-thumb {
+      position: relative;
+      margin-bottom: 162px;
+    }
+    
+    .about-hotel-text-first {
+      max-width: 488px;
+    }
+    
+    .about-hotel-image{
+      left: 95px;
+    }
+  
+    .about-hotel-thumb-second  {
+      gap: 45px;
+      margin-left: 294px;
+      margin-top: 0;
+    }
+    
+    .about-hotel-text-second {
+      max-width: 311px;
+      margin-bottom: 0;
+    }
+    
+    .slider-about-hotel {
+      bottom: -75px;
+      left:15px;
+      gap: 26px;
+  
+    }
+  }
