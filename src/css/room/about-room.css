@@ -1,0 +1,110 @@
+.about-room {
+
+}
+.container {
+
+}
+.about-room-section-title {
+font-family: 'Times New Roman';
+font-weight: 400;
+font-size: 32px;
+line-height: 1.16;
+width: 384px;
+color: #000000;
+
+
+margin-bottom: 0;
+margin-top: 32px;
+}
+.about-room-text {
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+width: 384px;
+color: #7A7A7A;
+
+margin-top: 16px;
+}
+.about-room-title {
+    font-family: 'Times New Roman';
+font-weight: 700;
+font-size: 24px;
+line-height: 1.67;
+width: 384px;
+color: #000000;
+
+margin-top: 32px;
+margin-bottom: 0;
+}
+.about-room-list {
+}
+.about-room-item {
+}
+.about-room-button {
+    font-family: 'Montserrat';
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #ffffff;
+
+padding: 20px 43px;
+background-color: #000000;
+border: 1px solid #F3C653;
+border-radius: 25px;
+
+margin-bottom: 20px;
+margin-top: 32px;
+}
+.about-room-link {
+    display: flex;
+}
+.about-room-text-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    
+    letter-spacing: 0.02em;
+    
+    color: #C79002;
+}
+.about-room-icon {
+    margin-top: -2px;
+    margin-left: 13px;
+    fill: #C79002;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-room-icon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 414px) {
+    
+  }
+
+
+
+  @media screen and (min-width: 1024px) {
+   
+  }
+
+
+@media screen and (min-width: 1280px) {
+    
+  }
