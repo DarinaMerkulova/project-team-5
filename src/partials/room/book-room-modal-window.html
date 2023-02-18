@@ -9,8 +9,14 @@
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
       }
+      select{
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        
+      }
       .modal-form {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         padding-left: 15px;
         padding-right: 15px;
         display: grid;
@@ -32,12 +38,12 @@
       .modal-content {
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
-        width: 414px;
-        height: 668px;
-        background-color: #fffdee;
+        width: 42.5%;
         margin: 10% auto;
         padding: 20px;
+        padding-bottom: 60px;
         border: 1px solid #888;
+        background-color: #fffdee;
       }
 
       /* Style for close button */
@@ -46,7 +52,7 @@
         font-size: 34px;
         font-weight: 400;
         height: 40px;
-		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       /* Style for close button on hover */
@@ -59,6 +65,7 @@
       .modal-title {
         display: flex;
         justify-content: center;
+        margin-top: 40px;
         margin-bottom: 40px;
       }
       .modal-input {
@@ -70,6 +77,7 @@
         border: 1px solid #c79002;
         border-radius: 2px;
         padding-left: 12px;
+        padding-right: 15px;
         color: #808080;
       }
 
@@ -91,6 +99,8 @@
       }
       /* Style for submit button */
       .submit {
+        width: 384px;
+        height: 64px;
         background-color: black;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
@@ -99,7 +109,8 @@
         line-height: 24px;
 
         /* White */
-
+        margin-left: 14px;
+        margin-right: 12px;
         color: #ffffff;
         border: 2px solid black;
         padding: 20px 43px;
@@ -114,6 +125,35 @@
         background-color: #f3c653;
         border: 2px solid #f3c653;
       }
+
+      @media screen and (min-width: 413px) {
+        .modal-content {
+          width: 414px;
+        }
+      }
+
+      /*TABLET and COMP*/
+      @media (min-width: 1024px) {
+        .modal-content {
+          width: 712px;
+        }
+        .modal-form {
+          width: 592px;
+        }
+        .submit {
+          width: 592px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          padding-top: 18px;
+          padding-bottom: 18px;
+          padding-left: 117px;
+          padding-right: 117px;
+          margin-left: 60px;
+          margin-right: 60px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -127,44 +167,52 @@
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
 
-        <div class="modal-form">
+        <div class="">
           <h2 class="modal-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
-          <input
-            class="modal-input"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Ваше ім’я"
-          />
-          <p class="question-desc">На кого забронювати столик?</p>
+          <div class="modal-form">
+            <input
+              class="modal-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ваше ім’я"
+            />
+            <p class="question-desc">На кого забронювати столик?</p>
 
-          <input
-            class="modal-input"
-            type="number"
-            id="phone"
-            name="phone"
-            placeholder="+38 (___) ___-__-__"
-          />
-          <p class="question-desc">Номер телефону</p>
+            <input
+              class="modal-input"
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="+38 (___) ___-__-__"
+            />
+            <p class="question-desc">Номер телефону</p>
 
-          <select class="modal-input" id="select1" name="select1">
-            <option value="option1">1</option>
-            <option value="option2">2</option>
-            <option value="option3">3</option>
-            <option value="option4">4</option>
-            <option value="option5">5</option>
-            <option value="option6">6</option>
-            <option value="option7">7</option>
-            <option value="option8">8</option>
-            <option value="option9">9</option>
-            <option value="option10">Party(more then 10)</option>
-          </select>
-          <p class="question-desc">Столик на яку кількість осіб?</p>
+            <select class="modal-input" id="select1" name="select1">
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10">Party(more then 10)</option>
+            </select>
+            <p class="question-desc">Столик на яку кількість осіб?</p>
 
-          <input class="modal-input" type="date" id="date" name="date" placeholder="Сьогодні" />
-          <p class="question-desc" style="margin-bottom: 40px">
-            На яку дату бронювати?
-          </p>
+            <input
+              class="modal-input"
+              type="date"
+              id="date"
+              name="date"
+              placeholder="Сьогодні"
+            />
+            <p class="question-desc" style="margin-bottom: 40px">
+              На яку дату бронювати?
+            </p>
+          </div>
 
           <button class="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
         </div>
