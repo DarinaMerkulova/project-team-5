@@ -1,0 +1,85 @@
+.rest-info {
+    background: linear-gradient(rgba(0, 0, 0, 0.65))
+    url('../../img/mobile/Mob-homepage/mob-goblet.jpg');
+}
+
+.rest-info-container {
+}
+
+
+
+.container {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+.rest-info-texts {
+    margin-bottom: 48px;
+}
+
+.rest-info-mimino {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.rest-info-title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.rest-info-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #BABABA;
+}
+
+.rest-info-slider {
+
+}
+
+.rest-info-list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+
+.rest-info-items {}
+
+.rest-info-button {
+    flex-basis: 100%;
+    
+}
+
+.rest-info-btn {
+    display: block;
+    width: 236px;
+    height: 48px;
+    left: 89px;
+    top: 583px;
+
+    background: transparent rgba(0, 0, 0, 0.4);
+
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    
+}
