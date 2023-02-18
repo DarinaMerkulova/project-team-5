@@ -1,0 +1,215 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media screen and (max-width: 413px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .container {
+        max-width: 384px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 930px;
+   
+  }
+}
+
+  @media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+  }
+}
+
+
+/* ------hotel-mobile----- */
+
+.double-room-lux {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0;
+    background-color: var(--main-bkg-color);
+    
+}
+
+.double-room-lux-text {
+    margin-bottom: 32px;
+}
+
+.double-room-lux-text1 {
+    width: 190px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--light-grey-color);
+}
+
+.double-room-lux-text2 {
+    width: 127px;
+    margin-bottom: 32px;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color:var(--dark-color);
+}
+
+.double-room-lux-title {
+    max-width: 348px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--black-color);
+}
+
+.double-room-lux-text3 {
+    width: 258px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--hotel-main-color);
+}
+
+.double-room-lux-img {
+    display: block;
+    margin-left: auto;
+    
+    margin-bottom: 32px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.double-room-lux-swiper {
+    margin-bottom: 72px;
+}
+
+.double-room-lux-transfer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    
+
+}
+
+.double-room-lux-link {
+    
+    padding-top: 14px 64px;
+    width: 236px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    background: var(--black-color);
+    border: 2px solid var(--main-bkg-color);
+    border-radius: 25px;
+    border: none;
+}
+
+.double-room-lux-btn {
+    /* padding: 14px 37px; */
+    width: 236px;
+    height: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    background: var(--black-color);
+    border: 2px solid var(--main-bkg-color);
+    border-radius: 25px;
+    border: none;
+}
+
+/* -----hotel-tablet----- */
+
+@media screen and (min-width: 1024px) {
+ 
+.double-room-lux {
+        padding-top: 62px;
+        padding-bottom: 104px;
+        background-color: var(--main-bkg-color);
+        
+    }
+
+    .double-room-lux-list {
+        margin-bottom: 176px;
+    }
+
+
+
+    .double-room-lux-text1 {
+        width: 304px;
+        margin-bottom: 4px;
+       
+        font-size: 32px;
+        line-height: 1.15;
+        color: var(--light-grey-color);
+    }
+
+    .double-room-lux-text2 {
+        width: 202px;
+        margin-bottom: 62px;
+        
+        font-size: 64px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        color:var(--dark-color);
+    }
+
+    .double-room-lux-title {
+        max-width: 433px;
+        
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.05em;
+        color: var(--black-color);
+    }
+
+    .double-room-lux-text3 {
+        width: 439px;
+        text-align: left;
+        
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--hotel-main-color);
+    }
+
+
+}

@@ -1,17 +1,60 @@
-<section>
-    <div>
+
+<!-- hotel double-room-lux -->
+<section class="double-room-lux">
+    <div class="container double-room-lux-container">
+        <div class="double-room-lux-list">
+            <div class="double-room-lux-text">
+            <p class="double-room-lux-text1">Amet minim mollit non</p>
+            <p class="double-room-lux-text2">MIMIHO</p>
+                <h2 class="double-room-lux-title">ДВОМІСНИЙ НОМЕР люкс</h2>
+                    <p class="double-room-lux-text3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>                
+            <picture class="double-room-lux-img">
+                <source
+                  srcset="
+                    ./img/desktop/Desktop_hotel/desk-hotel-modern-studio.jpg 1x,
+                    ./img/desktop/Desktop_hotel/desk-hotel-modern-studio@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/jpeg"
+                  width="460"
+                  height="574"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/Tablet_hotel/tab-hotel-modern-studio.jpg 1x,
+                    ./img/tablet/Tablet_hotel/tab-hotel-modern-studio@2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  type="image/jpeg"
+                  width="400"
+                  height="524"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/Mob-hotel/mob-hotel-modern-studio.jpg 1x,
+                    ./img/mobile/Mob-hotel/mob-hotel-modern-studio@2x.jpg 2x
+                  "
+                  media="(max-width: 1023px)"
+                  type="image/jpeg"
+                  width="244"
+                  height="322"
+                />
+                <img
+                  src="./img/mobile/Mob-hotel/mob-hotel-modern-studio.jpg "
+                  alt="hotel room"
+                  width="244"
+                  height="322"
+                />
+              </picture>
+             
+        </div> 
         <div>
-            <p>Amet minim mollit non</p>
-            <p>MIMIHO</p>
-                <h2>ДВОМІСНИЙ НОМЕР люкс</h2>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>                
-                    <img src="/src/img/mobile/Mob-hotel/mob-hotel-modern-studio.jpg" alt="" width="244" height="322">            
-    </div> 
-    <div>
-            <div class="swiper">swiper</div>      
-                <div><a href="">Детальніше</a>          
-                    <button>Переглянути ціни</button>
+            <div class="double-room-lux-swiper">swiper</div>      
+                <div class="double-room-lux-transfer">
+                    <a href="./room.html" class="double-room-lux-link">Детальніше</a>          
+                    <button name="button" type="button" class="double-room-lux-btn" data-modal-open>Переглянути ціни</button>
                 </div>
+        </div>
     </div>
 </section>
