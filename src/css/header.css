@@ -1,0 +1,339 @@
+@import url(../css/reset.css);
+
+.logo {
+    display: block;
+    font-family: 'Film P3', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.083;
+    letter-spacing: 0.3em;
+    color: #fff;
+}
+
+.site-item{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+}
+
+.header-phone{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.location{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.header-container{
+    position: absolute;
+}  
+/* HEADER ТЕЛЕФОН */
+
+
+    .header-nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        margin-right: 52px;
+    }
+    .site-nav{
+        display: flex;
+    }
+    .current-restoraunt{
+        display: flex;
+        align-items: center;
+    }
+
+    .current-hotel{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .worker-soc-link{
+        display: inline-block;;
+        margin-left: 12px;
+        margin-right: 28px;
+        fill: #F3C653;
+    }
+
+    .header-phone{
+        display: none;
+    }
+
+
+    .auth-list{
+        display:flex;
+        margin-top: 642px;
+
+    }
+    .site-soc-link{
+        margin-right: 23px;
+        fill: #F3C653;
+    }
+
+
+    .location{
+        
+        width: 210px;
+        height: 47px;
+
+        margin-top: 16px;
+        margin-left: 189px;
+        margin-right: 16px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+    .location-item{
+        align-items: center;
+    }
+
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
+
+    .location-text{
+        padding-left: 8px;
+        width: 179px;
+        height: 30px;
+    }
+    
+    .location-icon{
+        fill: #F3C653;
+    }
+
+@media screen and (min-width: 1024px) {
+    .header-nav{
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .logo {
+    font-size: 40px;
+    line-height: 1.075;
+
+    margin-left: 47px;
+    margin-right: 135px;
+    }
+
+    .site-item{
+    font-size: 20px;
+    line-height: 1.2;
+    }
+
+    .location{
+    font-size: 16px;
+    line-height: 1.25;
+    }
+
+    .current-restoraunt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .current-hotel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-link{
+        margin-left: 72px;
+        margin-right: 32px;
+    }
+
+    .header-phone{
+        display: flex;
+
+        width: 155px;
+        height: 40px;
+
+        padding-top: 12px;
+        padding-left: 36px;
+        padding-bottom: 12px;
+        padding-right: 8px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+
+    .worker-soc-link{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .restoraunt-link{
+        position: absolute;
+        left: 540px;
+        top: 36px;
+    }
+    
+    .hotel-link{
+        position: absolute;
+        left: 870px;
+        top: 36px;
+    }
+
+    .location{
+        width: 285px;
+        height: 56px;
+        margin-left: 47px;
+        margin-top: 533px;
+
+
+    }
+
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
+
+    .location-text{
+        padding-left: 8px;
+        width: 233px;
+        height: 40px;
+    }
+
+    .auth-list{
+        margin-left: 47px;
+        margin-top: 25px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+    .header-nav{
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .logo {
+    font-size: 40px;
+    line-height: 1.075;
+
+    margin-left: 85px;
+    margin-right: 63px;
+    }
+
+    .site-item{
+    font-size: 20px;
+    line-height: 1.2;
+    }
+
+    .location{
+    font-size: 16px;
+    line-height: 1.25;
+    }
+
+    .current-restoraunt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .current-hotel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-link{
+        margin-left: 72px;
+        margin-right: 32px;
+    }
+
+    .header-phone{
+        display: flex;
+
+
+
+        padding-top: 12px;
+        padding-left: 36px;
+        padding-bottom: 12px;
+        padding-right: 8px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+
+    .worker-soc-link{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .restoraunt-link{
+        position: absolute;
+        left: 507px;
+        top: 36px;
+    }
+    
+    .hotel-link{
+        position: absolute;
+        left: 835px;
+        top: 36px;
+    }
+
+    .location{
+        position: absolute;
+        width: 285px;
+        height: 56px;
+        left: 85px;
+        top: 600px;
+
+        margin: 0;
+    }
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
+
+    .location-text{
+        padding-left: 8px;
+        width: 233px;
+        height: 40px;
+    }
+
+    .auth-list{
+        position: absolute;
+        left: 1083px;
+        top: 10px;
+    }
+}
