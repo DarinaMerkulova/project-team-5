@@ -1,0 +1,291 @@
+
+/* ------hotel-mobile----- */
+
+.triple {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0;
+    background-color: var(--last-bkg-color);
+    
+}
+
+.triple-text {
+    margin-bottom: 32px;
+}
+
+.triple-text1 {
+    width: 200px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--light-grey-color);
+}
+
+.triple-text2 {
+    width: 127px;
+    margin-left: auto;
+    margin-bottom: 32px;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color:var(--dark-color);
+}
+
+.triple-title {
+    max-width: 305px;
+    margin-left: auto;
+    margin-bottom: 12px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--black-color);
+}
+
+.triple-text3 {
+    width: 242px;
+    margin-left: 83px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--hotel-main-color);
+}
+
+.triple-img {
+   
+    margin-right: auto;
+    margin-bottom: 32px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    
+}
+
+
+.hotel-triple-room-slider {
+    display: flex;
+    gap: 16px;
+    margin-left: 115px;
+    flex-direction: row;
+    margin-bottom: 72px;
+  }
+
+  @media screen and (max-width: 413px){
+    .hotel-room-slider {
+     margin-right: 53px;
+    }
+    }
+    
+    @media screen and (min-width: 414px) {
+      .hotel-room-slider-img {
+        flex-shrink: 0;
+      }
+    }
+
+.triple-transfer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    
+
+}
+
+.triple-link {
+    
+    padding-top: 14px 64px;
+    width: 236px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    background: var(--black-color);
+    border: 2px solid var(--main-bkg-color);
+    border-radius: 25px;
+    border: none;
+}
+
+.triple-btn {
+  
+    width: 236px;
+    height: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    background: var(--black-color);
+    border: 2px solid var(--main-bkg-color);
+    border-radius: 25px;
+    border: none;
+}
+
+/* -----hotel-tablet----- */
+
+@media screen and (min-width: 1024px) {
+ 
+.triple {
+       
+        padding-top: 66px;
+        padding-bottom: 145px;
+        background-color: var(--last-bkg-color);
+        
+    }
+
+  
+    .triple-list {
+        position: relative;
+        margin-bottom: 210px;
+    }
+
+
+
+    .triple-text1 {
+        width: 314px;
+        margin-bottom: 4px;
+       
+        font-size: 32px;
+        line-height: 1.15;
+        color: var(--light-grey-color);
+    }
+
+    .triple-text2 {
+        width: 202px;
+        margin-bottom: 72px;
+        
+        font-size: 64px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        color:var(--dark-color);
+    }
+
+    .triple-title {
+        max-width: 379px;
+        margin-right: 43px;
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.14;
+        letter-spacing: 0.05em;
+        color: var(--black-color);
+    }
+
+    .triple-text3 {
+        width: 400px;
+        margin-right: 20px;
+        margin-left: auto;
+        text-align: left;
+        
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--hotel-main-color);
+    }
+
+    .triple-img {
+        position: absolute;
+        top: -94px;
+        left: 66px;
+        z-index: 100;
+        overflow: visible;
+        background: #DADADA;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        
+        
+    }
+    
+    .hotel-triple-room-slider {
+        position: absolute;
+        right: 47px;
+        bottom: -265px;
+        
+        flex-direction: row-reverse;
+        
+        gap: 40px;
+      }
+
+      .triple-transfer {
+        
+       
+        align-items: start;
+        
+    
+    }
+
+}
+
+/* -----hotel-desktop----- */
+
+@media screen and (min-width: 1280px) {
+ 
+    .triple {
+           
+            padding-top: 72px;
+            padding-bottom: 182px;
+            background-color: var(--last-bkg-color);
+            
+        }
+
+        .triple-list {
+            
+            margin-bottom: 260px;
+        }
+
+        .triple-text1 {
+            margin-right: 57px;
+        }
+
+        .triple-text2 {
+            margin-right: 57px;
+        }
+
+        .triple-title {
+            max-width: 455px;
+            margin-right: 57px;
+            margin-bottom: 24px;
+            font-size: 36px;
+          
+        }
+
+        .triple-text3 {
+            width: 400px;
+            margin-left: 600px;
+            
+            
+            
+        }
+        .hotel-triple-room-slider {
+            position: absolute;
+            right: 85px;
+            bottom: -430px;
+            
+            flex-direction: row-reverse;
+            
+            gap: 40px;
+          }
+
+
+    }
