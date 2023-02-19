@@ -3,6 +3,7 @@
 
 
 .hotel-info-container {
+    max-width: 100%;
     padding-top: 24px;
     padding-bottom: 40px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -39,24 +40,28 @@
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 0.9;
+    width: 127px;
+    height: 43px;
+    line-height: 1.07;
     letter-spacing: 0.3em;
     color: #FFFFFF;
     margin-bottom: 12px;
     text-align: right;
     margin-right: -13px;
+    
 }
 
 
 
 
 .hotel-info-title {
-    
+    width: 73px;
+    height: 24px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 0.8;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     text-align: right;
@@ -70,6 +75,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
+    width: 243px;
+    height: 62px;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -180,14 +187,20 @@
 
     .hotel-info-mimino {
         font-size: 64px;
+        width: 202px;
+        height: 69px;
     }
 
     .hotel-info-title {
         font-size: 24px;
+        width: 87px;
+        height: 29px;
     }
 
     .hotel-info-text {
         font-size: 16px;
+        width: 549px;
+        height: 44px;
         margin-right: auto;
     }
 
@@ -238,5 +251,11 @@
                     url('../../img/desktop/Desrtop_home/desk-bed-room@2x.jpg');
             }
         }
+        
+                .hotel-info-text {
+                    width: 595px;
+                    height: 44px;
+                    
+                }
 
 }

@@ -3,6 +3,7 @@
 }
 
 .rest-info-container {
+    max-width: 100%;
     padding-top: 24px;
     padding-bottom: 40px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -36,6 +37,8 @@
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
+    width: 127px;
+    height: 43px;
     font-size: 40px;
     line-height: 0.9;
     letter-spacing: 0.3em;
@@ -49,6 +52,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
+    width: 127px;
+    height: 24px;
     font-size: 20px;
     line-height: 0.8;
     letter-spacing: 0.02em;
@@ -59,6 +64,8 @@
 .rest-info-text {
     font-family: 'Montserrat';
     font-style: normal;
+    width: 259px;
+    height: 62px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.2;
@@ -165,15 +172,21 @@ margin-bottom: 40px;
 
         .rest-info-mimino {
             font-size: 64px;
+            width: 202px;
+            height: 69px;
         }
 
         .rest-info-title {
             font-size: 24px;
+            width: 126px;
+            height: 29px;
         }
 
         .rest-info-text {
             font-size: 16px;
             margin-right: auto;
+            width: 610px;
+            height: 44px;
         }
 
         .rest-info-wrap {
@@ -227,4 +240,5 @@ margin-bottom: 40px;
                     url('../../img/desktop/Desrtop_home/desk-goblet@2x.jpg');
             }
         }
+
 }
