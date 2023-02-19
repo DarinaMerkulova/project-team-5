@@ -78,6 +78,12 @@
     margin-bottom: 72px;
   }
 
+  .slider-img {
+    background: #DADADA;
+/* shadow_little */
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
   @media screen and (max-width: 413px){
     .hotel-room-slider {
      margin-right: 53px;
@@ -96,7 +102,7 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    
+  
 
 }
 
