@@ -88,6 +88,27 @@ margin-bottom: 40px;
     
 }
 
+.rest-info-nav {
+    margin-top: 24px;
+    
+}
+
+.rest-info-nav-prev, .rest-info-nav-next  {
+    background-color: transparent;
+    border: none;
+}
+
+.rest-info-nav-prev-svg, .rest-info-nav-next-svg {
+    fill: #FFFFFF;
+    transition: fill var(--timing-duration) var(--timing-function);
+}
+
+.rest-info-nav-prev-svg:hover,
+.rest-info-nav-prev-svg:focus,
+.rest-info-nav-next-svg:hover,
+.rest-info-nav-next-svg:focus {
+    fill: var(--accent-color);
+}
 .rest-info-button {
     flex-basis: 100%;
     text-align: center;
