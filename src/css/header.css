@@ -1,5 +1,9 @@
 @import url(../css/reset.css);
 
+.header-container{
+    z-index: 100;
+}
+
 .logo {
     display: block;
     font-family: 'Film P3', sans-serif;
