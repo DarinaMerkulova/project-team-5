@@ -84,7 +84,7 @@
     .auth-list{
         display:flex;
         margin-top: 642px;
-
+        z-index: 100;
     }
     .site-soc-link{
         margin-right: 23px;
