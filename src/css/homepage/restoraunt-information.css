@@ -61,7 +61,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #BABABA;
 }
@@ -103,6 +103,7 @@ margin-bottom: 40px;
     color: var(--accent-color);
     margin: auto;
     margin-bottom: 16px;
+    transition: background-color var(--timing-duration) var(--timing-function);
 }
 
 .rest-info-btn:hover,
@@ -126,6 +127,7 @@ margin-bottom: 40px;
     font-weight: 700;
     margin: auto;
     padding: 14px 29px;
+    transition: background-color var(--timing-duration) var(--timing-function);
 }
 
 
@@ -138,6 +140,9 @@ margin-bottom: 40px;
 
 @media screen and (min-width: 1024px) {
     .rest-info-container {
+        padding-top: 48px;
+        padding-bottom: 40px;
+        padding-right: 47px;
             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                 url('../../img/tablet/Tablet_home/tab-goblet.jpg');
             
@@ -174,36 +179,32 @@ margin-bottom: 40px;
         .rest-info-wrap {
             display: flex;
             align-items: baseline;
+            gap: 18px;
+            
             
             
         }
 
 
         .rest-info-button {
-            
             align-items: flex-start;
-            /* padding-bottom: 0; */
-            margin: auto;
-            flex-basis: 0%;
-            /* float: right; */
+            flex-basis: 30%;
             order: 0;
-            width: 33%;
-            /* position: relative; */
-            /*height: 245px;*/
+            position: relative;
+            
         }
 
-        /* .hotel-info-btn-wrapper{
+        .rest-info-btn-wrapper {
         position: absolute;
         bottom: 0;
-        left:0;
-        
-    } */
+        right:0;
+        }
 
 
 
         .rest-info-slider {
             align-items: flex-start;
-            width:67%;
+            width:70%;
             float: left;
             order: 1;
         }
@@ -212,8 +213,9 @@ margin-bottom: 40px;
 
 @media screen and (min-width: 1280px) {
     .rest-info-container {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url('../../img/desktop/Desrtop_home/desk-goblet.jpg');
+        padding-bottom: 48px;   
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('../../img/desktop/Desrtop_home/desk-goblet.jpg');
     
         }
     
