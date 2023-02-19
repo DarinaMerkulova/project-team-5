@@ -3,6 +3,8 @@
 
 
 .hotel-info-container {
+    padding-top: 24px;
+    padding-bottom: 40px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url('../../img/mobile/Mob-homepage/mob-room.jpg');
     background-repeat: no-repeat;
@@ -28,7 +30,6 @@
 .hotel-info-texts {
     margin-bottom: 48px;
     padding-right: 33%;
-    padding-top: 24px;
     padding-left: 32px;
 }
 
@@ -50,7 +51,7 @@
 
 
 .hotel-info-title {
-    margin-bottom: 20px;
+    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -59,6 +60,7 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     text-align: right;
+    margin-bottom: 20px;
 }
 
 
@@ -74,11 +76,14 @@
     color: #BABABA;
     text-align: left;
     margin-right: -7px;
+    
 }
 
 
 
-.hotel-info-slider {}
+.hotel-info-slider {
+    margin-bottom: 40px;
+}
 
 .hotel-info-swiper-slider {
     display: flex;
@@ -94,9 +99,8 @@
 
 .hotel-info-button {
     flex-basis: 100%;
-    margin-top: 40px;
     text-align: center;
-    padding-bottom: 40px;
+    
 }
 
 
@@ -113,6 +117,7 @@
     border-radius: 25px;
     color: var(--accent-color);
     margin: auto;
+    margin-bottom: 16px;
 }
 
 
@@ -136,7 +141,7 @@
     color: var(--accent-color);
     font-weight: 700;
     margin: auto;
-    margin-top: 16px;
+    
 
 }
 
@@ -149,6 +154,8 @@
 
 @media screen and (min-width: 1024px) {
     .hotel-info-container {
+        padding-top: 48px;
+        padding-bottom: 40px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url('../../img/tablet/Tablet_home/tab-room.jpg');
     }
@@ -166,7 +173,6 @@
     .hotel-info-texts {
         margin-bottom: 40px;
         padding-right: 33%;
-        padding-top: 48px;
         padding-left: 197px;
     }
 
@@ -186,7 +192,7 @@
     .hotel-info-wrap {
         display: flex;
         align-items: baseline;
-        padding-bottom: 40px;
+        
     }
 
     .hotel-info-button {

@@ -3,6 +3,8 @@
 }
 
 .rest-info-container {
+    padding-top: 24px;
+    padding-bottom: 40px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url('../../img/mobile/Mob-homepage/mob-goblet.jpg');
     background-repeat: no-repeat;
@@ -64,28 +66,25 @@
     color: #BABABA;
 }
 
-/* .rest-info-wrap{
-display: flex;
-} */
-
-.rest-info-slider {
+.rest-info-wrap{
 
 }
 
-.swiper-slider {
+.rest-info-slider {
+margin-bottom: 40px;
+}
+
+.rest-info-swiper-slider {
     display: flex;
     gap: 20px;
+    overflow: hidden;
     
 }
 
-
-
-
 .rest-info-button {
     flex-basis: 100%;
-    margin-top: 40px;
     text-align: center;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     
     
 }
@@ -102,7 +101,8 @@ display: flex;
     border: 2px solid #FFFFFF;
     border-radius: 25px;
     color: var(--accent-color);
-    margin: auto;   
+    margin: auto;
+    margin-bottom: 16px;
 }
 
 .rest-info-btn:hover,
@@ -125,7 +125,6 @@ display: flex;
     color: var(--accent-color);
     font-weight: 700;
     margin: auto;
-    margin-top: 16px;
     padding: 14px 29px;
 }
 
@@ -137,3 +136,93 @@ display: flex;
     border: 2px solid var(--accent-color);
 }
 
+@media screen and (min-width: 1024px) {
+    .rest-info-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/tablet/Tablet_home/tab-goblet.jpg');
+            
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .rest-info-container {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('../../img/tablet/Tablet_home/tab-goblet@2x.jpg');
+            }
+        }
+        .rest-info-texts {
+            margin-bottom: 40px;
+            padding-right: 33%;
+            padding-top: 48px;
+            padding-left: 197px;
+        }
+
+        .rest-info-mimino {
+            font-size: 64px;
+        }
+
+        .rest-info-title {
+            font-size: 24px;
+        }
+
+        .rest-info-text {
+            font-size: 16px;
+            margin-right: auto;
+        }
+
+        .rest-info-wrap {
+            display: flex;
+            align-items: baseline;
+            
+            
+        }
+
+
+        .rest-info-button {
+            
+            align-items: flex-start;
+            /* padding-bottom: 0; */
+            margin: auto;
+            flex-basis: 0%;
+            /* float: right; */
+            order: 0;
+            width: 33%;
+            /* position: relative; */
+            /*height: 245px;*/
+        }
+
+        /* .hotel-info-btn-wrapper{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        
+    } */
+
+
+
+        .rest-info-slider {
+            align-items: flex-start;
+            width:67%;
+            float: left;
+            order: 1;
+        }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .rest-info-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/desktop/Desrtop_home/desk-goblet.jpg');
+    
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .rest-info-container {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('../../img/desktop/Desrtop_home/desk-goblet@2x.jpg');
+            }
+        }
+}
