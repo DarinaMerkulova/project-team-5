@@ -9,6 +9,7 @@
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
       }
+
       select{
         appearance: none;
       }
@@ -39,6 +40,7 @@
         width: 384px;
       }
       .modal {
+
         display: none;
         position: fixed;
         z-index: 1;
@@ -52,6 +54,8 @@
 
       /* Style for modal content */
       .modal-content {
+                border: 1px solid #F3C653;
+        border-radius: 2px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
         width: 42.5%;
@@ -157,6 +161,7 @@
     color: #808080;
       }
       .modal-select{
+        cursor: pointer;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
         font-size: large;
@@ -186,6 +191,8 @@
       /*TABLET and COMP*/
       @media (min-width: 1024px) {
         .modal-content {
+                  border: 1px solid #F3C653;
+        border-radius: 2px;
           width: 712px;
         }
         .modal-form {
@@ -222,7 +229,7 @@
         .last-que {
           margin-bottom: 20px;
         }
-        select {
+        .select {
           background-position: calc(100% - 3px) center;
           background-position-x: 244px;
         }
@@ -300,9 +307,9 @@
                 <p class="question-desc">Кількість ночей</p>
               </div>
             
-              <div>
+              <div class="right-side">
                 <input
-                  class="modal-input right-side"
+                  class="modal-input "
                   type="number"
                   id="input-field"
                   name="name"
