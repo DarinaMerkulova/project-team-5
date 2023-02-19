@@ -146,7 +146,7 @@
 .double-room {
        
         padding-top: 64px;
-        padding-bottom: 145px;
+        padding-bottom: 104px;
         background-color: var(--main-bkg-color);
         
     }
@@ -210,8 +210,7 @@
     }
     
     .hotel-double-room-slider {
-        position: absolute;
-        
+        margin-bottom: 0;      
         flex-direction: row;
         
         gap: 40px;
@@ -234,7 +233,7 @@
     .double-room {
            
             padding-top: 72px;
-            padding-bottom: 182px;
+            padding-bottom: 112px;
             background-color: var(--main-bkg-color);
             
         }
