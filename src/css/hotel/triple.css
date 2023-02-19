@@ -80,17 +80,15 @@
     margin-bottom: 72px;
     gap: 16px;
     margin-left: 115px;
-    flex-direction: row;
+    /* flex-direction: row-reverse; */
     
   }
 
-  .triple-transfer {
-    text-align: center;
-  }
+  
 
   @media screen and (max-width: 413px){
     .hotel-triple-room-slider {
-     margin-right: 53px;
+     margin-right: -62px;
     }
     }
     
@@ -100,6 +98,11 @@
       }
     }
 
+    .triple-transfer {
+        text-align: center;
+        align-items: center;
+        text-align: center;
+      }
 
 .triple-link {
     
@@ -221,12 +224,13 @@
         text-align: center;
         align-items: center;
         justify-content: space-between;
+        flex-direction: row-reverse;
     }
 
     .hotel-triple-room-slider {
         right: 47px;
         margin-bottom: 0;
-        flex-direction: row-reverse;
+        flex-direction: row;
         
         gap: 40px;
       }
@@ -248,7 +252,7 @@
     .triple {
            
             padding-top: 72px;
-            padding-bottom: 182px;
+            padding-bottom: 112px;
             background-color: var(--last-bkg-color);
             
         }
@@ -282,11 +286,11 @@
             
         }
         .hotel-triple-room-slider {
-            position: absolute;
+            /* position: absolute; */
             right: 85px;
             bottom: -430px;
             
-            flex-direction: row-reverse;
+            /* flex-direction: row; */
             
             gap: 40px;
           }

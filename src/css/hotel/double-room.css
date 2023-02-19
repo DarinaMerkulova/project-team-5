@@ -211,7 +211,16 @@
         
     }
     
+    .hotel-double-room-slider-transfer {
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .hotel-double-room-slider {
+       
         margin-bottom: 0;      
         flex-direction: row;
         
@@ -253,6 +262,13 @@
             
             
         }
+
+        .hotel-double-room-slider {
+                
+            flex-direction: row-reverse;
+            
+           
+          }
 
         .double-room-link:hover,
         .double-room-link:focus {
