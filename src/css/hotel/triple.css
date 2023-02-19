@@ -77,40 +77,37 @@
 
 .hotel-triple-room-slider {
     display: flex;
+    margin-bottom: 72px;
     gap: 16px;
     margin-left: 115px;
     flex-direction: row;
-    margin-bottom: 72px;
+    
+  }
+
+  .triple-transfer {
+    text-align: center;
   }
 
   @media screen and (max-width: 413px){
-    .hotel-room-slider {
+    .hotel-triple-room-slider {
      margin-right: 53px;
     }
     }
     
     @media screen and (min-width: 414px) {
-      .hotel-room-slider-img {
+      .hotel-triple-room-slider-img {
         flex-shrink: 0;
       }
     }
 
-.triple-transfer {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    
-
-}
 
 .triple-link {
     
     padding-top: 14px 64px;
     width: 236px;
     height: 48px;
-    display: flex;
+    margin-bottom: 16px;
+    display: inline-flex;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -125,6 +122,7 @@
     border: 2px solid var(--main-bkg-color);
     border-radius: 25px;
     border: none;
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 .triple-btn {
@@ -142,6 +140,7 @@
     border: 2px solid var(--main-bkg-color);
     border-radius: 25px;
     border: none;
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 /* -----hotel-tablet----- */
@@ -151,7 +150,7 @@
 .triple {
        
         padding-top: 66px;
-        padding-bottom: 145px;
+        padding-bottom: 104px;
         background-color: var(--last-bkg-color);
         
     }
@@ -217,19 +216,24 @@
         
     }
     
+    .slider-transfer {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .hotel-triple-room-slider {
-        position: absolute;
         right: 47px;
-        bottom: -265px;
-        
+        margin-bottom: 0;
         flex-direction: row-reverse;
         
         gap: 40px;
       }
 
       .triple-transfer {
-        
-       
+        display: flex;
+        flex-direction: column;
         align-items: start;
         
     
@@ -287,5 +291,21 @@
             gap: 40px;
           }
 
+        .triple-link:hover,
+        .triple-link:focus {
+            background-color: var(--light-color);
+            border: 2px solid var(--accent-color);
+            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+        
+        
+        }
 
+        .triple-btn:hover,
+        .triple-btn:focus {
+            background-color: var(--light-color);
+            border: 2px solid var(--accent-color);
+            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+        
+        
+        }
     }
