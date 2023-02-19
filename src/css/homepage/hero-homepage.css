@@ -1,43 +1,8 @@
-@import url(../reset.css);
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    color: var(--main-color);
-    background-color: var(--main-bkg-color);
-  }
-
-.container {
-    max-width: 413px;
-  
-    padding-left: 15px;
-    padding-right: 15px;
-  
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 414px) {
-    .container {
-      max-width: 414px;
-    }
-  }
-@media screen and (min-width: 1024px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-@media screen and (min-width: 1280px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
-  
+@import url(../reset.css); 
 
   /* HERO */
     .hero-homepage{
+        display: flex;
         position: relative;
         max-width: 1440px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -47,6 +12,9 @@ body {
         background-position: 0 0;
         margin-left: auto;
         margin-right: auto;
+
+        padding-top: 181px;
+        padding-bottom: 102px;
     }
 
   .hero-homepage-name{
@@ -57,16 +25,13 @@ body {
     letter-spacing: 0.3em;
     color: #FFFFFF;
 
-    padding-top: 181px;
     margin-left: 56px;
   }
 
   .hero-homerpage-thema{
-    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 16px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
     color: #FFFFFF;
 
     width: 294px;
@@ -90,11 +55,9 @@ body {
   }
 
   .hero-homepage-button{
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
 
     margin-top: 113px;
     margin-left: 89px;
@@ -110,7 +73,7 @@ body {
 
   .hero-homepage-button:last-child{
     margin-top: 24px;
-    margin-bottom: 102px;
+
   }
 
   @media screen and (min-width: 1024px) {
