@@ -1,0 +1,234 @@
+
+.hotel-info {}
+
+
+.hotel-info-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../../img/mobile/Mob-homepage/mob-room.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hotel-info-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../../img/mobile/Mob-homepage/mob-room@2x.jpg');
+    }
+}
+
+
+
+
+
+.hotel-info-texts {
+    margin-bottom: 48px;
+    padding-right: 33%;
+    padding-top: 24px;
+    padding-left: 32px;
+}
+
+
+.hotel-info-mimino {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 0.9;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    text-align: right;
+    margin-right: -13px;
+}
+
+
+
+
+.hotel-info-title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.8;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+
+
+
+.hotel-info-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 0.8;
+    letter-spacing: 0.02em;
+    color: #BABABA;
+    text-align: left;
+    margin-right: -7px;
+}
+
+
+
+.hotel-info-slider {}
+
+.hotel-info-swiper-slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+
+}
+
+
+
+.hotel-info-items {}
+
+
+.hotel-info-button {
+    flex-basis: 100%;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+.hotel-info-btn {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    width: 236px;
+    height: 48px;
+    left: 89px;
+    top: 583px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    color: var(--accent-color);
+    margin: auto;
+}
+
+
+
+.hotel-info-btn:hover,
+.hotel-info-btn:focus {
+    background-color: #FFFFFF;
+    border: 2px solid var(--accent-color);
+}
+
+
+.hotel-info-link {
+    display: block;
+    font-style: normal;
+    width: 236px;
+    height: 48px;
+    padding: 14px 31px;
+    background: transparent rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    color: var(--accent-color);
+    font-weight: 700;
+    margin: auto;
+    margin-top: 16px;
+
+}
+
+
+.hotel-info-link:hover,
+.hotel-info-link:focus {
+    background-color: #FFFFFF;
+    border: 2px solid var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-info-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../../img/tablet/Tablet_home/tab-room.jpg');
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hotel-info-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/tablet/Tablet_home/tab-room@2x.jpg');
+        }
+    }
+    
+    .hotel-info-texts {
+        margin-bottom: 40px;
+        padding-right: 33%;
+        padding-top: 48px;
+        padding-left: 197px;
+    }
+
+    .hotel-info-mimino {
+        font-size: 64px;
+    }
+
+    .hotel-info-title {
+        font-size: 24px;
+    }
+
+    .hotel-info-text {
+        font-size: 16px;
+        margin-right: auto;
+    }
+
+    .hotel-info-wrap {
+        display: flex;
+        align-items: baseline;
+        padding-bottom: 40px;
+    }
+
+    .hotel-info-button {
+        align-items: flex-start;
+        margin: auto;
+        padding-bottom: 0;
+        flex-basis: 0%;
+        justify-content: flex-end;
+        /* position: relative; */
+        /*height: 245px;*/
+    }
+
+    /* .hotel-info-btn-wrapper{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        
+    } */
+
+    
+    
+    .hotel-info-slider {
+        align-items: flex-start;
+        width: 67%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-info-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../../img/desktop/Desrtop_home/desk-bed-room.jpg');
+        }
+    
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hotel-info-container {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('../../img/desktop/Desrtop_home/desk-bed-room@2x.jpg');
+            }
+        }
+
+}
