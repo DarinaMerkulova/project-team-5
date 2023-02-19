@@ -120,6 +120,7 @@
     border: 2px solid var(--main-bkg-color);
     border-radius: 25px;
     border: none;
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 .double-room-btn {
@@ -137,6 +138,7 @@
     border: 2px solid var(--main-bkg-color);
     border-radius: 25px;
     border: none;
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 /* -----hotel-tablet----- */
@@ -252,5 +254,22 @@
             
         }
 
+        .double-room-link:hover,
+        .double-room-link:focus {
+            background-color: var(--light-color);
+            border: 2px solid var(--accent-color);
+            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+        
+        
+        }
+
+        .double-room-btn:hover,
+        .double-room-btn:focus {
+            background-color: var(--light-color);
+            border: 2px solid var(--accent-color);
+            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+        
+        
+        }
 
     }
