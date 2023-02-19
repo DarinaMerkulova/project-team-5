@@ -20,10 +20,15 @@
     }
 }
 
+.hotel-info-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../../img/mobile/Mob-homepage/mob-room.jpg');
+
+}
 
 
 
-.rest-info-texts {
+.hotel-info-texts {
     margin-bottom: 48px;
     padding-left: 33%;
     padding-top: 24px;
@@ -80,8 +85,7 @@ display: flex;
 
 
 
-
-.rest-info-button {
+.rest-info-button, .hotel-info-button {
     flex-basis: 100%;
     margin-top: 40px;
     text-align: center;
@@ -90,7 +94,7 @@ display: flex;
     
 }
 
-.rest-info-btn {
+.rest-info-btn, .hotel-info-btn {
     display: block;
     font-style: normal;
     font-weight: 700;
