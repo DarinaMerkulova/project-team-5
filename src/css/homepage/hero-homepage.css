@@ -144,6 +144,11 @@
     margin-top: 24px;
 
   }
+  .hero-homepage-button:hover,
+  .hero-homepage-button:focus {
+    background-color: #FFFFFF;
+    border: 2px solid var(--accent-color);
+}
 
 
   .location{
@@ -202,7 +207,6 @@
     letter-spacing: 0.3em;
     color: #FFFFFF;
 
-    padding-top: 188px;
   }
 
   .hero-homerpage-thema{
@@ -266,7 +270,10 @@
 
    .location{
     position: absolute;
+
+
     top: 250px;
+
     left: 30px;
         width: 285px;
         height: 56px;

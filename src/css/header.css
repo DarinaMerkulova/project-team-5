@@ -223,7 +223,7 @@
 
     .auth-list{
         margin-left: 65px;
-        margin-top: 780px;
+        margin-top: 600px;
     }
 
 
@@ -338,6 +338,6 @@
     .auth-list{
         position: absolute;
         left: 1083px;
-        top: -745px;
+        top: -757px;
     }
-}
+
