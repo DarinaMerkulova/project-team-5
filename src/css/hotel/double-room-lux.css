@@ -69,6 +69,7 @@
   margin-bottom: 72px;
   margin-right: 115px;
   flex-direction: row-reverse;
+  overflow: hidden;
 }
 
 .slider-img {
@@ -143,6 +144,10 @@
 /* -----hotel-tablet----- */
 
 @media screen and (min-width: 1024px) {
+  .double-room-lux >.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .double-room-lux {
     padding-top: 62px;
     padding-bottom: 104px;
@@ -165,7 +170,7 @@
 
   .double-room-lux-text2 {
     width: 202px;
-    margin-bottom: 72px;
+    margin-bottom: 62px;
 
     font-size: 64px;
     line-height: 1.08;
@@ -195,11 +200,12 @@
   .double-room-lux-img {
     position: absolute;
     top: -94px;
-    right: 66px;
+    right: 65px;
     z-index: 100;
     overflow: visible;
     background: #dadada;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
   }
 
   .swiper-transfer {
@@ -212,7 +218,6 @@
   .hotel-double-room-lux-slider {
     margin-bottom: 0;
     flex-direction: row;
-
     gap: 40px;
   }
 
