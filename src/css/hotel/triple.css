@@ -1,316 +1,308 @@
-
 /* ------hotel-mobile----- */
+.triple > .container {
+  /* outline: 1px solid rgb(9, 198, 62); */
+}
 
 .triple {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0;
-    background-color: var(--last-bkg-color);
-    
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0;
+  background-color: var(--last-bkg-color);
+  /* outline: 1px solid rgb(236, 130, 9); */
 }
 
 .triple-text {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .triple-text1 {
-    width: 200px;
-    margin-bottom: 8px;
-    margin-left: auto;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    color: var(--light-grey-color);
+  width: 200px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--light-grey-color);
 }
 
 .triple-text2 {
-    width: 127px;
-    margin-left: auto;
-    margin-bottom: 32px;
-    font-family: 'Film P3';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    color:var(--dark-color);
+  width: 127px;
+  margin-left: auto;
+  margin-bottom: 32px;
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: var(--dark-color);
 }
 
 .triple-title {
-    max-width: 305px;
-    margin-left: auto;
-    margin-bottom: 12px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
-    color: var(--black-color);
+  max-width: 305px;
+  margin-left: auto;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--black-color);
+  margin-bottom: 12px;
 }
 
 .triple-text3 {
-    width: 242px;
-    margin-left: 83px;
-    text-align: left;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--hotel-main-color);
+  width: 243px;
+  margin-left: 83px;
+  text-align: left;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.22;
+  color: var(--hotel-main-color);
 }
 
 .triple-img {
-   
-    margin-right: auto;
-    margin-bottom: 32px;
-    background: #DADADA;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    
+  margin-right: auto;
+  margin-bottom: 32px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
-
 .hotel-triple-room-slider {
-    display: flex;
-    margin-bottom: 72px;
-    gap: 16px;
-    margin-left: 115px;
-    overflow: hidden;
-    /* flex-direction: row-reverse; */
-    
+  display: flex;
+  margin-bottom: 72px;
+  gap: 16px;
+  margin-left: 115px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 413px) {
+  .hotel-triple-room-slider {
+    margin-left: 89px;
   }
+  .hotel-triple-room-slider-img {
+    min-width: 150px;
+    overflow: hidden;
+  }
+  .triple-title {
+    text-align: right;
+    font-size: 6vw;
+  }
+  .triple-text3 {
+    margin-left: 50px;
+    font-size: 3vw;
+  }
+}
 
-  
+@media screen and (min-width: 414px) {
+  .hotel-triple-room-slider-img {
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+}
 
-  @media screen and (max-width: 413px){
-    .hotel-triple-room-slider {
-     margin-right: -62px;
-    }
-    }
-    
-    @media screen and (min-width: 414px) {
-      .hotel-triple-room-slider-img {
-        flex-shrink: 0;
-      }
-    }
-
-    .triple-transfer {
-        text-align: center;
-        align-items: center;
-        text-align: center;
-      }
+.triple-transfer {
+  text-align: center;
+  align-items: center;
+  text-align: center;
+}
 
 .triple-link {
-    
-    padding-top: 14px 64px;
-    width: 236px;
-    height: 48px;
-    margin-bottom: 16px;
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    background: var(--black-color);
-    border: 2px solid var(--main-bkg-color);
-    border-radius: 25px;
-    border: none;
-    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+  padding-top: 14px 64px;
+  width: 236px;
+  height: 48px;
+  margin-bottom: 16px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  background: var(--black-color);
+  border: 2px solid var(--main-bkg-color);
+  border-radius: 25px;
+  border: none;
+  transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+    border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 .triple-btn {
-  
-    width: 236px;
-    height: 48px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    background: var(--black-color);
-    border: 2px solid var(--main-bkg-color);
-    border-radius: 25px;
-    border: none;
-    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+  width: 236px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  background: var(--black-color);
+  border: 2px solid var(--main-bkg-color);
+  border-radius: 25px;
+  border: none;
+  transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+    border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 /* -----hotel-tablet----- */
 
 @media screen and (min-width: 1024px) {
- 
-.triple {
-       
-        padding-top: 66px;
-        padding-bottom: 104px;
-        background-color: var(--last-bkg-color);
-        
-    }
+  .triple {
+    padding-top: 66px;
+    padding-bottom: 104px;
+    background-color: var(--last-bkg-color);
+  }
 
-  
-    .triple-list {
-        position: relative;
-        margin-bottom: 210px;
-    }
+  .triple-list {
+    position: relative;
+    margin-bottom: 210px;
+  }
 
+  .triple-text1 {
+    width: 314px;
+    margin-bottom: 4px;
 
+    font-size: 32px;
+    line-height: 1.15;
+    color: var(--light-grey-color);
+  }
 
-    .triple-text1 {
-        width: 314px;
-        margin-bottom: 4px;
-       
-        font-size: 32px;
-        line-height: 1.15;
-        color: var(--light-grey-color);
-    }
+  .triple-text2 {
+    width: 202px;
+    margin-bottom: 72px;
 
-    .triple-text2 {
-        width: 202px;
-        margin-bottom: 72px;
-        
-        font-size: 64px;
-        line-height: 1.08;
-        letter-spacing: 0.3em;
-        color:var(--dark-color);
-    }
+    font-size: 64px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: var(--dark-color);
+  }
 
-    .triple-title {
-        max-width: 379px;
-        margin-right: 43px;
-        margin-bottom: 16px;
-        font-size: 30px;
-        line-height: 1.14;
-        letter-spacing: 0.05em;
-        color: var(--black-color);
-    }
+  .triple-title {
+    max-width: 379px;
+    margin-bottom: 16px;
+    margin-right: 23px;
+    font-size: 30px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: var(--black-color);
+  }
 
-    .triple-text3 {
-        width: 400px;
-        margin-right: 20px;
-        margin-left: auto;
-        text-align: left;
-        
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        color: var(--hotel-main-color);
-    }
+  .triple-text3 {
+    width: 400px;
+    margin-left: auto;
+    text-align: left;
 
-    .triple-img {
-        position: absolute;
-        top: -94px;
-        left: 66px;
-        z-index: 100;
-        overflow: visible;
-        background: #DADADA;
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-        
-        
-    }
-    
-    .slider-transfer {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-    }
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--hotel-main-color);
+  }
 
-    .hotel-triple-room-slider {
-        right: 47px;
-        margin-bottom: 0;
-        flex-direction: row;
-        
-        gap: 40px;
-      }
+  .triple-img {
+    position: absolute;
+    top: -94px;
+    left: 66px;
+    z-index: 100;
+    overflow: visible;
+    background: #dadada;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
 
-      .triple-transfer {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        
-    
-    }
+  .slider-transfer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 
+  .hotel-triple-room-slider {
+    right: 47px;
+    margin-bottom: 0;
+    flex-direction: row;
+
+    gap: 40px;
+  }
+
+  .triple-transfer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 /* -----hotel-desktop----- */
 
 @media screen and (min-width: 1280px) {
- 
-    .triple {
-           
-            padding-top: 72px;
-            padding-bottom: 112px;
-            background-color: var(--last-bkg-color);
-            
-        }
+  .triple > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-        .triple-list {
-            
-            margin-bottom: 260px;
-        }
+  .triple {
+    padding-top: 72px;
+    padding-bottom: 112px;
+    background-color: var(--last-bkg-color);
+  }
+  .triple-text1 {
+  }
 
-        .triple-text1 {
-            margin-right: 57px;
-        }
+  .triple-list {
+    margin-bottom: 260px;
+  }
 
-        .triple-text2 {
-            margin-right: 57px;
-        }
+  .triple-text2 {
+    margin-left: auto;
+  }
 
-        .triple-title {
-            max-width: 455px;
-            margin-right: 57px;
-            margin-bottom: 24px;
-            font-size: 36px;
-          
-        }
+  .triple-title {
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    max-width: 455px;
+  }
 
-        .triple-text3 {
-            width: 400px;
-            margin-left: 600px;
-            
-            
-            
-        }
-        .hotel-triple-room-slider {
-            /* position: absolute; */
-            right: 85px;
-            bottom: -430px;
-            
-            /* flex-direction: row; */
-            
-            gap: 40px;
-          }
+  .triple-text3 {
+    width: 400px;
+    margin-left: 660px;
+  }
+  .triple-img {
+    top: -104px;
+    left: 90px;
+  }
+  .hotel-triple-room-slider {
+    /* position: absolute; */
+    right: 85px;
+    bottom: -430px;
 
-        .triple-link:hover,
-        .triple-link:focus {
-            background-color: var(--light-color);
-            border: 2px solid var(--accent-color);
-            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
-        
-        
-        }
+    /* flex-direction: row; */
 
-        .triple-btn:hover,
-        .triple-btn:focus {
-            background-color: var(--light-color);
-            border: 2px solid var(--accent-color);
-            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
-        
-        
-        }
-    }
+    gap: 40px;
+  }
+
+  .triple-link:hover,
+  .triple-link:focus {
+    background-color: var(--light-color);
+    border: 2px solid var(--accent-color);
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+      border 250ms ease(0.4, 0, 0.2, 1);
+  }
+
+  .triple-btn:hover,
+  .triple-btn:focus {
+    background-color: var(--light-color);
+    border: 2px solid var(--accent-color);
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+      border 250ms ease(0.4, 0, 0.2, 1);
+  }
+}
