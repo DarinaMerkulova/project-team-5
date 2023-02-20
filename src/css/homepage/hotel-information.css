@@ -1,24 +1,25 @@
 
-.hotel-info {}
+.hotel-info {
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../../img/mobile/Mob-homepage/mob-room.jpg');
+}
 
 
 .hotel-info-container {
-    max-width: 100%;
     padding-top: 24px;
     padding-bottom: 40px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url('../../img/mobile/Mob-homepage/mob-room.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
+    
 }
 
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hotel-info-container {
+    .hotel-info {
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
             url('../../img/mobile/Mob-homepage/mob-room@2x.jpg');
     }
@@ -192,19 +193,23 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    .hotel-info {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../../img/tablet/Tablet_home/tab-room.jpg');
+
+    }
     .hotel-info-container {
         padding-top: 48px;
         padding-bottom: 40px;
         padding-left: 47px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url('../../img/tablet/Tablet_home/tab-room.jpg');
     }
 
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hotel-info-container {
+        .hotel-info {
             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                 url('../../img/tablet/Tablet_home/tab-room@2x.jpg');
         }
@@ -271,17 +276,20 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .hotel-info {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../../img/desktop/Desrtop_home/desk-bed-room.jpg');
+    }
     .hotel-info-container {
             padding-bottom: 48px;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../../img/desktop/Desrtop_home/desk-bed-room.jpg');
+            
         }
     
     
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .hotel-info-container {
+            .hotel-info {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                     url('../../img/desktop/Desrtop_home/desk-bed-room@2x.jpg');
             }
