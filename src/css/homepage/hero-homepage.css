@@ -2,22 +2,27 @@
 
   /* HERO */
     .hero-homepage{
-        display: flex;
-        position: relative;
-        max-width: 1440px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../../img/mobile/Mob-homepage/mob-hero.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 0;
-        margin-left: auto;
-        margin-right: auto;
-
-        padding-top: 181px;
-        padding-bottom: 102px;
+      display: flex;
+      position: relative;
     }
 
+  .hero-homepage-container{
+      max-width: 1440px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../../img/mobile/Mob-homepage/mob-hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      margin-left: auto;
+      margin-right: auto;
+    
+      padding-top: 181px;
+      padding-bottom: 102px;
+  }
+
   .hero-homepage-name{
+    display: flex;
+    justify-content: space-around;
     font-family: 'Film P3';
     font-weight: 700;
     font-size: 96px;
@@ -25,7 +30,7 @@
     letter-spacing: 0.3em;
     color: #FFFFFF;
 
-    margin-left: 56px;
+    /* margin-left: 56px; */
   }
 
   .hero-homerpage-thema{
@@ -37,7 +42,9 @@
     width: 294px;
 
     margin-top: 24px;
-    margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 60px; */
   }
 
   .hero-homepage-slogan{
@@ -51,16 +58,27 @@
     width: 330px;
 
     margin-top: 40px;
-    margin-left: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 49px; */
   }
 
+  .hero-button-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .hero-homepage-button{
+    display: inline-block;
+    padding: 14px 24px;
+    min-width: 236px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
 
     margin-top: 113px;
-    margin-left: 89px;
+
 
     color: #F3C653;
 
@@ -68,7 +86,7 @@
     border: 2px solid #FFFFFF;
     border-radius: 25px;
 
-    padding: 14px 24px;
+ 
   }
 
   .hero-homepage-button:last-child{
@@ -78,6 +96,7 @@
 
   @media screen and (min-width: 1024px) {
     .hero-homepage-container{
+    min-width: 1024px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../../img/tablet/Tablet_home/tab-hero.jpg);
   }
@@ -91,7 +110,6 @@
     color: #FFFFFF;
 
     padding-top: 188px;
-    margin-left: 310px;
   }
 
   .hero-homerpage-thema{
@@ -105,7 +123,6 @@
     width: 368px;
 
     margin-top: 16px;
-    margin-left: 320px;
   }
 
   .hero-homepage-slogan{
@@ -119,7 +136,15 @@
     width: 360px;
 
     margin-top: 56px;
-    margin-left: 325px;
+  }
+
+  .hero-button-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .hero-button-list-item{
+    margin-right: 47px;
   }
 
   .hero-homepage-button{
@@ -151,12 +176,20 @@
 
 
   @media screen and (min-width: 1280px) {
-    .hero-homepage{
+    .hero-homepage-container{
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url(../../img/desktop/Desrtop_home/desk-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 100%;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
   
   .hero-homepage-name{
+    display: flex;
+    justify-content: space-around;
     font-family: 'Film P3';
     font-weight: 700;
     font-size: 128px;
@@ -164,7 +197,7 @@
     letter-spacing: 0.3em;
     color: #FFFFFF;
 
-    margin-left: 350px;
+    margin-left: 0;
   }
 
   .hero-homerpage-thema{
@@ -177,8 +210,8 @@
 
     width: 368px;
 
-    margin-top: 32px;
-    margin-left: 370px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-homepage-slogan{
@@ -192,9 +225,16 @@
     width: 360px;
 
     margin-top: 64px;
-    margin-left: 370px;
+    /* margin-left: 370px; */
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  .hero-button-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
   .hero-homepage-button{
     font-family: 'Montserrat';
     font-weight: 700;
@@ -217,5 +257,9 @@
   .hero-homepage-button:last-child{
     margin-top: 144px;
     margin-left: 60px;
+  }
+
+  .hero-button-list-item{
+    margin-right: 85px;
   }
   }
