@@ -193,6 +193,7 @@
     background: #FFFFFF;
     border: 0.5px solid #F3C653;
     border-radius: 2px;
+    /* display: flex; */
     margin-left: auto;
     margin-bottom: 32px;
 }
