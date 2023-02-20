@@ -144,6 +144,11 @@
     margin-top: 24px;
 
   }
+  .hero-homepage-button:hover,
+  .hero-homepage-button:focus {
+    background-color: #FFFFFF;
+    border: 2px solid var(--accent-color);
+}
 
   @media screen and (min-width: 1024px) {
   
@@ -155,7 +160,6 @@
     letter-spacing: 0.3em;
     color: #FFFFFF;
 
-    padding-top: 188px;
   }
 
   .hero-homerpage-thema{
@@ -216,6 +220,30 @@
     margin-top: 145px;
     margin-left: 40px;
   }
+
+   .location{
+    position: absolute;
+    left: 30px;
+        width: 285px;
+        height: 56px;
+        margin-left: 47px;
+        margin-top: 533px;
+
+
+    }
+
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
+
+    .location-text{
+        padding-left: 8px;
+        width: 233px;
+        height: 40px;
+    }
   }
 
 
