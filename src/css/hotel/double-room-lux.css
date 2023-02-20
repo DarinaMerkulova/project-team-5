@@ -1,13 +1,13 @@
 /* ------hotel-mobile----- */
 .double-room-lux-container {
-  outline: 1px solid rgb(9, 198, 62);
+  /* outline: 1px solid rgb(9, 198, 62); */
 }
 .double-room-lux {
   padding-top: 32px;
   padding-bottom: 32px;
   margin: 0;
   background-color: var(--main-bkg-color);
-  outline: 1px solid rgb(236, 130, 9);
+  /* outline: 1px solid rgb(236, 130, 9); */
 }
 
 .double-room-lux-text {
@@ -81,7 +81,10 @@
 
 @media screen and (max-width: 413px) {
   .hotel-double-room-lux-slider {
-    margin-right: 53px;
+    margin-right: 89px;
+  }
+  .hotel-double-room-lux-slider-img {
+    min-width: 150px;
   }
 }
 
