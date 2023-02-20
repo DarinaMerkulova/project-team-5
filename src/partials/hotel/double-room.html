@@ -1,253 +1,4 @@
 <!-- hotel double-rooom -->
-<style>
-  /* Style for modal background */
-  .body {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-  }
-
-  select {
-    appearance: none;
-  }
-  .select {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-image: url(/src/img/down-arrow.png);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 3px) center;
-    background-position-x: 347px;
-  }
-  .date-icon {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-image: url(/src/img/down-arrow.png);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 3px) center;
-    background-position-x: 347px;
-  }
-  .modal-form {
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 384px;
-  }
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  /* Style for modal content */
-  .modal-content {
-    border: 1px solid #f3c653;
-    border-radius: 2px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    width: 42.5%;
-    margin: 10% auto;
-    padding: 15px;
-    padding-bottom: 60px;
-    border: 1px solid #888;
-    background-color: #fffdee;
-    z-index: 10;
-  }
-
-  /* Style for close button */
-  .close {
-    float: right;
-    font-size: 34px;
-    font-weight: 400;
-    height: 40px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* Style for close button on hover */
-  .close:hover,
-  .close:focus {
-    color: #f3c653;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .modal-title {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .modal-input {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: large;
-    height: 54px;
-    background-color: #fffdee;
-    border: 1px solid #c79002;
-    border-radius: 2px;
-    padding-left: 12px;
-    padding-right: 15px;
-    color: #808080;
-    width: 384px;
-  }
-
-  .question-desc {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-    letter-spacing: 0.02em;
-
-    /* Brown */
-    margin-left: 12px;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    color: #c79002;
-  }
-  /* Style for submit button */
-  .submit {
-    width: 384px;
-    height: 64px;
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    /* White */
-    color: #ffffff;
-    border: 2px solid black;
-    padding: 20px 43px;
-    cursor: pointer;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .last-que {
-    margin-bottom: 40px;
-  }
-  .modal-input-check {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: large;
-    height: 54px;
-    background-color: #fffdee;
-    border: 1px solid #c79002;
-    border-radius: 2px;
-    padding-left: 12px;
-    padding-right: 15px;
-    color: #808080;
-    width: 384px;
-  }
-  .modal-room-type {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: large;
-    height: 54px;
-    color: #808080;
-  }
-  .modal-select {
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: large;
-    height: 54px;
-    background-color: #fffdee;
-    border: none;
-    border-radius: 2px;
-    padding-left: 12px;
-    padding-right: 15px;
-    color: #808080;
-    width: 384px;
-  }
-  /* Style for submit button on hover and focus */
-  .submit:hover,
-  .submit:focus {
-    color: black;
-    background-color: #f3c653;
-    border: 2px solid #f3c653;
-  }
-
-  @media screen and (min-width: 413px) {
-    .modal-content {
-      width: 414px;
-    }
-  }
-
-  /*TABLET and COMP*/
-  @media (min-width: 1024px) {
-    .modal-content {
-      border: 1px solid #f3c653;
-      border-radius: 2px;
-      width: 712px;
-    }
-    .modal-form {
-      width: 592px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      flex-direction: column;
-      margin-left: 40px;
-    }
-    .submit {
-      width: 592px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 29px;
-      padding-top: 18px;
-      padding-bottom: 18px;
-      padding-left: 117px;
-      padding-right: 117px;
-      margin-left: 40px;
-    }
-    .modal-input {
-      width: 288px;
-      height: 54px;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-right: 0px;
-    }
-    .modal-input-check {
-      width: 288px;
-    }
-    .last-que {
-      margin-bottom: 20px;
-    }
-    .select {
-      background-position: calc(100% - 3px) center;
-      background-position-x: 244px;
-    }
-    .date-icon {
-      background-position: calc(100% - 3px) center;
-      background-position-x: 244px;
-    }
-    .rigth-way {
-      width: 288px;
-      display: flex;
-      flex-direction: row;
-    }
-    .modal-title {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 46px;
-      /* identical to box height */
-
-      letter-spacing: 0.05em;
-    }
-    .right-side {
-      margin-left: 16px;
-    }
-  }
-</style>
 <section class="double-room">
   <div class="container double-room-container">
     <div class="double-room-list">
@@ -255,279 +6,64 @@
         <p class="double-room-text1">Amet minim mollit non</p>
         <p class="double-room-text2">MIMIHO</p>
         <h2 class="double-room-title">ДВОМІСНИЙ НОМЕР</h2>
-        <p class="double-room-text3">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
+        <p class="double-room-text3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+          officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
       </div>
       <picture class="">
-        <source
-          srcset="
-            ./img/desktop/Desktop_hotel/desk-hotel-modern-studio.jpg    1x,
-            ./img/desktop/Desktop_hotel/desk-hotel-modern-studio@2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/jpeg"
-          width="460"
-          height="574"
-        />
-        <source
-          srcset="
-            ./img/tablet/Tablet_hotel/tab-hotel-modern-studio.jpg    1x,
-            ./img/tablet/Tablet_hotel/tab-hotel-modern-studio@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-          type="image/jpeg"
-          width="400"
-          height="524"
-        />
-        <source
-          srcset="
-            ./img/mobile/Mob-hotel/mob-hotel-modern-studio.jpg    1x,
-            ./img/mobile/Mob-hotel/mob-hotel-modern-studio@2x.jpg 2x
-          "
-          media="(max-width: 1023px)"
-          type="image/jpeg"
-          width="244"
-          height="322"
-        />
-        <img
-          class="double-room-lux-img"
-          src="/src/img/mobile/Mob-hotel/mob-hotel-modern-studio.jpg "
-          alt="hotel room"
-          max-width="460"
-          height="322"
-        />
+        <source srcset="
+                    ./img/desktop/Desktop_hotel/desk-hotel-modern-studio.jpg 1x,
+                    ./img/desktop/Desktop_hotel/desk-hotel-modern-studio@2x.jpg 2x
+                  " media="(min-width: 1280px)" type="image/jpeg" width="460" height="574" />
+        <source srcset="
+                    ./img/tablet/Tablet_hotel/tab-hotel-modern-studio.jpg 1x,
+                    ./img/tablet/Tablet_hotel/tab-hotel-modern-studio@2x.jpg 2x
+                  " media="(min-width: 1024px)" type="image/jpeg" width="400" height="524" />
+        <source srcset="
+                    ./img/mobile/Mob-hotel/mob-hotel-modern-studio.jpg 1x,
+                    ./img/mobile/Mob-hotel/mob-hotel-modern-studio@2x.jpg 2x
+                  " media="(max-width: 1023px)" type="image/jpeg" width="244" height="322" />
+        <img class="double-room-lux-img" src="/src/img/mobile/Mob-hotel/mob-hotel-modern-studio.jpg " alt="hotel room"
+          max-width="460" height="322" />
       </picture>
     </div>
     <div>
     <div class="hotel-double-room-slider-transfer">
-
       <div class="hotel-double-room-slider">
         <picture class="hotel-double-room-slider-img">
-          <source
-            srcset="
-              ./img/slider/mob/img2.jpg    1x,
-              ./img/slider/mob/img2@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/jpeg"
-            width="254"
-            height="254"
-          />
-          <source
-            srcset="
-              ./img/slider/tablet/img2.jpg    1x,
-              ./img/slider/tablet/img2@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-            type="image/jpeg"
-            width="194"
-            height="194"
-          />
-          <source
-            srcset="
-              ./img/slider/tablet/img2.jpg    1x,
-              ./img/slider/tablet/img2@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-            type="image/jpeg"
-            width="194"
-            height="194"
-          />
-          <img
-            class="slider-img"
-            src="./img/slider/tablet/img2.jpg "
-            alt="room"
-            width="194"
-            height="194"
-          />
+          <source srcset="
+                    ./img/slider/mob/img2.jpg 1x,
+                    ./img/slider/mob/img2@2x.jpg 2x
+                    " media="(min-width: 1280px)" type="image/jpeg" width="254" height="254" />
+          <source srcset="
+                    ./img/slider/tablet/img2.jpg 1x,
+                    ./img/slider/tablet/img2@2x.jpg 2x
+                    " media="(min-width: 1024px)" type="image/jpeg" width="194" height="194" />
+          <source srcset="
+                    ./img/slider/tablet/img2.jpg 1x,
+                    ./img/slider/tablet/img2@2x.jpg 2x
+                    " media="(max-width: 1023px)" type="image/jpeg" width="194" height="194" />
+          <img class="slider-img" src="./img/slider/tablet/img2.jpg " alt="room" width="194" height="194" />
         </picture>
         <picture class="hotel-double-room-slider-img">
-          <source
-            srcset="
-              ./img/slider/mob/img3.jpg    1x,
-              ./img/slider/mob/img3@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/jpeg"
-            width="254"
-            height="254"
-          />
-          <source
-            srcset="
-              ./img/slider/mob/img3.jpg    1x,
-              ./img/slider/mob/img3@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-            type="image/jpeg"
-            width="194"
-            height="194"
-          />
-          <source
-            srcset="
-              ./img/slider/mob/img3.jpg    1x,
-              ./img/slider/mob/img3@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-            type="image/jpeg"
-            width="194"
-            height="194"
-          />
-          <img
-            class="slider-img"
-            src="./img/slider/mob/img3.jpg "
-            alt="room"
-            width="194"
-            height="194"
-          />
+          <source srcset="
+                        ./img/slider/mob/img3.jpg 1x,
+                        ./img/slider/mob/img3@2x.jpg 2x
+                        " media="(min-width: 1280px)" type="image/jpeg" width="254" height="254" />
+          <source srcset="
+                        ./img/slider/mob/img3.jpg 1x,
+                        ./img/slider/mob/img3@2x.jpg 2x
+                        " media="(min-width: 1024px)" type="image/jpeg" width="194" height="194" />
+          <source srcset="
+                        ./img/slider/mob/img3.jpg 1x,
+                        ./img/slider/mob/img3@2x.jpg 2x
+                        " media="(max-width: 1023px)" type="image/jpeg" width="194" height="194" />
+          <img class="slider-img" src="./img/slider/mob/img3.jpg " alt="room" width="194" height="194" />
         </picture>
       </div>
       <div class="double-room-transfer">
         <a href="./room.html" class="double-room-link">Детальніше</a>
-        <button
-          name="button"
-          type="button"
-          class="double-room-btn"
-          onclick="openModal()"
-        >
-          Переглянути ціни
-        </button>
+        <button name="button" type="button" class="double-room-btn" data-modal-open>Переглянути ціни</button>
       </div>
-      <!-- Modal -->
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
-
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-
-          <h2 class="modal-title" style="color: black">ЦІНИ НА НОМЕР</h2>
-
-          <div class="modal-form">
-            <div class="type-room">
-              <select
-                class="modal-select"
-                id="field-select"
-                name="select1"
-                required
-              >
-                <option value="option1">Двомісний люкс</option>
-                <option value="option2">Двомісний</option>
-                <option value="option3">Трьохмісний</option>
-              </select>
-              <p class="question-desc" style="margin-bottom: 20px">
-                Категорія номеру
-              </p>
-            </div>
-            <div class="rigth-way">
-              <div>
-                <select
-                  class="modal-input-check select"
-                  id=""
-                  name="select1"
-                  required
-                >
-                  <option value="option1">1</option>
-                  <option value="option2">2</option>
-                  <option value="option3">3</option>
-                  <option value="option4">4</option>
-                  <option value="option5">5</option>
-                  <option value="option6">6</option>
-                  <option value="option7">7</option>
-                  <option value="option8">8</option>
-                  <option value="option9">9</option>
-                  <option value="option10">10</option>
-                </select>
-                <p class="question-desc" style="margin-bottom: 20px">
-                  Кількість ночей
-                </p>
-              </div>
-
-              <div class="right-side">
-                <input
-                  class="modal-input"
-                  type="number"
-                  id="input-field"
-                  name="name"
-                  readonly
-                  min="1000"
-                  placeholder="1000"
-                />
-                <p class="question-desc" style="margin-bottom: 20px">грн</p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="submit modal-form-btn-submit"
-            type="submit"
-            id="submitBtn"
-          >
-            ЗАБРОНЮВАТИ НОМЕР
-          </button>
-        </div>
-      </div>
-      <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById('myBtn');
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName('close')[0];
-
-        var submitBtn = document.getElementById('submitBtn');
-
-        // Function to open the modal
-        function openModal() {
-          modal.style.display = 'block';
-        }
-
-        // Function to close the modal
-        function closeModal() {
-          modal.style.display = 'none';
-        }
-        // When the user clicks on the submit button, close the modal
-        submitBtn.onclick = function () {
-          modal.style.display = 'none';
-        };
-
-        // Close the modal when user clicks outside of it
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            closeModal();
-          }
-        };
-
-        const fieldSelect = document.getElementById('field-select');
-        const inputField = document.getElementById('input-field');
-
-        fieldSelect.addEventListener('change', function () {
-          if (fieldSelect.value === 'option1') {
-            inputField.placeholder = '1500/Ніч';
-          } else if (fieldSelect.value === 'option2') {
-            inputField.placeholder = '1000/Ніч';
-          } else if (fieldSelect.value === 'option3') {
-            inputField.placeholder = '2000/Ніч';
-          }
-        });
-
-        (() => {
-          const refs = {
-            openModalBtn: document.querySelector('[data-modal-open]'),
-            closeModalBtn: document.querySelector('[data-modal-close]'),
-            modal: document.querySelector('[data-modal]'),
-          };
-
-          refs.openModalBtn.addEventListener('click', toggleModal);
-          refs.closeModalBtn.addEventListener('click', toggleModal);
-
-          function toggleModal() {
-            refs.modal.classList.toggle('is-hidden');
-          }
-        })();
-      </script>
     </div>
     </div>
   </div>
