@@ -51,22 +51,15 @@
 .about-restourant-text-first {
   font-size: 12px;
   line-height: 1.25;
-  color: var( --hotel-main-color);
+  color: var(--hotel-main-color);
   margin-bottom: 28px;
   max-width: 258px;
 }
 
 .restorant-about-image,
-.about-restourant-image {
-  margin-left: auto;
-  margin-bottom: 32px;
-
-  background: rgba(218, 218, 218, 1);
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-}
 .about-restourant-image-frame {
   margin-left: auto;
+  margin-bottom: 32px;
   background: rgba(218, 218, 218, 1);
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -99,7 +92,8 @@
   gap: 20px;
   margin-left: 69px;
 }
-.restorant-about-img-frame, .slider-img-frame {
+.restorant-about-img-frame,
+.slider-img-frame {
   background: rgba(218, 218, 218, 1);
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -157,16 +151,12 @@
   }
 
   .restorant-about-image,
-  .about-restourant-image {
+  .about-restourant-image-frame {
     position: absolute;
     top: -152px;
     right: 52px;
     margin-bottom: 0;
 
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-    border-radius: 0;
-  }
-  .about-restourant-image-frame{
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     border-radius: 0;
   }
@@ -239,9 +229,12 @@
     bottom: -103px;
     right: 0;
   }
-  .restorant-about-img-frame, .about-restourant-image-frame {
+  .restorant-about-image,
+.about-restourant-image-frame{
+  border-radius: 2px;
+}
+  .restorant-about-img-frame {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 0;
   }
-
 }
