@@ -18,12 +18,12 @@
 
 @import url('./restoraunt/hero-restoraunt.css');
 @import url('./restoraunt/about-restoraum.css');
-@import url('./restoraunt/menu-restoraunt.css');
+@import url('./restoraunt/menu-restoraunts.css');
 
 @import url('./hotel/hero-hotel.css');
-@import url('./hotel/double-room.css');
 @import url('./hotel/double-room-lux.css');
 @import url('./hotel/triple.css');
+@import url('./hotel/double-room.css');
 
 @import url('./room/hero-room.css');
 @import url('./room/about-room.css');

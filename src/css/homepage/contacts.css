@@ -1,0 +1,306 @@
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    max-width: 413px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.mimino-contacts {
+    padding-top: 36px;
+    padding-bottom: 32px;
+    background: #FFFDEE;
+}
+
+.contact-mimino {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    width: 127px;
+    height: 43px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin-bottom: 12px;
+}
+
+.contact-complex {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    width: 294px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+}
+
+.contact-restaurant {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    width: 102px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #C79002;
+
+    margin-right: 22px;
+}
+
+.contact-tel-icon {
+    fill: #C79002;
+}
+
+.contact-restaurant-tel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    width: 100px;
+    height: 17px;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #494848;
+}
+
+.contact-street {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #494848;
+}
+
+.contact-rest {
+    display: flex;
+    align-items: center;
+
+}
+
+.contact-hotel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.contact-hotel-tel {
+    margin-left: auto;
+}
+
+.contact-restaurant-tel {
+    width: 144px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+}
+
+.cont-restaurant-tel-first {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        width: 130px;
+        font-size: 14px;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #494848;
+        margin-right: auto;
+}
+
+.cont-restaurant-tel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    width: 100px;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #494848;
+    margin-right: auto;
+}
+
+.contact-hotel-tel {
+    width: 260px;
+    height: 40px;
+    display: flex;
+    background: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+}
+
+.contact-complex {
+    margin-bottom: 16px;
+}
+
+.contact-rest {
+    margin-bottom: 16px;
+}
+
+.contact-tel-icon {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.contact-rest {
+    margin-bottom: 16px;
+}
+
+.contact-street {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    width: 183px;
+    height: 61px;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+
+}
+
+.contact-location-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: auto;
+    fill: #C79002;
+
+}
+
+.contact-street1 {
+    width: 260px;
+    height: 76px;
+    color: #494848;
+    background: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    /* display: flex; */
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+
+.contact-street {
+    display: inline-block;
+    width: 200px;
+    height: 76px;
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+
+
+.map-link {
+    width: 100%;
+    height: 220px;
+    display: inline-block;
+}
+
+ @media screen and (min-width: 1024px) {
+     .container {
+         max-width: 930px;
+     }
+
+     /* .container {
+         padding-left: 47px;
+         padding-right: 47px;
+     } */
+
+     .mimino-contacts {
+         padding-top: 56px;
+         padding-bottom: 40px;
+     }
+
+     .contact-mimino {
+         margin-bottom: 8px;
+     }
+
+     .contact-complex {
+         margin-bottom: 52px;
+     }
+
+     .contact-restaurant {
+         margin-bottom: 8px;
+     }
+
+     .contact-rest {
+         display: block;
+         margin-bottom: 24px;
+     }
+
+     .contact-hotel {
+         display: block;
+         margin-bottom: 48px;
+     }
+
+     .contact-hotel-tel {
+         margin-right: auto;
+         margin-left: 0;
+     }
+
+     .contact-street1 {
+         margin-left: 0;
+         margin-right: auto;
+         width: 285px;
+         height: 56px;
+     }
+
+     .contact-street {
+         width: 233px;
+         height: 40px;
+     }
+
+     .map-link {
+         width: 535px;
+         height: 412px;
+         margin-left: auto;
+     }
+
+     .contacts-columb {
+         display: flex;
+     }
+
+     }
+         @media screen and (min-width: 1280px) {
+             .container {
+                 max-width: 1110px;
+                 padding-left: 85px;
+                 padding-right: 85px;
+    
+             }
+    
+             .map-link {
+                 width: 634px;
+             }
+    
+             .mimino-contacts {
+                 padding-bottom: 74px;
+             }
+    
+             .contact-mimino {
+                 margin-bottom: 16px;
+             }
+    
+             .contact-complex {
+                 margin-bottom: 40px;
+                 font-size: 20px;
+                 line-height: 1.21;
+             }
+              }

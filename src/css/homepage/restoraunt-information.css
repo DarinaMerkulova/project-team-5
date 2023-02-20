@@ -1,0 +1,274 @@
+.rest-info {
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../../img/mobile/Mob-homepage/mob-goblet.jpg');
+}
+
+.rest-info-container {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .rest-info {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/mobile/Mob-homepage/mob-goblet@2x.jpg');
+    }
+}
+
+.hotel-info-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../../img/mobile/Mob-homepage/mob-room.jpg');
+
+}
+
+
+
+.hotel-info-texts {
+    margin-bottom: 48px;
+    padding-left: 33%;
+    padding-top: 24px;
+}
+
+
+.rest-info-mimino {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    width: 127px;
+    height: 43px;
+    font-size: 40px;
+    line-height: 0.9;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+
+.rest-info-title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    width: 127px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 0.8;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+
+.rest-info-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 259px;
+    height: 62px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #BABABA;
+}
+
+.rest-info-wrap{
+
+}
+
+.rest-info-slider {
+margin-bottom: 40px;
+}
+
+.rest-info-swiper-slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    
+}
+
+.rest-info-nav {
+    margin-top: 24px;
+
+}
+
+.rest-info-nav-prev, .rest-info-nav-next  {
+    background-color: transparent;
+    border: none;
+}
+
+.rest-info-nav-prev-svg, .rest-info-nav-next-svg {
+    fill: #FFFFFF;
+    transition: fill var(--timing-duration) var(--timing-function);
+}
+
+.rest-info-nav-prev-svg:hover,
+.rest-info-nav-prev-svg:focus,
+.rest-info-nav-next-svg:hover,
+.rest-info-nav-next-svg:focus {
+    fill: var(--accent-color);
+}
+.rest-info-button {
+    flex-basis: 100%;
+    text-align: center;
+    /* padding-bottom: 40px; */
+    
+    
+}
+
+.rest-info-btn, .hotel-info-btn {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    width: 236px;
+    height: 48px;
+    left: 89px;
+    top: 583px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    color: var(--accent-color);
+    margin: auto;
+    margin-bottom: 16px;
+    transition: background-color var(--timing-duration) var(--timing-function);
+}
+
+.rest-info-btn:hover,
+.rest-info-btn:focus {
+    background-color: #FFFFFF;
+    border: 2px solid var(--accent-color);
+}
+
+
+
+.rest-info-link {
+    display: block;
+    font-style: normal;
+    width: 236px;
+    height: 48px;
+    padding: 14px 31px;
+    background: transparent rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    color: var(--accent-color);
+    font-weight: 700;
+    margin: auto;
+    padding: 14px 29px;
+    transition: background-color var(--timing-duration) var(--timing-function);
+}
+
+
+
+.rest-info-link:hover,
+.rest-info-link:focus {
+    background-color: #FFFFFF;
+    border: 2px solid var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .rest-info {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/tablet/Tablet_home/tab-goblet.jpg');
+    }
+    .rest-info-container {
+        padding-top: 48px;
+        padding-bottom: 40px;
+        padding-right: 47px;
+            
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .rest-info {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('../../img/tablet/Tablet_home/tab-goblet@2x.jpg');
+            }
+        }
+        .rest-info-texts {
+            margin-bottom: 40px;
+            padding-right: 33%;
+            padding-top: 48px;
+            padding-left: 197px;
+        }
+
+        .rest-info-mimino {
+            font-size: 64px;
+            width: 202px;
+            height: 69px;
+        }
+
+        .rest-info-title {
+            font-size: 24px;
+            width: 126px;
+            height: 29px;
+        }
+
+        .rest-info-text {
+            font-size: 16px;
+            margin-right: auto;
+            width: 610px;
+            height: 44px;
+        }
+
+        .rest-info-wrap {
+            display: flex;
+            align-items: baseline;
+            gap: 18px;
+            
+            
+            
+        }
+
+
+        .rest-info-button {
+            align-items: flex-start;
+            flex-basis: 30%;
+            order: 0;
+            position: relative;
+            
+        }
+
+        .rest-info-btn-wrapper {
+        position: absolute;
+        bottom: 0;
+        right:0;
+        }
+
+
+
+        .rest-info-slider {
+            align-items: flex-start;
+            width:70%;
+            float: left;
+            order: 1;
+        }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .rest-info {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/desktop/Desrtop_home/desk-goblet.jpg');
+    }
+
+    .rest-info-container {
+        padding-bottom: 48px;
+    
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .rest-info {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('../../img/desktop/Desrtop_home/desk-goblet@2x.jpg');
+            }
+        }
+
+}
