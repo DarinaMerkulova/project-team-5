@@ -83,7 +83,7 @@
 
     .auth-list{
         display:flex;
-        margin-top: 642px;
+        margin-top: 575px;
         z-index: 100;
     }
     .site-soc-link{
@@ -222,8 +222,8 @@
     }
 
     .auth-list{
-        margin-left: 47px;
-        margin-top: 25px;
+        margin-left: 65px;
+        margin-top: 790px;
     }
 
 
@@ -303,13 +303,13 @@
 
     .restoraunt-link{
         position: absolute;
-        left: 507px;
+        left: 575px;
         top: 36px;
     }
     
     .hotel-link{
         position: absolute;
-        left: 835px;
+        left: 905px;
         top: 36px;
     }
 
@@ -338,6 +338,6 @@
     .auth-list{
         position: absolute;
         left: 1083px;
-        top: 10px;
+        top: -757px;
     }
 }
