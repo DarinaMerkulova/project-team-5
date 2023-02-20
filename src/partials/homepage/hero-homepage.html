@@ -1,10 +1,398 @@
 <section class="hero-homepage">
-    <div class="container hero-homepage-container">
-        <h1 class="hero-homepage-name">MIMIHO</h1>
-        <p class="hero-homerpage-thema">Ресторанно-готельний комплекс</p>
-        <p class="hero-homepage-slogan">СМАК ЖИТТЯ 24/7</p>
+  <style>
+    .body1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+    }
+    select {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-image: url(/src/img/down-arrow.png);
+      background-repeat: no-repeat;
+      background-position: calc(100% - 3px) center;
+      background-position-x: 347px;
+    }
+    .date-icon1 {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-image: url(/src/img/down-arrow.png);
+      background-repeat: no-repeat;
+      background-position: calc(100% - 3px) center;
+      background-position-x: 347px;
+    }
+    .modal-form1 {
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 384px;
+    }
+    .modal1 {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
 
-        <button class="hero-homepage-button" type="button">Забронювати столик</button>
-        <button class="hero-homepage-button" type="button">Забронювати номер</button>
-    </div>
+    /* Style for modal content */
+    .modal-content1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      width: 42.5%;
+      margin: 10% auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 60px;
+      border: 1px solid #888;
+      background-color: #fffdee;
+    }
+
+    /* Style for close button */
+    .close1 {
+      float: right;
+      font-size: 34px;
+      font-weight: 400;
+      height: 40px;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Style for close button on hover */
+    .close1:hover,
+    .close1:focus {
+      color: #f3c653;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .modal-title1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .modal-input1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: large;
+      height: 54px;
+      background-color: #fffdee;
+      border: 1px solid #c79002;
+      border-radius: 2px;
+      padding-left: 12px;
+      padding-right: 15px;
+      color: #808080;
+      width: 384px;
+    }
+
+    .question-desc1 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      letter-spacing: 0.02em;
+
+      /* Brown */
+      margin-left: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      color: #c79002;
+    }
+    /* Style for submit button */
+    .submit1 {
+      width: 388px;
+      height: 64px;
+      background-color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: -2px;
+      /* White */
+      color: #ffffff;
+      border: 2px solid black;
+      padding: 20px 43px;
+      cursor: pointer;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .last-que1 {
+      margin-bottom: 40px;
+    }
+    .modal-input-check1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: large;
+      height: 54px;
+      background-color: #fffdee;
+      border: 1px solid #c79002;
+      border-radius: 2px;
+      padding-left: 12px;
+      padding-right: 15px;
+      color: #808080;
+      width: 384px;
+    }
+
+    /* Style for submit button on hover and focus */
+    .submit1:hover,
+    .submit1:focus {
+      color: black;
+      background-color: #f3c653;
+      border: 2px solid #f3c653;
+    }
+
+    @media screen and (min-width: 413px) {
+      .modal-content1 {
+        width: 414px;
+      }
+    }
+
+    /*TABLET and COMP*/
+    @media (min-width: 1024px) {
+      .modal-content1 {
+        width: 712px;
+      }
+      .modal-form1 {
+        width: 592px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      .submit1 {
+        width: 595px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 117px;
+        padding-right: 117px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      .modal-input1 {
+        width: 288px;
+        height: 54px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+      }
+      .modal-input-check1 {
+        width: 288px;
+      }
+      .last-que1 {
+        margin-bottom: 20px;
+      }
+      select {
+        background-position: calc(100% - 3px) center;
+        background-position-x: 244px;
+      }
+      .date-icon1 {
+        background-position: calc(100% - 3px) center;
+        background-position-x: 244px;
+      }
+      .rigth-way1 {
+        width: 288px;
+        display: flex;
+        flex-direction: row;
+      }
+      .modal-title1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+      }
+      .type-room1 {
+        display: grid;
+        justify-content: end;
+      }
+      .right-colum1 {
+        margin-left: 16px;
+      }
+    }
+  </style>
+  <div class="container hero-homepage-container">
+    <h1 class="hero-homepage-name">MIMIHO</h1>
+    <p class="hero-homerpage-thema">Ресторанно-готельний комплекс</p>
+    <p class="hero-homepage-slogan">СМАК ЖИТТЯ 24/7</p>
+
+    <button class="hero-homepage-button" type="button" onclick="openModal()">
+      Забронювати столик
+    </button>
+    <button class="hero-homepage-button" type="button" onclick="openModalBookRoom()">
+      Забронювати номер
+    </button>
+  </div>
 </section>
+<!-- Modal -->
+<div id="myModalBookRoom" class="modal1">
+  <!-- Modal content -->
+
+  <div class="modal-content1">
+    <span id="closeBook" class="close1" onclick="closeModalBook()"
+      >&times;</span
+    >
+
+    <div class="">
+      <h2 class="modal-title1" style="color: black">ЗАБРОНЮВАТИ НОМЕР</h2>
+      <div class="modal-form1">
+        <div class="rigth-way1">
+          <div>
+            <input
+              class="modal-input1"
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Ваше ім’я"
+            />
+            <p class="question-desc1" style="margin-bottom: 20px">
+              На кого забронювати номер?
+            </p>
+          </div>
+
+          <div class="right-colum1">
+            <input
+              class="modal-input1"
+              type="number"
+              id="phone"
+              name="phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="+38 (___) ___-__-__"
+            />
+            <p class="question-desc1" style="margin-bottom: 20px">
+              Номер телефону
+            </p>
+          </div>
+        </div>
+
+        <div class="type-room1">
+          <select
+            class="modal-input-check1"
+            id="select1"
+            name="select1"
+            required
+          >
+            <option value="option1">Двомісний люкс</option>
+            <option value="option2">Двомісний</option>
+            <option value="option3">Трьохмісний</option>
+          </select>
+          <p class="question-desc1" style="margin-bottom: 20px">
+            Категорія номеру
+          </p>
+        </div>
+        <div class="rigth-way1">
+          <div>
+            <input
+              placeholder="Сьогодні"
+              class="modal-input1 date-icon1"
+              type="text"
+              id="date"
+              required
+              onfocus="  (this.type='date')"
+              onblur="(this.type='text')"
+            />
+            <p class="question-desc1" style="margin-bottom: 20px">
+              Дата заїзду
+            </p>
+          </div>
+          <div class="right-colum1">
+            <input
+              placeholder="Сьогодні"
+              class="modal-input1 date-icon1"
+              type="text"
+              id="date"
+              required
+              onfocus="  (this.type='date')"
+              onblur="(this.type='text')"
+            />
+            <p class="question-desc1 last-que1" style="margin-bottom: 20px">
+              Дата виїзду
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="submit1 modal-form-btn-submit1"
+        type="submit"
+        id="submitBtnBook"
+      >
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+  // Get the modal
+  var modal1 = document.getElementById('myModalBookRoom');
+
+  // Get the button that opens the modal
+  var btn1 = document.getElementById('myBtnBookRoom');
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName('closeBook')[0];
+
+  var submitBtn = document.getElementById('submitBtn');
+
+  // Function to open the modal
+  function openModalBookRoom() {
+    modal1.style.display = 'block';
+  }
+  // Function to close the modal
+  function closeModalBook() {
+    modal1.style.display = 'none';
+  }
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+  // When the user clicks on the submit button, close the modal
+  submitBtnBook.onclick = function () {
+    modal1.style.display = 'none';
+  };
+  submitBtn.onclick = function () {
+    modal.style.display = 'none';
+  };
+  // Close the modal when user clicks outside of it
+  window.onclick = function (event) {
+    if (event.target == modal1) {
+      closeModalBook();
+    }
+  };
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      closeModal();
+    }
+  };
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector('[data-modal-open]'),
+      closeModalBtn: document.querySelector('[data-modal-close]'),
+      modal: document.querySelector('[data-modal]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.modal.classList.toggle('is-hidden');
+    }
+  })();
+</script>
