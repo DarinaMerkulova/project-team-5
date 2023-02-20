@@ -1,23 +1,21 @@
 .rest-info {
-    
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../../img/mobile/Mob-homepage/mob-goblet.jpg');
 }
 
 .rest-info-container {
-    max-width: 100%;
     padding-top: 24px;
     padding-bottom: 40px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url('../../img/mobile/Mob-homepage/mob-goblet.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.65);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .rest-info-container {
+    .rest-info {
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                 url('../../img/mobile/Mob-homepage/mob-goblet@2x.jpg');
     }
@@ -95,7 +93,7 @@ margin-bottom: 40px;
 
 .rest-info-nav {
     margin-top: 24px;
-    
+
 }
 
 .rest-info-nav-prev, .rest-info-nav-next  {
@@ -172,19 +170,21 @@ margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1024px) {
+    .rest-info {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/tablet/Tablet_home/tab-goblet.jpg');
+    }
     .rest-info-container {
         padding-top: 48px;
         padding-bottom: 40px;
         padding-right: 47px;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url('../../img/tablet/Tablet_home/tab-goblet.jpg');
             
         }
     
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .rest-info-container {
+            .rest-info {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                     url('../../img/tablet/Tablet_home/tab-goblet@2x.jpg');
             }
@@ -251,17 +251,21 @@ margin-bottom: 40px;
 
 
 @media screen and (min-width: 1280px) {
-    .rest-info-container {
-        padding-bottom: 48px;   
+
+    .rest-info {
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url('../../img/desktop/Desrtop_home/desk-goblet.jpg');
+                url('../../img/desktop/Desrtop_home/desk-goblet.jpg');
+    }
+
+    .rest-info-container {
+        padding-bottom: 48px;
     
         }
     
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .rest-info-container {
+            .rest-info {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                     url('../../img/desktop/Desrtop_home/desk-goblet@2x.jpg');
             }
