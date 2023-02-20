@@ -69,14 +69,14 @@
     
 }
 
-
-.hotel-room-slider {
+.hotel-double-room-lux-slider {
     display: flex;
     gap: 16px;
+    margin-bottom: 72px;  
     margin-right: 115px;
     flex-direction: row-reverse;
-    margin-bottom: 72px;
-  }
+   
+}
 
   .slider-img {
     background: #DADADA;
@@ -84,24 +84,24 @@
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
+
   @media screen and (max-width: 413px){
-    .hotel-room-slider {
+    .hotel-double-room-lux-slider {
      margin-right: 53px;
     }
     }
     
     @media screen and (min-width: 414px) {
-      .hotel-room-slider-img {
+      .hotel-double-room-lux-slider-img {
         flex-shrink: 0;
       }
     }
 
 .double-room-lux-transfer {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     align-items: center;
+    text-align: center;
+ 
   
 
 }
@@ -111,7 +111,8 @@
     padding-top: 14px 64px;
     width: 236px;
     height: 48px;
-    display: flex;
+    margin-bottom: 16px;
+    display: inline-flex;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -122,10 +123,12 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    background: var(--black-color);
+    background-color: var(--black-color);
     border: 2px solid var(--main-bkg-color);
     border-radius: 25px;
     border: none;
+
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 .double-room-lux-btn {
@@ -139,11 +142,14 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    background: var(--black-color);
+    background-color: var(--black-color);
     border: 2px solid var(--main-bkg-color);
     border-radius: 25px;
     border: none;
+
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
 }
+
 
 /* -----hotel-tablet----- */
 
@@ -152,7 +158,7 @@
 .double-room-lux {
        
         padding-top: 62px;
-        padding-bottom: 145px;
+        padding-bottom: 104px;
         background-color: var(--main-bkg-color);
         
     }
@@ -214,18 +220,24 @@
         
         
     }
+
+    .swiper-transfer {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
     
-    .hotel-room-slider {
-        position: absolute;
-        
+    .hotel-double-room-lux-slider {
+        margin-bottom: 0;     
         flex-direction: row;
         
         gap: 40px;
       }
 
       .double-room-lux-transfer {
-        
-       
+        display: flex;
+        flex-direction: column;       
         align-items: end;
         
     
@@ -240,7 +252,7 @@
     .double-room-lux {
            
             padding-top: 72px;
-            padding-bottom: 182px;
+            padding-bottom: 112px;
             background-color: var(--main-bkg-color);
             
         }
@@ -258,6 +270,22 @@
             
             
         }
+        .double-room-lux-link:hover,
+        .double-room-lux-link:focus {
+            background-color: var(--light-color);
+            border: 2px solid var(--accent-color);
+            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+        
+        
+        }
 
+        .double-room-lux-btn:hover,
+        .double-room-lux-btn:focus {
+            background-color: var(--light-color);
+            border: 2px solid var(--accent-color);
+            transition: background-color 250ms ease(0.4, 0, 0.2, 1), border 250ms ease(0.4, 0, 0.2, 1);
+        
+        
+        }
 
     }
