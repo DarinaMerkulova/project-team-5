@@ -84,6 +84,7 @@
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
+
   @media screen and (max-width: 413px){
     .hotel-double-room-lux-slider {
      margin-right: 53px;
@@ -100,7 +101,7 @@
     text-align: center;
     align-items: center;
     text-align: center;
-    /* justify-content: center; */
+ 
   
 
 }
