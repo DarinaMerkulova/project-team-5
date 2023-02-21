@@ -1,5 +1,6 @@
 /* ------hotel-mobile----- */
 .double-room >.container {
+  position: relative;
   /* outline: 1px solid rgb(9, 198, 62); */
 }
 .double-room {
@@ -70,7 +71,6 @@
   flex-direction: row-reverse;
   margin-right: 115px;
   margin-bottom: 72px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 413px) {
@@ -117,7 +117,14 @@
   transition: background-color 250ms ease(0.4, 0, 0.2, 1),
     border 250ms ease(0.4, 0, 0.2, 1);
 }
-
+/* ================== buttons-narrows================== */
+.slider-narrows-double {
+  position: absolute;
+  bottom: 140px;
+  left: 16px;
+  display: flex;
+  gap: 34px;
+}
 .double-room-btn {
   width: 236px;
   height: 48px;
@@ -220,6 +227,10 @@
   .double-room-transfer {
     align-items: end;
   }
+  .slider-narrows-double {
+    bottom: -58px;
+    left: 330px;
+  }
 }
 
 /* -----hotel-desktop----- */
@@ -259,5 +270,9 @@
     border: 2px solid var(--accent-color);
     transition: background-color 250ms ease(0.4, 0, 0.2, 1),
       border 250ms ease(0.4, 0, 0.2, 1);
+  }
+  .slider-narrows-double{
+    bottom: -65px;
+    left: 450px;
   }
 }
