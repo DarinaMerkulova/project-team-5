@@ -1,170 +1,171 @@
-.link {
-    text-decoration: none;
-}
-.list {
-    list-style: none;
-}
-  .logo-foot {
-      font-family: 'Film P3';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 1.08;
-      letter-spacing: 0.3em;
-      color: #F3C653;
-    
-  }
-
-  .footer {
-      padding-left: 44px;
+@media screen and (max-width: 1023px) {
+    .footer {
+      background-color: #0e0c07;
       padding-top: 40px;
       padding-bottom: 40px;
-      padding-right: 15px;
-      background-color: #0E0C07;
+      height: 240px;
+    }
   }
-
-  .footer-soc {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 20px;
-      margin-left: 220px;
-  }
-
   
-
-  .footer-soc-icon {
-      fill: #F3C653;
-  }
-
-  /* .footer-soc-icon:hover,
-  .footer-soc-icon:focus {
-    fill: currentColor;
-  } */
-
-  .footer-mob {
-      display: flex;
-  }
-
-  .footer-soc-tablet {
-      display: none;
-  }
-
-  .footer-list {
-      margin-left: 85px;
-      margin-bottom: 32px;
-  }
-
-  .footer-link {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      color: #F3C653;
-      
-  }
-
-
-
- 
-
-  .footer-item:not(:last-child) {
-      margin-bottom: 16px;
-  }
   @media screen and (min-width: 1024px) {
-      .container {
-          max-width: 930px;
-      }
-
-      .contact-mimino-right {
-          display: flex;
-      }
-
-      .logo-foot {
-          font-size: 64px;
-          display: inline-block;
-          margin-top: 37px;
-      }
-
-      .footer {
-          padding-left: 107px;
-          padding-top: 80px;
-          padding-bottom: 80px;
-          padding-right: 75px;
-      }
-
-      .footer-list {
-          margin-left: 163px;
-          margin-bottom: 0;
-      }
-
-      .footer-soc {
-          display: none;
-      }
-
-      .footer-soc-tablet {
-          display: block;
-      }
-
-      .footer-tablet {
-          display: flex;
-      }
-
-      .footer-soc-link {
-          font-family: 'Montserrat';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 1.25;
-          letter-spacing: 0.02em;
-          color: #F3C653;
-      }
-
-      .footer-soc-link {
-          display: flex;
-          margin-top: 8px;
-          margin-left: 12px;
-          margin-right: 12px;
-          justify-content: space-between;
-      }
-
-      .footer-icon {
-          margin-left: 137px;
-          width: 144px;
-          height: 40px;
-          border: 0.5px solid #F3C653;
-          border-radius: 2px;
-      }
-
-      .footer-icon:not(:last-child) {
-          margin-bottom: 12px;
-      }
+    .footer {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background-color: #0e0c07;
+      height: 304px;
+    }
   }
-  @media screen and (min-width: 1280px) {
-      .container {
-          max-width: 1110px;
-
-      }
-
-      .footer {
-          padding-left: 107px;
-          padding-right: 101px;
-      }
-
-      .logo-foot {
-          font-size: 64px;
-          display: inline-block;
-          margin-top: 40px;
-      }
-
-      .footer-list {
-          margin-left: 231px;
-      }
-
-      .footer-icon {
-          margin-left: 199px;
-      }
+  
+  .footer-logo {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.01;
+    letter-spacing: 0.3em;
+    color: #f3c653;
+    margin-left: 40px;
   }
+  
+  @media screen and (min-width: 1024px) {
+    .footer-logo {
+      margin-left: 104px;
+      margin-right: 163px;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 69px;
+      letter-spacing: 0.3em;
+    }
+  }
+  
+  .footer-btn-social {
+    display: block;
+    margin-left: 149px;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .footer-btn-social {
+      display: none;
+    }
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-menu {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    margin-bottom: 33px;
+  }
+  
+  .footer-menu-list:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
+  .footer-social-list {
+    display: flex;
+    gap: 23px;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer-social-list {
+      display: none;
+    }
+  }
+  
+  .footer-icon {
+    fill: rgba(243, 198, 83, 0.7);
+    transition: fill var (--transition);
+  }
+  
+  .footer-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer-link {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer-menu-wrapper {
+      margin-right: 137px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer-sm-border {
+      justify-content: space-around;
+      margin-bottom: 12px;
+      height: 40px;
+      width: 144px;
+      padding: 10px 12px;
+      border: 0.5px solid #f3c653;
+      border-radius: 2px;
+      align-items: center;
+      display: flex;
+    }
+  }
+  
+  .footer-social-media {
+    margin-right: 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  
+  @media screen and (min-width: 414px) {
+  
+    .footer-icon:hover,
+    .footer-icon:focus {
+      fill: var(--transition)
+    }
+    
+    
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer-icon {
+        fill: rgba(243, 198, 83, 0.7);
+      }
+  
+    .footer-sm-border:hover,
+    .footer-sm-border:focus {
+      background-color: #c79002;
+    }
+  
+  }
+  
+      .footer-logo,
+      .footer-menu {
+        transition: color var(--transition);
+      }
+    
+      .footer-logo:hover,
+      .footer-logo:focus,
+      .footer-menu-title:hover,
+      .footer-menu-title:focus {
+        color: #c79002;
+      }
+    
+      .footer-sm-border {
+        transition: background-color var(--transition);
+      }
