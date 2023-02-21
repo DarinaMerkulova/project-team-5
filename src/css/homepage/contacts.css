@@ -197,7 +197,23 @@
     margin-left: auto;
     margin-bottom: 32px;
 }
+.contact-address-link{
+display: flex;
+align-items: center;
+padding: 8px 5px 8px 6px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.01em;
+color: #494848;
+}
 
+.contact-address-icon {
+    flex-shrink: 0;
+    margin-right: 8px;
+    fill: #C79002;;
+}
 .contact-street {
     display: inline-block;
     width: 200px;
@@ -211,6 +227,9 @@
     width: 100%;
     height: 220px;
     display: inline-block;
+    border: 1px solid #BABABA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 }
 
  @media screen and (min-width: 1024px) {
