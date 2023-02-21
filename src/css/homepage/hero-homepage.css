@@ -1,5 +1,4 @@
 /* HERO */
-
 .hero {
   padding-top: 198px;
   padding-bottom: 20px;
@@ -190,7 +189,7 @@
 }
 @media screen and (max-width: 1023.98px) {
   .hero-bottom {
-    margin-bottom: 58px;
+    margin-bottom: 58px;}
 
    .location{
     position: absolute;
@@ -338,7 +337,6 @@
   display: flex;
   gap: 20px;
 }
-
 .hero-sm-link {
   display: inline-block;
   width: 24px;
@@ -366,4 +364,56 @@
   .hero-sm-list {
     display: none;
   }
+}
+.hero-homepage{
+  max-width: 100%;
+  max-height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  url('../../img/mobile/Mob-homepage/mob-hero.jpg');
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-homepage {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('../../img/mobile/Mob-homepage/mob-hero@2x.jpg');
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+.hero-homepage{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  url('../../img/tablet/Tablet_home/tab-hero.jpg');
+}
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .rest-info {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/tablet/Tablet_home/tab-hero@2x.jpg');
+            }
+        }
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+.hero-homepage{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  url('../../img/desktop/Desrtop_home/desk-hero.jpg');
+}
+
+     @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .rest-info {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../../img/desktop/Desrtop_home/desk-hero@2x.jpg');
+            }
+        }
 }
