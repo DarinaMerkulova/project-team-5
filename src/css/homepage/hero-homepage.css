@@ -35,7 +35,8 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-overlay {
+  
+    .hero-overlay {
     background-image: linear-gradient(to right, var(--gradient-bkg)),
       url(../../img/mobile/Mob-homepage/mob-hero@2x.jpg);
   }
