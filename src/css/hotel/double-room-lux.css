@@ -1,5 +1,6 @@
 /* ------hotel-mobile----- */
 .double-room-lux-container {
+  position: relative;
   /* outline: 1px solid rgb(9, 198, 62); */
 }
 .double-room-lux {
@@ -69,7 +70,6 @@
   margin-bottom: 72px;
   margin-right: 115px;
   flex-direction: row-reverse;
-  overflow: hidden;
 }
 
 .slider-img {
@@ -123,6 +123,14 @@
 
   transition: background-color 250ms ease(0.4, 0, 0.2, 1),
     border 250ms ease(0.4, 0, 0.2, 1);
+}
+/* ================== buttons-narrows================== */
+.slider-narrows-double-lux {
+  position: absolute;
+  bottom: 140px;
+  left: 16px;
+  display: flex;
+  gap: 34px;
 }
 
 .double-room-lux-btn {
@@ -229,6 +237,10 @@
     flex-direction: column;
     align-items: end;
   }
+  .slider-narrows-double-lux {
+    bottom: -58px;
+    left: 330px;
+  }
 }
 
 /* -----hotel-desktop----- */
@@ -244,6 +256,9 @@
     max-width: 517px;
     margin-bottom: 24px;
     font-size: 36px;
+  }
+  .double-room-lux-img {
+    right: 90px;
   }
 
   .double-room-lux-text3 {
@@ -263,5 +278,9 @@
     border: 2px solid var(--accent-color);
     transition: background-color 250ms ease(0.4, 0, 0.2, 1),
       border 250ms ease(0.4, 0, 0.2, 1);
+  }
+  .slider-narrows-double-lux {
+    bottom: -65px;
+    left: 450px;
   }
 }
