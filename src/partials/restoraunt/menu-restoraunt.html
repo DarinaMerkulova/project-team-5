@@ -1,230 +1,3 @@
-<style>
-  /* Style for modal background */
-  .body {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-  }
-  select {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-image: url(/src/img/down-arrow.png);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 3px) center;
-    background-position-x: 347px;
-  }
-  input {
-    appearance: none;
-  }
-  .date-icon {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-image: url(/src/img/down-arrow.png);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 3px) center;
-    background-position-x: 347px;
-  }
-  .modal-form {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 384px;
-  }
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  /* Style for modal content */
-  .modal-content {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    width: 42.5%;
-    margin: 10% auto;
-    padding: 20px;
-    padding-bottom: 60px;
-    border: 1px solid #888;
-    background-color: #fffdee;
-  }
-
-  /* Style for close button */
-  .close {
-    float: right;
-    font-size: 34px;
-    font-weight: 400;
-    height: 40px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* Style for close button on hover */
-  .close:hover,
-  .close:focus {
-    color: #f3c653;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .modal-title {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .modal-input {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: large;
-    height: 54px;
-    background-color: #fffdee;
-    border: 1px solid #c79002;
-    border-radius: 2px;
-    padding-left: 12px;
-    padding-right: 15px;
-    color: #808080;
-    width: 384px;
-  }
-
-  .question-desc {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-    letter-spacing: 0.02em;
-
-    /* Brown */
-    margin-left: 12px;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    color: #c79002;
-  }
-  /* Style for submit button */
-  .submit {
-    width: 388px;
-    height: 64px;
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    /* White */
-    margin-left: 12px;
-    margin-right: 12px;
-    color: #ffffff;
-    border: 2px solid black;
-    padding: 20px 43px;
-    cursor: pointer;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .last-que {
-    margin-bottom: 40px;
-  }
-  .modal-input-check {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: large;
-    height: 54px;
-    background-color: #fffdee;
-    border: 1px solid #c79002;
-    border-radius: 2px;
-    padding-left: 12px;
-    padding-right: 15px;
-    color: #808080;
-    width: 384px;
-  }
-
-  /* Style for submit button on hover and focus */
-  .submit:hover,
-  .submit:focus {
-    color: black;
-    background-color: #f3c653;
-    border: 2px solid #f3c653;
-  }
-
-  @media screen and (min-width: 413px) {
-    .modal-content {
-      width: 454px;
-    }
-  }
-  /*TABLET and COMP*/
-  @media (min-width: 1024px) {
-    .modal-content {
-      width: 712px;
-    }
-
-    .modal-form {
-      width: 600px;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      padding-left: 0px;
-      padding-right: 10px;
-      padding-bottom: 20px;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-    .submit {
-      width: 595px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 29px;
-      padding-top: 18px;
-      padding-bottom: 18px;
-      padding-left: 117px;
-      padding-right: 117px;
-      margin-left: 37px;
-    }
-    .modal-input {
-      width: 288px;
-      height: 54px;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-right: 0px;
-    }
-    .modal-input-check {
-      width: 288px;
-    }
-    .last-que {
-      margin-bottom: 20px;
-    }
-    .select {
-      background-position: calc(100% - 3px) center;
-      background-position-x: 244px;
-    }
-    .date-icon {
-      background-position: calc(100% - 3px) center;
-      background-position-x: 244px;
-    }
-    .rigth-way {
-      width: 288px;
-      display: flex;
-      flex-direction: column;
-    }
-    .modal-title {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 46px;
-      /* identical to box height */
-
-      letter-spacing: 0.05em;
-    }
-  }
-</style>
 <!-- Rest menu -->
 <section class="rest-menu">
   <div class="container">
@@ -234,668 +7,229 @@
         <ul class="restaurant-menu-list">
           <h3 class="restaurant-menu-title-text">Гарячі страви</h3>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Борщ з телятини з квасолею</p>
-                <p class="restaurant-menu-text-meal">
-                  Телятина, картопля, капуста, морква, цибуля, квасоля, часник,
-                  помідори, зелень, сметана
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">400 г</p>
-              <p class="restaurant-menu-price">240 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Борщ з телятини з квасолею</p>
+              <p class="restaurant-menu-text-meal">
+                Телятина, картопля, капуста, морква, цибуля, квасоля, часник,
+                помідори, зелень, сметана
+              </p>
             </div>
+            <p class="restaurant-menu-weight">400 г</p>
+            <p class="restaurant-menu-price">240 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Суп сирний з куркою</p>
-                <p class="restaurant-menu-text-meal">
-                  Курятина, картопля, морква, цибуля, печериці, сир м’який,
-                  зелень
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">400 г</p>
-              <p class="restaurant-menu-price">200 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Суп сирний з куркою</p>
+              <p class="restaurant-menu-text-meal">
+                Курятина, картопля, морква, цибуля, печериці, сир м’який, зелень
+              </p>
             </div>
+            <p class="restaurant-menu-weight">400 г</p>
+            <p class="restaurant-menu-price">200 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Паста карбонара</p>
-                <p class="restaurant-menu-text-meal">
-                  Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">350 г</p>
-              <p class="restaurant-menu-price">430 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Паста карбонара</p>
+              <p class="restaurant-menu-text-meal">
+                Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень
+              </p>
             </div>
+            <p class="restaurant-menu-weight">350 г</p>
+            <p class="restaurant-menu-price">430 грн</p>
           </li>
 
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Стейк зі свинини</p>
-                <p class="restaurant-menu-text-meal">
-                  Свиняча вирізка, спеціі, подається з соусом солодкий чилі та
-                  овочами
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">400 г</p>
-              <p class="restaurant-menu-price">500 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Стейк зі свинини</p>
+              <p class="restaurant-menu-text-meal">
+                Свиняча вирізка, спеціі, подається з соусом солодкий чилі та
+                овочами
+              </p>
             </div>
+            <p class="restaurant-menu-weight">400 г</p>
+            <p class="restaurant-menu-price">500 грн</p>
           </li>
 
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">
-                  Горбуша в соусі з білого вина
-                </p>
-                <p class="restaurant-menu-text-meal">
-                  Ніжна горбуша, вершковий соус на основі білого вина
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">400 г</p>
-              <p class="restaurant-menu-price">400 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Горбуша в соусі з білого вина</p>
+              <p class="restaurant-menu-text-meal">
+                Ніжна горбуша, вершковий соус на основі білого вина
+              </p>
             </div>
+            <p class="restaurant-menu-weight">400 г</p>
+            <p class="restaurant-menu-price">400 грн</p>
           </li>
         </ul>
         <ul class="restaurant-menu-list">
           <h3 class="restaurant-menu-title-text">Гарніри та закуски</h3>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Запечені овочі</p>
-                <p class="restaurant-menu-text-meal">
-                  Кабачок, перець, помідор, баклажан
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">400 г</p>
-              <p class="restaurant-menu-price">240 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Запечені овочі</p>
+              <p class="restaurant-menu-text-meal">
+                Кабачок, перець, помідор, баклажан
+              </p>
             </div>
+            <p class="restaurant-menu-weight">400 г</p>
+            <p class="restaurant-menu-price">240 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Картопля фрі</p>
-                <p class="restaurant-menu-text-meal">Картопля, соус томатний</p>
-              </div>
-              <p class="restaurant-menu-weight">150 г</p>
-              <p class="restaurant-menu-price">160 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Картопля фрі</p>
+              <p class="restaurant-menu-text-meal">Картопля, соус томатний</p>
             </div>
+            <p class="restaurant-menu-weight">150 г</p>
+            <p class="restaurant-menu-price">160 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Картопля по-селянськи</p>
-                <p class="restaurant-menu-text-meal">
-                  Картопля, спеції, соус пікантний
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">150 г</p>
-              <p class="restaurant-menu-price">160 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Картопля по-селянськи</p>
+              <p class="restaurant-menu-text-meal">
+                Картопля, спеції, соус пікантний
+              </p>
             </div>
+            <p class="restaurant-menu-weight">150 г</p>
+            <p class="restaurant-menu-price">160 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Хрумкі соління з бочки</p>
-                <p class="restaurant-menu-text-meal">
-                  Огірок солений, помідор квашений, квашена капуста, морква
-                  по-корейські
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">250 г</p>
-              <p class="restaurant-menu-price">350 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Хрумкі соління з бочки</p>
+              <p class="restaurant-menu-text-meal">
+                Огірок солений, помідор квашений, квашена капуста, морква
+                по-корейські
+              </p>
             </div>
+            <p class="restaurant-menu-weight">250 г</p>
+            <p class="restaurant-menu-price">350 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">
-                  Крильця курячі в медовому соусі
-                </p>
-                <p class="restaurant-menu-text-meal">
-                  Крильця курячі, гірчично-медовий соус, подається з морквою,
-                  селерою і соусом блючиз
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">400 г</p>
-              <p class="restaurant-menu-price">420 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">
+                Крильця курячі в медовому соусі
+              </p>
+              <p class="restaurant-menu-text-meal">
+                Крильця курячі, гірчично-медовий соус, подається з морквою,
+                селерою і соусом блючиз
+              </p>
             </div>
+            <p class="restaurant-menu-weight">400 г</p>
+            <p class="restaurant-menu-price">420 грн</p>
           </li>
         </ul>
-      </div>
+        </div>
       <div class="right-wrap">
         <ul class="restaurant-menu-list">
           <h3 class="restaurant-menu-title-text">Салати</h3>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Цезар з куркою</p>
-                <p class="restaurant-menu-text-meal">
-                  Куряче філе, листя салату, помідори чері, сир пармезан,
-                  грінки, соус цезар
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">230 г</p>
-              <p class="restaurant-menu-price">450 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Цезар з куркою</p>
+              <p class="restaurant-menu-text-meal">
+                Куряче філе, листя салату, помідори чері, сир пармезан, грінки,
+                соус цезар
+              </p>
             </div>
+            <p class="restaurant-menu-weight">230 г</p>
+            <p class="restaurant-menu-price">450 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Цезар з креветками</p>
-                <p class="restaurant-menu-text-meal">
-                  Тигрові креветки, листя салату, помідори чері, сир пармезан,
-                  грінки, соус цезар
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">230 г</p>
-              <p class="restaurant-menu-price">300 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Цезар з креветками</p>
+              <p class="restaurant-menu-text-meal">
+                Тигрові креветки, листя салату, помідори чері, сир пармезан,
+                грінки, соус цезар
+              </p>
             </div>
+            <p class="restaurant-menu-weight">230 г</p>
+            <p class="restaurant-menu-price">300 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Грецький салат</p>
-                <p class="restaurant-menu-text-meal">
-                  Свіжі огірок, помідор, болгарський перець, оливки, сир бринза,
-                  листя салату, соус
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">230 г</p>
-              <p class="restaurant-menu-price">280 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Грецький салат</p>
+              <p class="restaurant-menu-text-meal">
+                Свіжі огірок, помідор, болгарський перець, оливки, сир бринза,
+                листя салату, соус
+              </p>
             </div>
+            <p class="restaurant-menu-weight">230 г</p>
+            <p class="restaurant-menu-price">280 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">М’ясний салат</p>
-                <p class="restaurant-menu-text-meal">
-                  Куряче філе або свиняча вирізка, свіжі огірок, помідор,
-                  болгарський перець, соус ранч
-                </p>
-              </div>
-              <p class="restaurant-menu-weight">230 г</p>
-              <p class="restaurant-menu-price">300 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">М’ясний салат</p>
+              <p class="restaurant-menu-text-meal">
+                Куряче філе або свиняча вирізка, свіжі огірок, помідор,
+                болгарський перець, соус ранч
+              </p>
             </div>
+            <p class="restaurant-menu-weight">230 г</p>
+            <p class="restaurant-menu-price">300 грн</p>
           </li>
         </ul>
         <ul class="restaurant-menu-list">
           <h3 class="restaurant-menu-title-text">Десерти</h3>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Торт наполеон</p>
-              </div>
-              <p class="restaurant-menu-weight">230 г</p>
-              <p class="restaurant-menu-price">300 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Торт наполеон</p>
             </div>
+            <p class="restaurant-menu-weight">230 г</p>
+            <p class="restaurant-menu-price">300 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Торт маковий</p>
-              </div>
-              <p class="restaurant-menu-weight">230 г</p>
-              <p class="restaurant-menu-price">300 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Торт маковий</p>
             </div>
+            <p class="restaurant-menu-weight">230 г</p>
+            <p class="restaurant-menu-price">300 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Тірамісу</p>
-              </div>
-              <p class="restaurant-menu-weight">120 г</p>
-              <p class="restaurant-menu-price">260 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Тірамісу</p>
             </div>
+            <p class="restaurant-menu-weight">120 г</p>
+            <p class="restaurant-menu-price">260 грн</p>
           </li>
         </ul>
         <!-- </ul> -->
         <ul class="restaurant-menu-list">
           <h3 class="restaurant-menu-title-text">Напої</h3>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Чай чорний/зелений</p>
-              </div>
-              <p class="restaurant-menu-weight">500 г</p>
-              <p class="restaurant-menu-price">100 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Чай чорний/зелений</p>
             </div>
+            <p class="restaurant-menu-weight">500 мл</p>
+            <p class="restaurant-menu-price">100 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Еспресо</p>
-              </div>
-              <p class="restaurant-menu-weight">30 г</p>
-              <p class="restaurant-menu-price">100 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Еспресо</p>
             </div>
+            <p class="restaurant-menu-weight">30 мл</p>
+            <p class="restaurant-menu-price">100 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Американо</p>
-              </div>
-              <p class="restaurant-menu-weight">150 г</p>
-              <p class="restaurant-menu-price">100 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Американо</p>
             </div>
+            <p class="restaurant-menu-weight">150 мл</p>
+            <p class="restaurant-menu-price">100 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Капучино</p>
-              </div>
-              <p class="restaurant-menu-weight">200 г</p>
-              <p class="restaurant-menu-price">160 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Капучино</p>
             </div>
+            <p class="restaurant-menu-weight">200 мл</p>
+            <p class="restaurant-menu-price">160 грн</p>
           </li>
           <li class="restaurant-menu-item">
-            <div class="inner-wraper">
-              <div class="holder">
-                <p class="restaurant-menu-text">Лате</p>
-              </div>
-              <p class="restaurant-menu-weight">200 г</p>
-              <p class="restaurant-menu-price">160 грн</p>
+            <div class="holder">
+              <p class="restaurant-menu-text">Лате</p>
             </div>
+            <p class="restaurant-menu-weight">200 мл</p>
+            <p class="restaurant-menu-price">160 грн</p>
           </li>
         </ul>
       </div>
     </div>
-    <button class="restaurant-btn btn" type="button" onclick="openModal()">
-      Забронювати столик
-    </button>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-
-        <div class="">
-          <h2 class="modal-title" style="color: black">ЗАБРОНЮВАТИ СТОЛИК</h2>
-          <div class="modal-form">
-            <div class="rigth-way">
-              <div>
-                <input
-                  class="modal-input"
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  placeholder="Ваше ім’я"
-                />
-                <p
-                  class="question-desc rigth-way2"
-                  style="margin-bottom: 20px;"
-                >
-                  На кого забронювати столик?
-                </p>
-              </div>
-
-              <div>
-                <input
-                  class="modal-input"
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  required
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                  placeholder="+38 (___) ___-__-__"
-                />
-                <p class="question-desc" style="margin-bottom: 20px;">Номер телефону</p>
-              </div>
-            </div>
-
-            <div class="rigth-way">
-              <div>
-                <select
-                  class="modal-input-check select"
-                  id="select1"
-                  name="select1"
-                  required
-                >
-                  <option value="option1">1</option>
-                  <option value="option2">2</option>
-                  <option value="option3">3</option>
-                  <option value="option4">4</option>
-                  <option value="option5">5</option>
-                  <option value="option6">6</option>
-                  <option value="option7">7</option>
-                  <option value="option8">8</option>
-                  <option value="option9">9</option>
-                  <option value="option10">Party (more then 10)</option>
-                </select>
-                <p
-                  class="question-desc"
-                  style="margin-bottom: 20px;"
-                >
-                  Столик на яку кількість осіб?
-                </p>
-              </div>
-
-              <div>
-                <input
-                  placeholder="Сьогодні"
-                  class="modal-input date-icon"
-                  type="text"
-                  id="date"
-                  required
-                  onfocus="  (this.type='date')"
-                  onblur="(this.type='text')"
-                />
-                <p class="question-desc" style="margin-bottom: 20px;">На яку дату бронювати?</p>
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="submit modal-form-btn-submit"
-            type="submit"
-            id="submitBtn"
-          >
-            ОФОРМИТИ БРОНЮВАННЯ
-          </button>
-        </div>
-      </div>
-    </div>
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
-
-      // Get the button that opens the modal
-      var btn = document.getElementById('myBtn');
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName('close')[0];
-
-      var submitBtn = document.getElementById('submitBtn');
-
-      // Function to open the modal
-      function openModal() {
-        modal.style.display = 'block';
-      }
-
-      // Function to close the modal
-      function closeModal() {
-        modal.style.display = 'none';
-      }
-      // When the user clicks on the submit button, close the modal
-      submitBtn.onclick = function () {
-        modal.style.display = 'none';
-      };
-
-      // Close the modal when user clicks outside of it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          closeModal();
-        }
-      };
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          modal: document.querySelector('[data-modal]'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
-        }
-      })();
-    </script>
+    <button class="restaurant-btn btn" type="button">Забронювати столик</button>
   </div>
-
-    <h2 class="restaurant-menu-title">МЕНЮ РЕСТОРАНУ </h2>
-    <div class="rest-left-wrap">
-    <div class="left-wrap">
-      <ul class="restaurant-menu-list">
-      
-          <h3 class="restaurant-menu-title-text">Гарячі страви</h3>
-          <li class="restaurant-menu-item">
-         
-            <div class="holder">
-             <p class="restaurant-menu-text">Борщ з телятини з квасолею </p>
-             <p class="restaurant-menu-text-meal">Телятина, картопля, капуста, морква, цибуля, квасоля, часник, помідори, зелень, сметана</p>
-            </div>
-            <p class="restaurant-menu-weight">400 г</p>
-            <p class="restaurant-menu-price">240 грн</p>
-            
-        
-        </li>
-     <li class="restaurant-menu-item">
-     
-         <div class="holder">
-          <p class="restaurant-menu-text">Суп сирний з куркою </p>
-          <p class="restaurant-menu-text-meal">Курятина, картопля, морква, цибуля, печериці, сир м’який, зелень</p>
-         </div>
-          <p class="restaurant-menu-weight">400 г</p>
-          <p class="restaurant-menu-price">200 грн</p>
- 
-        </li>
-        <li class="restaurant-menu-item">
-   
-          <div class="holder">
-            <p class="restaurant-menu-text">Паста карбонара</p>
-            <p class="restaurant-menu-text-meal">Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень</p>
-         </div>
-            <p class="restaurant-menu-weight">350 г</p>
-            <p class="restaurant-menu-price">430 грн</p>
-        
-        
-         </li>
-        
-      <li class="restaurant-menu-item">
-      
-          <div class="holder">
-            <p class="restaurant-menu-text">Стейк зі свинини</p>
-            <p class="restaurant-menu-text-meal">Свиняча вирізка, спеціі, подається з соусом солодкий чилі та овочами</p>
-          </div>
-            <p class="restaurant-menu-weight">400 г</p>
-            <p class="restaurant-menu-price">500 грн</p>
-        
-          
-       </li>
-        
-       <li class="restaurant-menu-item">
-   
-           <div class="holder">
-            <p class="restaurant-menu-text">Горбуша в соусі з білого вина</p>
-            <p class="restaurant-menu-text-meal">Ніжна горбуша, вершковий соус на основі білого вина</p>
-           </div>
-            <p class="restaurant-menu-weight">400 г</p>
-            <p class="restaurant-menu-price">400 грн</p>
-         
-          </li>  
-   </ul>
-   <ul class="restaurant-menu-list">
-        <h3 class="restaurant-menu-title-text">Гарніри та закуски</h3>
-        <li class="restaurant-menu-item">
-    
-          <div class="holder">
-            <p class="restaurant-menu-text">Запечені овочі </p>
-            <p class="restaurant-menu-text-meal">Кабачок, перець, помідор, баклажан</p>
-          </div>
-            <p class="restaurant-menu-weight">400 г</p>
-            <p class="restaurant-menu-price">240 грн</p>
-          
-       
-      </li>
-     <li class="restaurant-menu-item">
-    
-       <div class="holder">
-        <p class="restaurant-menu-text">Картопля фрі </p>
-        <p class="restaurant-menu-text-meal">Картопля, соус томатний</p>
-      </div>
-        <p class="restaurant-menu-weight">150 г</p>
-        <p class="restaurant-menu-price">160 грн</p>
-  
-   
-     </li>
-   <li class="restaurant-menu-item">
-   
-       <div class="holder">
-        <p class="restaurant-menu-text">Картопля по-селянськи</p>
-        <p class="restaurant-menu-text-meal">Картопля, спеції, соус пікантний</p>
-      </div>
-        <p class="restaurant-menu-weight">150 г</p>
-        <p class="restaurant-menu-price">160 грн</p>
-   
-   </li>
-  <li class="restaurant-menu-item">
- 
-  <div class="holder">
-    <p class="restaurant-menu-text">Хрумкі соління з бочки</p>
-    <p class="restaurant-menu-text-meal">Огірок солений, помідор квашений, квашена капуста, морква по-корейські</p>
-  </div>
-    <p class="restaurant-menu-weight">250 г</p>
-    <p class="restaurant-menu-price">350 грн</p>
- 
-  </li>
-  <li class="restaurant-menu-item">
- 
-  <div class="holder">
-     <p class="restaurant-menu-text">Крильця курячі в медовому соусі</p>
-     <p class="restaurant-menu-text-meal">Крильця курячі, гірчично-медовий соус, подається з морквою, селерою і соусом блючиз</p>
-  </div>
-     <p class="restaurant-menu-weight">400 г</p>
-     <p class="restaurant-menu-price">420 грн</p>
-
-  </li>
-</ul>
-</div>
-<div class="right-wrap"> 
-  <ul class="restaurant-menu-list">
-   <h3 class="restaurant-menu-title-text">Салати</h3>
-    <li class="restaurant-menu-item">
-    
-        <div class="holder">
-          <p class="restaurant-menu-text">Цезар з куркою </p>
-          <p class="restaurant-menu-text-meal">Куряче філе, листя салату, помідори чері, сир пармезан, грінки, соус цезар</p>
-        </div>
-          <p class="restaurant-menu-weight">230 г</p>
-          <p class="restaurant-menu-price">450 грн</p>
-   
-    </li> 
-    <li class="restaurant-menu-item">
-    
-      <div class="holder">
-        <p class="restaurant-menu-text">Цезар з креветками </p>
-        <p class="restaurant-menu-text-meal">Тигрові креветки, листя салату, помідори чері, сир пармезан, грінки, соус цезар</p>
-      </div>
-        <p class="restaurant-menu-weight">230 г</p>
-        <p class="restaurant-menu-price">300 грн</p>
-      
-     
-      </li>
-      <li class="restaurant-menu-item">
-   
-        <div class="holder">
-          <p class="restaurant-menu-text">Грецький салат</p>
-          <p class="restaurant-menu-text-meal">Свіжі огірок, помідор, болгарський перець, оливки, сир бринза, листя салату, соус</p>
-        </div>
-          <p class="restaurant-menu-weight">230 г</p>
-          <p class="restaurant-menu-price">280 грн</p>
-        
-       
-       </li>
-       <li class="restaurant-menu-item">
- 
-          <div class="holder">
-            <p class="restaurant-menu-text">М’ясний салат</p>
-            <p class="restaurant-menu-text-meal">Куряче філе або свиняча вирізка, свіжі огірок, помідор, болгарський перець, соус ранч</p>
-          </div>
-            <p class="restaurant-menu-weight">230 г</p>
-            <p class="restaurant-menu-price">300 грн</p>
-         
-          </li>
-</ul>
-<ul class="restaurant-menu-list">
-     <h3 class="restaurant-menu-title-text">Десерти </h3>
-     <li class="restaurant-menu-item">
-   
-      <div class="holder">
-        <p class="restaurant-menu-text">Торт наполеон </p>
-     </div>
-        <p class="restaurant-menu-weight">230 г</p>
-        <p class="restaurant-menu-price">300 грн</p>
-      
-  </li>
- <li class="restaurant-menu-item">
-
-    <div class="holder">
-      <p class="restaurant-menu-text">Торт маковий </p> 
-    </div>
-      <p class="restaurant-menu-weight">230 г</p>
-      <p class="restaurant-menu-price">300 грн</p>
-
-    </li>
-    <li class="restaurant-menu-item">
-    
-      <div class="holder">
-        <p class="restaurant-menu-text">Тірамісу </p> 
-      </div>
-        <p class="restaurant-menu-weight">120 г</p>
-        <p class="restaurant-menu-price">260 грн</p>
-     
-      </li>
-   </ul>
-<!-- </ul> -->
-<ul class="restaurant-menu-list">
-     <h3 class="restaurant-menu-title-text">Напої</h3>
-  <li class="restaurant-menu-item">
-
-      <div class="holder">
-        <p class="restaurant-menu-text">Чай чорний/зелений  </p>
-     </div>
-        <p class="restaurant-menu-weight">500 г</p>
-        <p class="restaurant-menu-price">100 грн</p>
-   
-  </li>
-  <li class="restaurant-menu-item">
- 
-    <div class="holder">
-      <p class="restaurant-menu-text">Еспресо </p> 
-    </div>
-      <p class="restaurant-menu-weight">30 г</p>
-      <p class="restaurant-menu-price">100 грн</p>
-   
-    </li>
-   <li class="restaurant-menu-item">
-    
-      <div class="holder">
-        <p class="restaurant-menu-text">Американо </p> 
-      </div>
-        <p class="restaurant-menu-weight">150 г</p>
-        <p class="restaurant-menu-price">100 грн</p>
-    
-      </li>
-     <li class="restaurant-menu-item">
-    
-        <div class="holder">
-          <p class="restaurant-menu-text">Капучино </p> 
-        </div>
-          <p class="restaurant-menu-weight">200 г</p>
-          <p class="restaurant-menu-price">160 грн</p>
-      
-        </li>
-        <li class="restaurant-menu-item">
-        
-          <div class="holder">
-            <p class="restaurant-menu-text">Лате</p> 
-          </div>
-            <p class="restaurant-menu-weight">200 г</p>
-            <p class="restaurant-menu-price">160 грн</p>
-       
-        </li>
-   </ul>
-</div> 
-</div>
-<button class="restaurant-btn btn" type="button">Забронювати столик</button>
-</div> 
 </section>
