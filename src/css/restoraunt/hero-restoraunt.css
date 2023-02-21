@@ -1,6 +1,5 @@
-/*  HERO-HOTEL */
 
-.hero-hotel-overlay {
+.hero-rest-overlay {
   min-width: 320px;
   min-height: 740px;
   margin-left: auto;
@@ -9,7 +8,7 @@
       to right,
       var(--gradient-bkg)
     ),
-    url('../../img/mobile/Mob-rest/mob-rest-hero.jpg');
+    url(../../img/mobile/Mob-rest/mob-rest-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -18,79 +17,58 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-hotel-overlay {
+  .hero-rest-overlay {
     background-image: linear-gradient(
         to right,
         var(--gradient-bkg)
       ),
-      url('../../img/mobile/Mob-rest/mob-rest-hero@2x.jpg');
+      url(../../img/mobile/Mob-rest/mob-rest-hero@2x.jpg);
   }
 }
 /* tablet screen */
 @media screen and (min-width: 1024px) {
-  .hero-hotel-overlay {
+  .hero-rest-overlay {
     min-height: 720px;
     background-image: linear-gradient(
         to right,
         var(--gradient-bkg)
       ),
-     url('../../img/mobile/Mob-rest/tab-rest-hero.jpg');
+      url(../../img/tablet/Tablet_rest/tab-rest-hero.jpg);
   }
 }
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
   (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
   (min-width: 1024px) and (min-resolution: 192dpi),
   (min-width: 1024px) and (min-resolution: 2dppx) {
-  .hero-hotel-overlay {
+  .hero-rest-overlay {
     background-image: linear-gradient(
         to right,
-        var(--gradient-bkg)),
-      url('../../img/tablet/Tablet_home/tab-rest-hero@2x.jpg');
+        var(--gradient-bkg)
+      ),
+      url(../../img/tablet/Tablet_rest/tab-rest-hero.jpg);
   }
 }
 /* desk screen  */
 @media screen and (min-width: 1280px) {
-  .hero-hotel-overlay {
+  .hero-rest-overlay {
     min-height: 720px;
 
     background-image: linear-gradient(
         to right,
         var(--gradient-bkg)
       ),
-      url('../../img/mobile/Mob-rest/desk-rest-hero.jpg');
+      url(../../img/desktop/Desrtop_rest/desk-rest-hero.jpg);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
   (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
   (min-width: 1280px) and (min-resolution: 192dpi),
   (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero-hotel-overlay {
+  .hero-rest-overlay {
     background-image: linear-gradient(
         to right,
         var(--gradient-bkg)
       ),
-      url('../../img/desktop/Desrtop_home/desk-rest-hero@2x.jpg');
+      url(../../img/desktop/Desrtop_rest/desk-rest-hero@2x.jpg);
   }
 }
-
-.hero-title.hotel {
-    margin-bottom: 32px;
-}
-
-.hero-type.hotel {
-    margin-bottom: 178px;
-}
-@media screen and (min-width: 1024px) {
-  .hero-type.hotel {
-    margin-bottom: 218px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero-type.hotel {
-    margin-bottom: 242px;
-  }
-}
-
-
-
-
