@@ -56,7 +56,7 @@
 }
 
 .about-room-button {
-  transition: background-color 250ms, color 250ms;
+  transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .about-room-link {
@@ -71,8 +71,9 @@
 
   letter-spacing: 0.02em;
   color: #c79002;
-  transition: color 250ms;
-}
+  transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1)
+  }
+
 
 .about-room-text-link:hover,
 .about-room-text-link:active {
