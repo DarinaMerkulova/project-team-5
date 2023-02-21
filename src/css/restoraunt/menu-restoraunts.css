@@ -2,12 +2,14 @@
   background-color: var(--main-bkg-color);
   padding-top: 58px;
   padding-bottom: 32px;
+  min-width: 320px;
   /* justify-content: center; */
   /* margin-right: 0;
     margin-left: 0; */
 
   /* background-color: #F0ECD6; */
 }
+
 .restaurant-menu-title {
   font-family: 'Times New Roman';
   font-weight: 700;
@@ -43,7 +45,7 @@
 }
 
 .restaurant-menu-weight {
-  width: 40px;
+  width: 52px;
   height: 17px;
   font-weight: 300;
   font-size: 14px;
@@ -52,7 +54,7 @@
   color: var(--black-color);
 }
 .restaurant-menu-price {
-  width: 60px;
+  width: 62px;
   height: 17px;
   font-weight: 700;
   font-size: 14px;
@@ -63,16 +65,10 @@
   margin-bottom: 8px;
   display: grid;
   grid-template-columns: 1fr auto auto;
-  gap: 32px;
+  gap: 25px;
   align-items: center;
 }
 
-.holder {
-  max-width: 225px;
-  min-width: 225px;
-  /* margin-right: 32px; */
-  /* margin-right: 10px; */
-}
 .inner-wraper {
   display: flex;
   align-items: center;
@@ -110,19 +106,18 @@
   background-color: var(--main-bkg-color);
   padding-top: 58px;
 }
+
 @media screen and (min-width: 1024px) {
-  .menu {
-    max-width: 1024px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 20px;
-    margin-right: 20px;
+  .container {
+    max-width: 960px;
   }
+
   .left-wrap {
     display: inline;
   }
+
   .holder {
-    max-width: 257px;
+    max-width: 220px;
   }
   .rest-menu {
     background-color: var(--last-bkg-color);
@@ -153,10 +148,6 @@
     font-size: 14px;
     line-height: calc(17 / 14);
   }
-  .restaurant-menu-title-text {
-    font-weight: 700;
-    font-size: 20px;
-  }
 
   .restaurant-menu-weight {
     font-weight: 300;
@@ -178,17 +169,20 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .menu {
-    max-width: 100%;
-    margin-left: 80px;
-    margin-right: 80px;
+  .container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+
   .left-wrap {
     display: inline;
   }
+
   .holder {
-    max-width: 220px;
+    max-width: 257px;
   }
+
   .rest-menu {
     background-color: var(--last-bkg-color);
     padding-top: 58px;
@@ -196,11 +190,7 @@
     margin-left: 0;
   }
 
-  .restaurant-menu-text-meal{
-    width: 257px;
-  }
   .restaurant-menu-title-text {
-    font-weight: 700;
     font-size: 24px;
     line-height: calc(28 / 24);
   }
