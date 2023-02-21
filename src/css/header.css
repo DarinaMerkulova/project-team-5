@@ -87,7 +87,7 @@
   letter-spacing: 0.02em;
   padding-top: 9.5px;
   padding-bottom: 9.5px;
-  color: var(--last-accent-color);
+  color: var(--accent-color)
 
   
 }
@@ -113,7 +113,7 @@
 .header-nav-link:hover,
 .header-nav-link:focus,
 .header-nav-link:active {
-  color: var(--accent-color);
+  color: var(--last-accent-color)
 }
 
 .header-nav-item {
@@ -145,7 +145,8 @@
   align-items: center;
   padding-top: 7.5px;
   padding-bottom: 7.5px;
-  transition: border-color 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
+  transform 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
 
 
 }  
@@ -172,7 +173,7 @@
 .header-nav-contact:hover,
 .header-nav-contact:focus,
 .header-nav-contact:active {
-  background-color: var(--last-accent-color);
+  background-color: var(--last-accent-color)
   }
   
 .header-nav-phone-number {
@@ -223,7 +224,7 @@
   display: inline-flex;
   padding-top: 9px;
   padding-bottom: 9px;
-  color: rgba(243, 198, 83, 0.7);
+  color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
     transform 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -231,7 +232,7 @@
 .header-social-link-icon:hover,
 .header-social-link-icon:focus,
 .header-social-link-icon:active {
-  color: var(--accent-color);
+  color: var(--last-accent-color);
 }
 
 .header-social-icon {
