@@ -76,6 +76,23 @@
     background-image: linear-gradient(to right, var(--gradient-bkg)),
       url('../../img/desktop/Desrtop_home/desk-hero@2x.jpg');
   }
+
+
+  .hero-homepage-button:hover,
+  .hero-homepage-button:focus {
+    background-color: #FFFFFF;
+    border: 2px solid var(--accent-color);
+}
+
+
+  .location{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #fff;
+
 }
 
 .hero-title {
@@ -103,6 +120,13 @@
   .hero-title {
     margin-bottom: 16px;
     font-size: 128px;
+
+
+    line-height: 1.078;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+
+
   }
 }
 @media screen and (min-width: 1280px) {
@@ -158,6 +182,7 @@
   }
 }
 
+
 .hero-bottom {
   display: flex;
   align-items: flex-end;
@@ -166,6 +191,35 @@
 @media screen and (max-width: 1023.98px) {
   .hero-bottom {
     margin-bottom: 58px;
+
+   .location{
+    position: absolute;
+
+
+    top: 250px;
+
+    left: 30px;
+        width: 285px;
+        height: 56px;
+        margin-left: 47px;
+        margin-top: 533px;
+
+
+    }
+
+    .location-link{
+        display: flex;
+        align-items: center;
+        padding-left: 19px;
+        padding-top: 8px;
+    }
+
+    .location-text{
+        padding-left: 8px;
+        width: 233px;
+        height: 40px;
+    }
+
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
