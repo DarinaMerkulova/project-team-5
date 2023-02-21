@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modal Window Example</title>
+    <link rel="stylesheet" href="/src/css/fonts.css" />
+    <link rel="stylesheet" href="/src/css/room/room-price-modal.css">
+  </head>
+  <body>
+    <!-- Button to open the modal -->
+    <button onclick="openModal()">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div class="">
+          <h2 class="modal-title">ЦІНИ НА НОМЕР</h2>
+
+          <div class="modal-form">
+            <div class="type-room">
+              <select
+                class="modal-select"
+                id="field-select"
+                name="select1"
+                required
+              >
+                <option value="option1">Двомісний люкс</option>
+                <option value="option2">Двомісний</option>
+                <option value="option3">Трьохмісний</option>
+              </select>
+              <p class="question-desc">Категорія номеру</p>
+            </div>
+            <div class="rigth-way">
+              <div>
+                <select
+                  class="modal-input-check select"
+                  id=""
+                  name="select1"
+                  required
+                >
+                  <option value="option1">1</option>
+                  <option value="option2">2</option>
+                  <option value="option3">3</option>
+                  <option value="option4">4</option>
+                  <option value="option5">5</option>
+                  <option value="option6">6</option>
+                  <option value="option7">7</option>
+                  <option value="option8">8</option>
+                  <option value="option9">9</option>
+                  <option value="option10">10</option>
+                </select>
+                <p class="question-desc">Кількість ночей</p>
+              </div>
+            
+              <div class="right-side">
+                <input
+                  class="modal-input "
+                  type="number"
+                  id="input-field"
+                  name="name"
+                  readonly
+                  min="1000"
+                  placeholder="1000"
+                />
+                <p class="question-desc">грн</p>
+              </div>
+            </div>
+          <button class="submit modal-form-btn-submit" type="submit" id="submitBtn">
+            ЗАБРОНЮВАТИ НОМЕР
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/src/js/room-price-modal.js">
+    </script>
+  </body>
+</html>
