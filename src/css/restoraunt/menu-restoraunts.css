@@ -36,7 +36,6 @@
   color: var(--black-color);
 }
 .restaurant-menu-text-meal {
-  width: 220px;
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
@@ -65,7 +64,7 @@
   margin-bottom: 8px;
   display: grid;
   grid-template-columns: 1fr auto auto;
-  gap: 25px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -105,6 +104,16 @@
 .rest-menu {
   background-color: var(--main-bkg-color);
   padding-top: 58px;
+}
+
+@media screen and (min-width: 414px) {
+  .restaurant-menu-item {
+    gap: 25px;
+  }
+
+  .restaurant-menu-text-meal {
+    width: 220px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
