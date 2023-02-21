@@ -1,5 +1,6 @@
 /* ------hotel-mobile----- */
 .triple > .container {
+  position: relative;
   /* outline: 1px solid rgb(9, 198, 62); */
 }
 
@@ -77,7 +78,7 @@
   gap: 16px;
   margin-left: 115px;
   overflow: hidden;
-}
+} 
 
 @media screen and (max-width: 413px) {
   .hotel-triple-room-slider {
@@ -132,6 +133,14 @@
   border: none;
   transition: background-color 250ms ease(0.4, 0, 0.2, 1),
     border 250ms ease(0.4, 0, 0.2, 1);
+}
+/* ================== buttons-narrows================== */
+.slider-narrows-triple {
+  position: absolute;
+  bottom: 140px;
+  right: 16px;
+  display: flex;
+  gap: 34px;
 }
 
 .triple-btn {
@@ -237,6 +246,10 @@
     flex-direction: column;
     align-items: start;
   }
+  .slider-narrows-triple {
+    bottom: -60px;
+    right: 345px;
+  }
 }
 
 /* -----hotel-desktop----- */
@@ -304,5 +317,9 @@
     border: 2px solid var(--accent-color);
     transition: background-color 250ms ease(0.4, 0, 0.2, 1),
       border 250ms ease(0.4, 0, 0.2, 1);
+  }
+  .slider-narrows-triple {
+    bottom: -65px;
+    right: 450px;
   }
 }

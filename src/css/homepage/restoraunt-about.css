@@ -1,16 +1,17 @@
 /* ==========================Restourant About====================== */
 .restorant-about,
 .about-restourant {
+  position: relative;
   padding-top: 16px;
   padding-bottom: 72px;
   background-color: var(--main-bkg-color);
+  /* outline: 1px solid rgb(236, 130, 9); */
 }
 .restorant-about > .container,
 .about-restourant > .container {
   /* outline: 1px solid rgb(236, 130, 9); */
 }
-.restorant-about-thumb {
-}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -105,6 +106,24 @@
     flex-shrink: 0;
   }
 }
+/* ================== buttons-narrows================== */
+.slider-narrows {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;;
+  display: flex;
+  gap: 34px;
+}
+.slider-narrows-left, .slider-narrows-right {
+  cursor: pointer;
+  transition: fill var(--timing-duration) var(--timing-function);
+}
+.slider-narrows-left:hover, .slider-narrows-left:focus,
+.slider-narrows-right:hover, .slider-narrows-right:focus
+ {
+  fill: var(--last-accent-color);
+}
+
 /*================= mobile version================ */
 @media screen and (min-width: 414px) {
   .slider-img-width {
@@ -186,6 +205,9 @@
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     border-radius: 0;
   }
+  .slider-narrows {
+    bottom: -220px;
+  }
 }
 
 /*================= desktop version restourant================ */
@@ -237,5 +259,13 @@
   .restorant-about-img-frame {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 0;
+  }
+  .slider-narrows {
+    right: 20px;
+    bottom: -175px;
+  }
+  .slider-narrows.restourant-diference{
+    bottom: -165px; 
+    right: 0;
   }
 }
