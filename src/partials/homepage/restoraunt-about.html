@@ -32,8 +32,8 @@
         />
         <source
           srcset="
-          ./img/mobile/Mob-homepage/mob-rest-inter.jpg    1x,
-          ./img/mobile/Mob-homepage/mob-rest-inter@2x.jpg 2x
+            ./img/mobile/Mob-homepage/mob-rest-inter.jpg    1x,
+            ./img/mobile/Mob-homepage/mob-rest-inter@2x.jpg 2x
           "
           media="(max-width: 1023px)"
           type="image/jpeg"
@@ -82,7 +82,7 @@
           height="278"
         />
         <img
-        class="restorant-about-img-frame"
+          class="restorant-about-img-frame"
           src="./img/mobile/Mob-homepage/mob-interior.jpg"
           alt="restourant hall"
           width="460"
@@ -96,29 +96,35 @@
       </p>
     </div>
     <!-- ------------------Slider restourant about------------------------------- -->
-    <div class="slider-restourant-about">
-      <picture class="slider-img-width">
-        <source
-          srcset="
+    
+    <!-- Slider main container -->
+    <div class="swiper about-rest-slider swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture class="about-rest-slider-photo img">
+            <source
+             srcset="
             ./img/desktop/Desrtop_home/desk-rest-helena.jpg    1x,
             ./img/desktop/Desrtop_home/desk-rest-helena@2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/jpeg"
-          width="254"
-          height="254"
-        />
-        <source
-          srcset="
+             "
+              media="(min-width: 1280px)"
+              type="image/jpeg"
+             width="254"
+               height="254"
+            />
+            <source
+            srcset="
             ./img/tablet/Tablet_home/tab-rest-helena.jpg    1x,
             ./img/tablet/Tablet_home/tab-rest-helena@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-          type="image/jpeg"
-          width="194"
-          height="194"
-        />
-        <source
+           "
+           media="(min-width: 1024px)"
+            type="image/jpeg"
+           width="194"
+           height="194"
+          />
+          <source
           srcset="
           ./img/slider/mob/mob-rest1.jpg   1x,
           ./img/slider/mob/mob-rest1@2x.jpg 2x
@@ -127,7 +133,7 @@
           type="image/jpeg"
           width="245"
           height="245"
-        />
+         />
         <img
         class="slider-img-frame"
           src="./img/slider/mob/mob-rest1.jpg "
@@ -135,9 +141,11 @@
           width="254"
           height="254"
         />
-      </picture>
-      <picture class="slider-img-width">
-        <source
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="about-rest-slider-photo img">
+           <source
           srcset="
             ./img/desktop/Desrtop_home/desk-rest-mat-brown.jpg    1x,
             ./img/desktop/Desrtop_home/desk-rest-mat-brown@2x.jpg 2x
@@ -174,7 +182,106 @@
           width="254"
           height="254"
         />
-      </picture>
+          </picture>
+        </div>
+        <div class="swiper-slide">
+           <picture class="about-rest-slider-photo img">
+            <source
+             srcset="
+            ./img/desktop/Desrtop_home/desk-rest-helena.jpg    1x,
+            ./img/desktop/Desrtop_home/desk-rest-helena@2x.jpg 2x
+             "
+              media="(min-width: 1280px)"
+              type="image/jpeg"
+             width="254"
+               height="254"
+            />
+            <source
+            srcset="
+            ./img/tablet/Tablet_home/tab-rest-helena.jpg    1x,
+            ./img/tablet/Tablet_home/tab-rest-helena@2x.jpg 2x
+           "
+           media="(min-width: 1024px)"
+            type="image/jpeg"
+           width="194"
+           height="194"
+          />
+          <source
+          srcset="
+          ./img/slider/mob/mob-rest1.jpg   1x,
+          ./img/slider/mob/mob-rest1@2x.jpg 2x
+          "
+          media="(max-width: 1023px)"
+          type="image/jpeg"
+          width="245"
+          height="245"
+         />
+        <img
+        class="slider-img-frame"
+          src="./img/slider/mob/mob-rest1.jpg "
+          alt="glass of wine"
+          width="254"
+          height="254"
+        />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="about-rest-slider-photo img">
+           <source
+          srcset="
+            ./img/desktop/Desrtop_home/desk-rest-mat-brown.jpg    1x,
+            ./img/desktop/Desrtop_home/desk-rest-mat-brown@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/jpeg"
+          width="254"
+          height="254"
+        />
+        <source
+          srcset="
+            ./img/tablet/Tablet_home/tab-rest--mat-brown.jpg   1x,
+            ./img/tablet/Tablet_home/tab-rest-mat-brown@2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+          type="image/jpeg"
+          width="194"
+          height="194"
+        />
+        <source
+          srcset="
+          ./img/slider/mob/img9.jpg   1x,
+          ./img/slider/mob/img9@2x.jpg 2x
+          "
+          media="(max-width: 1023px)"
+          type="image/jpeg"
+          width="245"
+          height="245"
+        />
+        <img
+        class="slider-img-frame"
+          src="./img/slider/mob/img9.jpg "
+          alt="table with food"
+          width="254"
+          height="254"
+        />
+          </picture>
+        </div>
+    </div>
+    <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev about-rest-slider">
+        <svg class="swiper-button-prev-icon" width="32px" height="32px">
+          <use href="./img/icon.svg#icon-slider-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next about-rest-slider">
+       <svg
+        class="swiper-button-next-icon about-rest-slider"
+        width="32px"
+        height="32px"
+        >
+         <use href="./img/icon.svg#icon-slider-right"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
