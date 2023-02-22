@@ -2,7 +2,7 @@
   padding-top: 198px;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 1023px) {
   .hero {
     position: relative;
   }
@@ -196,8 +196,8 @@
   display: flex;
   align-items: center;
   padding: 8px 5px 8px 6px;
+  font-style: normal;
 
-  font-family: var(--font-fam-monserat);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
