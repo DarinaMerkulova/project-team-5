@@ -3,11 +3,6 @@
   padding-top: 58px;
   padding-bottom: 32px;
   min-width: 320px;
-  /* justify-content: center; */
-  /* margin-right: 0;
-    margin-left: 0; */
-
-  /* background-color: #F0ECD6; */
 }
 
 .restaurant-menu-title {
@@ -19,13 +14,18 @@
   color: var(--black-color);
 }
 
+.restaurant-menu-name {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 .restaurant-menu-title-text {
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
+  margin-block-end: 0px;
   color: var(--black-color);
-  margin-bottom: 20px;
-  margin-top: 20px;
+  
 }
 .restaurant-menu-text {
   font-weight: 500;
@@ -38,7 +38,6 @@
 .restaurant-menu-text-meal {
   font-weight: 400;
   font-size: 10px;
-  
   line-height: calc(12 / 10);
   letter-spacing: 0.02em;
   color: var(--black-color);
@@ -73,17 +72,13 @@
 .inner-wraper {
   display: flex;
   align-items: center;
-  /* justify-content:space-between;  */
 }
 
 .restaurant-btn {
-  /* display:flex; */
   display: block;
   position: relative;
   width: 236px;
   height: 48px;
-  /* margin-left:auto;
-  margin-right: auto; */
   background: var(--black-color);
   border: 2px solid var(--last-bkg-color);
   border-radius: 25px;
@@ -94,7 +89,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  margin: 32px auto 32px;
+  margin: 32px auto 0px;
 }
 .restaurant-btn:hover,
 .restaurant-btn:focus {
@@ -135,16 +130,19 @@
   .restaurant-menu-item {
     gap: 47px;
   }
+
   .rest-left-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .restaurant-menu-title {
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 32px;
   }
+
   .restaurant-menu-text {
     font-weight: 500;
     font-size: 14px;
@@ -157,17 +155,16 @@
     margin-left: auto;
     margin-right: 0;
   }
+
   .restaurant-menu-price {
     font-weight: 700;
     font-size: 14px;
-    /* margin-left: 48px; */
     margin-right: 0;
   }
+
   .restaurant-btn {
     margin-right: 0;
     margin-left: auto;
-    margin-top: 67px;
-    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -236,6 +233,6 @@
     margin-right: 0;
     margin-left: auto;
     margin-top: 51px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
