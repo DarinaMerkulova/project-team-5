@@ -90,7 +90,7 @@
   /* .footer-icon {
     fill: rgba(243, 198, 83, 0.7);
     transition: fill var (--timing-function) var(--timing-duration);
-  }
+  }*/
 
   
   .footer-link {
@@ -108,7 +108,7 @@
     fill:#f3c653;
     background-color: transparent;
     transition: color var (--transition), fill var(--transitio);
-
+  
   }
   
   .footer-link:hover,
