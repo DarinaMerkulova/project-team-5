@@ -52,7 +52,7 @@
 @media screen and (min-width: 1280px) {
   .hero-rest-overlay {
     min-height: 720px;
-
+    max-width: 1280px;
     background-image: linear-gradient(
         to right,
         var(--gradient-bkg)

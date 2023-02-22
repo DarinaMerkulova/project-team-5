@@ -77,6 +77,7 @@
 @media screen and (min-width: 1280px) {
   .hero-room-overlay {
     min-height: 720px;
+    max-width: 1280px;
     background-image: linear-gradient(
         to bottom,
         #000000,
