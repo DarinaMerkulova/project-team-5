@@ -1,17 +1,24 @@
 
-.hotel-info {
+ .hotel-info {
     max-width: 100%;
+    min-width: 320px;
+    min-height: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url('../../img/mobile/Mob-homepage/mob-room.jpg');
-}
+        }
+
 
 
 .hotel-info-container {
     padding-top: 24px;
     padding-bottom: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
+    
     
 }
 
@@ -21,7 +28,7 @@
 (min-resolution: 2dppx) {
     .hotel-info {
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url('../../img/mobile/Mob-homepage/mob-room@2x.jpg');
+            url('./img/mobile/Mob-homepage/mob-room@2x.jpg');
     }
 }
 
@@ -195,8 +202,9 @@
 @media screen and (min-width: 1024px) {
 
     .hotel-info {
+            min-height: 620px;    
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../../img/tablet/Tablet_home/tab-room.jpg');
+                url('./img/tablet/Tablet_home/tab-room.jpg');
 
     }
     .hotel-info-container {
@@ -211,7 +219,7 @@
     (min-resolution: 2dppx) {
         .hotel-info {
             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url('../../img/tablet/Tablet_home/tab-room@2x.jpg');
+                url('./img/tablet/Tablet_home/tab-room@2x.jpg');
         }
     }
     
@@ -277,6 +285,7 @@
 
 @media screen and (min-width: 1280px) {
     .hotel-info {
+        max-width: 1280px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                 url('../../img/desktop/Desrtop_home/desk-bed-room.jpg');
     }

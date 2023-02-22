@@ -103,7 +103,7 @@
   .about-hotel {
     padding-top: 120px;
     padding-bottom: 262px;
-    outline: 1px solid rgb(31, 92, 35);
+    /* outline: 1px solid rgb(31, 92, 35); */
   }
   .about-hotel-thumb {
     position: relative;
