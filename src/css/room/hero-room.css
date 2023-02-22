@@ -77,6 +77,7 @@
 @media screen and (min-width: 1280px) {
   .hero-room-overlay {
     min-height: 720px;
+    max-width: 1280px;
     background-image: linear-gradient(
         to bottom,
         #000000,
@@ -288,11 +289,13 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   color: var(--accent-color);
-  background: var(--btn-bkg-color);
+  background-color: var(--btn-bkg-color);
   border: 2px solid var(--light-color);
   border-radius: 25px;
-  transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
-  transform 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: color var(--timing-duration) var(--timing-function),
+  transform var(--timing-duration) var(--timing-function),
+  background-color var(--timing-duration) var(--timing-function),
+  border-color var(--timing-duration) var(--timing-function) ;
 }
 
 .hero-room-btn:hover,
