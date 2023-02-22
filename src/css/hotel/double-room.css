@@ -114,8 +114,8 @@
   border: 2px solid var(--main-bkg-color);
   border-radius: 25px;
   border: none;
-  transition: background-color 250ms ease(0.4, 0, 0.2, 1),
-    border 250ms ease(0.4, 0, 0.2, 1);
+  transition: background-color var(--timing-function) var(--timing-duration),
+    border var(--timing-duration) var(--timing-function);
 }
 /* ================== buttons-narrows================== */
 .slider-narrows-double {
@@ -139,8 +139,8 @@
   border: 2px solid var(--main-bkg-color);
   border-radius: 25px;
   border: none;
-  transition: background-color 250ms ease(0.4, 0, 0.2, 1),
-    border 250ms ease(0.4, 0, 0.2, 1);
+  transition: background-color var(--timing-duration) var(--timing-function),
+    border var(--timing-duration) var(--timing-function);
 }
 
 /* -----hotel-tablet----- */

@@ -81,6 +81,9 @@
   position: relative;
   width: 236px;
   height: 48px;
+
+  
+  
   background-color: var(--black-color);
   border: 2px solid var(--last-bkg-color);
   border-radius: 25px;
@@ -94,11 +97,12 @@
   margin: 32px auto 0px;
   transition:background-color var(--timing-duration) var(--timing-function), 
   border var(--timing-duration) var(--timing-function);
+  
 }
 
 .restaurant-btn:hover,
 .restaurant-btn:focus {
-  background: var(--light-color);
+  background-color: var(--light-color);
   border: 2px solid var(--accent-color);
   border-radius: 25px;
 }
