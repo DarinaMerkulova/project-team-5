@@ -164,7 +164,8 @@
     color: var(--accent-color);
     margin: auto;
     margin-bottom: 16px;
-    transition: background-color var(--timing-duration) var(--timing-function);
+    transition: background-color var(--timing-duration) var(--timing-function),
+    border var(--timing-duration) var(--timing-function);
 }
 
 
@@ -188,7 +189,8 @@
     color: var(--accent-color);
     font-weight: 700;
     margin: auto;
-    transition: background-color var(--timing-duration) var(--timing-function);
+    transition: background-color var(--timing-duration) var(--timing-function), 
+    border var(--timing-duration) var(--timing-function);
 
 }
 
