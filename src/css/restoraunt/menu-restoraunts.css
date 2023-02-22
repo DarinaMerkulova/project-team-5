@@ -18,6 +18,9 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.restaurant-menu-name:first-child{
+  margin-top: 0;
+}
 
 .restaurant-menu-title-text {
   font-weight: 700;
