@@ -1,5 +1,6 @@
 @media screen and (max-width: 1023px) {
     .footer {
+      max-width: 1280px;
       background-color: #0e0c07;
       padding-top: 40px;
       padding-bottom: 40px;
