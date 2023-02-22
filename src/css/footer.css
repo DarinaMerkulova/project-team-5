@@ -71,18 +71,26 @@
   .footer-social-list {
     display: flex;
     gap: 23px;
+    
   }
- 
+  .social-link {
+    fill: #f3c653;
+    transition: fill var(--transition);
+  }
+
+  .social-link:hover {
+    fill: #c79002;}
+  
   @media screen and (min-width: 1024px) {
     .footer-social-list {
       display: none;
     }
   }
   
-  .footer-icon {
+  /* .footer-icon {
     fill: rgba(243, 198, 83, 0.7);
     transition: fill var (--transition);
-  }
+  } */
   
   .footer-link {
     font-family: 'Montserrat';
@@ -91,12 +99,31 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #f3c653;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    /* padding: 8px 15px; */
+    fill:#f3c653;
+    background-color: transparent;
+    transition: color var (--transition), fill var(--transitio);
+
   }
   
+  .footer-link:hover,
+  .footer-link:focus {
+    color: #c79002;
+    fill: #c79002;
+    border: 0.5px solid #c79002;
+    border-radius: 2px;
+    /* background-color: #c79002; */
+    
+  }
   @media screen and (min-width: 1024px) {
     .footer-link {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
   
@@ -114,16 +141,11 @@
       margin-bottom: 12px;
       height: 40px;
       width: 144px;
-      padding: 10px 12px;
-      border: 0.5px solid #f3c653;
-      border-radius: 2px;
       align-items: center;
       display: flex;
     }
   }
-  .footer-sm-border:hover{
-    fill:#c79002;
-  }
+ 
   .footer-social-media {
     margin-right: 11px;
     font-family: 'Montserrat';
@@ -136,25 +158,23 @@
   
   @media screen and (min-width: 414px) {
   
-    .footer-icon:hover,
+    /* .footer-icon:hover,
     .footer-icon:focus {
-      fill: #c79002;
-    }
+      fill: white;
+    } */
     
     
   }
   
-  @media screen and (min-width: 1024px) {
+  /* @media screen and (min-width: 1024px) {
     .footer-icon {
         fill: rgba(243, 198, 83, 0.7);
       }
   
-    .footer-sm-border:hover,
-    .footer-sm-border:focus {
-      background-color: #c79002;
-    }
   
-  }
+    } */
+  
+  
   
       .footer-logo,
       .footer-menu {
@@ -168,6 +188,6 @@
         color: #c79002;
       }
     
-      .footer-sm-border {
+      /* .footer-sm-border {
         transition: background-color var(--transition);
-      }
+      } */
