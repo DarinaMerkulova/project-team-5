@@ -121,8 +121,8 @@
   border-radius: 25px;
   border: none;
 
-  transition: background-color var(--timing-function) var(--timing-duration),
-    border var(--timing-duration) var(--timing-function);
+  transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+    border 250ms ease(0.4, 0, 0.2, 1);
 }
 /* ================== buttons-narrows================== */
 .slider-narrows-double-lux {
@@ -148,8 +148,8 @@
   border-radius: 25px;
   border: none;
 
-  transition: background-color var(--timing-duration) var(--timing-function),
-    border var(--timing-duration) var(--timing-function);
+  transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+    border 250ms ease(0.4, 0, 0.2, 1);
 }
 
 /* -----hotel-tablet----- */
@@ -268,16 +268,16 @@
   .double-room-lux-link:focus {
     background-color: var(--light-color);
     border: 2px solid var(--accent-color);
-    /* transition: background-color 250ms ease(0.4, 0, 0.2, 1),
-      border 250ms ease(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+      border 250ms ease(0.4, 0, 0.2, 1);
   }
 
   .double-room-lux-btn:hover,
   .double-room-lux-btn:focus {
     background-color: var(--light-color);
     border: 2px solid var(--accent-color);
-    /* transition: background-color 250ms ease(0.4, 0, 0.2, 1),
-      border 250ms ease(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms ease(0.4, 0, 0.2, 1),
+      border 250ms ease(0.4, 0, 0.2, 1);
   }
   .slider-narrows-double-lux {
     bottom: -65px;

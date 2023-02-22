@@ -89,9 +89,8 @@
   
   /* .footer-icon {
     fill: rgba(243, 198, 83, 0.7);
-    transition: fill var (--timing-function) var(--timing-duration);
-  }
-
+    transition: fill var (--transition);
+  } */
   
   .footer-link {
     font-family: 'Montserrat';
@@ -144,10 +143,9 @@
       width: 144px;
       align-items: center;
       display: flex;
-      transition: fill var(--timing-function) var(--timing-duration);
     }
   }
-
+ 
   .footer-social-media {
     margin-right: 11px;
     font-family: 'Montserrat';
@@ -179,8 +177,8 @@
   
   
       .footer-logo,
-      .footer-menu-title {
-        transition: color var(--timing-duration) var(--timing-function);
+      .footer-menu {
+        transition: color var(--transition);
       }
     
       .footer-logo:hover,
@@ -190,4 +188,6 @@
         color: #c79002;
       }
     
-
+      /* .footer-sm-border {
+        transition: background-color var(--transition);
+      } */

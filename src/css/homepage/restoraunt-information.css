@@ -134,8 +134,7 @@ margin-bottom: 40px;
     color: var(--accent-color);
     margin: auto;
     margin-bottom: 16px;
-    transition: background-color var(--timing-duration) var(--timing-function),
-    border var(--timing-duration) var(--timing-function);
+    transition: background-color var(--timing-duration) var(--timing-function);
 }
 
 .rest-info-btn:hover,
@@ -159,8 +158,7 @@ margin-bottom: 40px;
     font-weight: 700;
     margin: auto;
     padding: 14px 29px;
-    transition: background-color var(--timing-duration) var(--timing-function),
-    border var(--timing-duration) var(--timing-function);
+    transition: background-color var(--timing-duration) var(--timing-function);
 }
 
 
