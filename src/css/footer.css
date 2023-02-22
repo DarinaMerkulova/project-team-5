@@ -107,7 +107,8 @@
     /* padding: 8px 15px; */
     fill:#f3c653;
     background-color: transparent;
-    transition: color var (--transition), fill var(--transitio);
+    transition: color var(--timing-duration) var(--timing-function),
+    fill var(--timing-duration) var(--timing-function);
   
   }
   

@@ -47,8 +47,8 @@
 
   margin-bottom: 20px;
   margin-top: 32px;
-  transition: background-color var(--timing-duration) var(--timing-function),
-      color var(--timing-duration) var(--timing-function);
+  transition: color var(--timing-duration) var(--timing-function),
+  background-color var(--timing-duration) var(--timing-function);
 }
 
 .about-room-button:hover,
@@ -57,9 +57,9 @@
   color: #000000;
 }
 
-.about-room-button {
+/* .about-room-button {
   transition: color var(--timing-duration) var(--timing-function);
-}
+} */
 
 .about-room-link {
   display: flex;

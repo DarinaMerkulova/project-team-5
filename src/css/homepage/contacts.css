@@ -158,7 +158,7 @@
 .contacts-phone {
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.21;
     letter-spacing: 0.02em;
     color: #494848;
@@ -201,14 +201,18 @@
     padding: 8px;
 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     background-color: #ffffff;
     border: 0.5px solid #f3c653;
     border-radius: 2px;
 }
-
+@media screen and (min-width: 414px) {
+    .contacts-phone-thumb {
+    justify-content: center;
+    }
+}
 .contacts-phone-thumb-icon {
     margin-right: 8px;
 
