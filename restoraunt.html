@@ -14,9 +14,15 @@
       referrerpolicy="no-referrer"
     />
     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
   <script type="module" crossorigin src="/project-team-5/assets/index-ec808ebb.js"></script>
   <script type="module" crossorigin src="/project-team-5/assets/modal-ccbe16fe.js"></script>
   <link rel="stylesheet" href="/project-team-5/assets/index-ef505a09.css">
+  <link rel="stylesheet" href="/project-team-5/assets/animate-69cff587.css">
 
   <body>
        <!-- Loads the specified .html file -->
@@ -105,7 +111,7 @@
     <main>
         <section class="hero hero-rest-overlay">
   <div class="container">
-    <h1 lang="en" class="hero-title">MIMIHO</h1>
+    <h1 lang="en" class="hero-title animate__animated animate__zoomIn">MIMIHO</h1>
     <h2 class="hero-type">Ресторанно-готельний комплекс</h2>
     <p class="hero-tagline">СМАК ЖИТТЯ 24/7</p>
 
@@ -257,8 +263,9 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <!---------------Slider About restourant ----------------------->
-    <div class="slider-about-restourant">
+
+    <!-- ------------------Slider About restourant ------------------------------- -->
+    <div class="slider-about-restourant wow fadeInRight">
       <picture class="slider-img-width">
         <source
           srcset="/project-team-5/assets/desk-pizza-898302d5.jpg 1x, /project-team-5/assets/desk-pizza@2x-5d20b78d.jpg 2x"
@@ -909,5 +916,9 @@
 <!-- Backdrop for modals -->
 <div class="backdrop js-overlay-modal"></div>
     
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   </body>
 </html>

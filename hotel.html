@@ -13,9 +13,15 @@
       referrerpolicy="no-referrer"
     />
     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
 <script type="module" crossorigin src="/project-team-5/assets/index-ec808ebb.js"></script>
 <script type="module" crossorigin src="/project-team-5/assets/modal-ccbe16fe.js"></script>
 <link rel="stylesheet" href="/project-team-5/assets/index-ef505a09.css">
+<link rel="stylesheet" href="/project-team-5/assets/animate-69cff587.css">
 
 <body>
      <!-- Loads the specified .html file -->
@@ -104,7 +110,7 @@
      <main>
         <section class="hero hero-hotel-overlay">
   <div class="container">
-    <h1 lang="en" class="hero-title hotel">MIMIHO</h1>
+    <h1 lang="en" class="hero-title hotel animate__animated animate__zoomIn">MIMIHO</h1>
     <h2 class="hero-type hotel">Готель</h2>
 
     <div class="hero-bottom">
@@ -221,7 +227,7 @@
       </picture>
     </div>
     <div class="swiper-transfer">
-      <div class="hotel-double-room-lux-slider">
+      <div class="hotel-double-room-lux-slider wow fadeInLeft">
         <picture class="hotel-double-room-lux-slider-img">
           <source
             srcset="/project-team-5/assets/img2-84d2d5ff.jpg 1x, /project-team-5/assets/img2@2x-4856eb4f.jpg 2x"
@@ -356,7 +362,7 @@
       </picture>
     </div>
     <div class="slider-transfer">
-      <div class="hotel-triple-room-slider">
+      <div class="hotel-triple-room-slider wow fadeInRight">
         <picture class="hotel-triple-room-slider-img">
           <source
             srcset="/project-team-5/assets/img2-84d2d5ff.jpg 1x, /project-team-5/assets/img2@2x-4856eb4f.jpg 2x"
@@ -492,7 +498,7 @@
     </div>
     <div>
       <div class="hotel-double-room-slider-transfer">
-        <div class="hotel-double-room-slider">
+        <div class="hotel-double-room-slider wow fadeInLeft">
           <picture class="hotel-double-room-slider-img">
             <source
               srcset="/project-team-5/assets/img2-84d2d5ff.jpg 1x, /project-team-5/assets/img2@2x-4856eb4f.jpg 2x"
@@ -920,5 +926,9 @@
 <!-- Backdrop for modals -->
 <div class="backdrop js-overlay-modal"></div>
      
+     <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
  </body>
 </html>
