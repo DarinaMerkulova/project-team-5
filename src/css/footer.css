@@ -81,7 +81,7 @@
   
   .footer-icon {
     fill: rgba(243, 198, 83, 0.7);
-    transition: fill var (--transition);
+    transition: fill var (--timing-function) var(--timing-duration);
   }
   
   .footer-link {
@@ -119,9 +119,11 @@
       border-radius: 2px;
       align-items: center;
       display: flex;
+      transition: fill var(--timing-function) var(--timing-duration);
     }
   }
-  .footer-sm-border:hover{
+  .footer-sm-border:hover,
+  .footer-sm-border:focus {
     fill:#c79002;
   }
   .footer-social-media {
@@ -157,8 +159,8 @@
   }
   
       .footer-logo,
-      .footer-menu {
-        transition: color var(--transition);
+      .footer-menu-title {
+        transition: color var(--timing-duration) var(--timing-function);
       }
     
       .footer-logo:hover,
@@ -169,5 +171,5 @@
       }
     
       .footer-sm-border {
-        transition: background-color var(--transition);
+        transition: background-color var(--timing-duration) var(--timing-function);
       }
