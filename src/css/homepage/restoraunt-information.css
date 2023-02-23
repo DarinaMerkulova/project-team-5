@@ -97,9 +97,11 @@ margin-bottom: 40px;
 
 }
 
-.rest-info-nav-prev, .rest-info-nav-next  {
+.rest-info-nav-prev, 
+.rest-info-nav-next  {
     background-color: transparent;
     border: none;
+    margin-right: 24px;
 }
 
 .rest-info-nav-prev-svg, .rest-info-nav-next-svg {

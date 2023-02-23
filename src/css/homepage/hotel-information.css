@@ -125,6 +125,7 @@
 .hotel-info-nav-next {
     background-color: transparent;
     border: none;
+    margin-left: 24px;
 }
 
 .hotel-info-nav-prev-svg,
