@@ -1,5 +1,5 @@
 /* ------hotel-mobile----- */
-.triple > .container {
+.triple-container {
   position: relative;
   /* outline: 1px solid rgb(9, 198, 62); */
 }
@@ -264,6 +264,9 @@
     padding-top: 72px;
     padding-bottom: 112px;
     background-color: var(--last-bkg-color);
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .triple-text1 {
   }
