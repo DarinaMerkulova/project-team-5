@@ -80,16 +80,30 @@
   display: flex;
   gap: 34px;
 }
+
+/*---------------Slider-------------*/
+.about-hotel-slider  .swiper-container{
+  margin-left: 0px;
+}
+
 @media screen and (max-width: 413px) {
-  .slider-about-hotel {
+  /* .slider-about-hotel {
     margin-right: 53px;
+  } */
+  .swiper-container-hotel {
+     width: 320px;
   }
 }
 
 @media screen and (min-width: 414px) {
-  .slider-img-width {
+  /* .slider-img-width {
     flex-shrink: 0;
+  } */
+.swiper-container-hotel {
+    width: 330px;
+    margin-right: 84px;
   }
+
 }
 /*================= tablet version hotel================ */
 @media screen and (min-width: 1024px) {
@@ -102,7 +116,7 @@
 
   .about-hotel {
     padding-top: 120px;
-    padding-bottom: 262px;
+    padding-bottom: 96px;
     /* outline: 1px solid rgb(31, 92, 35); */
   }
   .about-hotel-thumb {
@@ -163,6 +177,13 @@
     bottom: -220px;
     left: 48px;
   }
+  .swiper-container-hotel {
+    width: 428px;
+    margin-left: 0px;
+    margin-top: -28px;
+  }
+
+
 }
 /*================= desktop version hotel ================ */
 
@@ -218,5 +239,10 @@
   .slider-narrows-hotel {
     bottom: -145px;
     left: 15px;
+  }
+
+  .swiper-container-hotel {
+    width: 548px;
+    margin-top: -151px;
   }
 }
