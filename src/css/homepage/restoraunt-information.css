@@ -16,7 +16,8 @@
     padding-bottom: 40px;
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .rest-info {
@@ -175,7 +176,7 @@ margin-bottom: 40px;
     .rest-info {
         min-height: 620px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url('../../img/tablet/Tablet_home/tab-goblet.jpg');
+                url('../../img/tablet/Tablet_home/tab-goblet1.jpg');
     }
     .rest-info-container {
         padding-top: 48px;
@@ -183,15 +184,19 @@ margin-bottom: 40px;
         padding-right: 47px;
             
         }
+    }
     
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+    @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+    (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+    (min-width: 1024px) and (min-resolution: 192dpi),
+    (min-width: 1024px) and (min-resolution: 2dppx){
             .rest-info {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                     url('../../img/tablet/Tablet_home/tab-goblet@2x.jpg');
             }
         }
+
+    @media screen and (min-width: 1024px) {
         .rest-info-texts {
             margin-bottom: 40px;
             padding-right: 33%;
@@ -265,14 +270,16 @@ margin-bottom: 40px;
         padding-bottom: 48px;
     
         }
+    }
     
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 1024px) and (min-resolution: 192dpi),
+(min-width: 1024px) and (min-resolution: 2dppx) {
             .rest-info {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                     url('../../img/desktop/Desrtop_home/desk-goblet@2x.jpg');
             }
         }
 
-}
+
