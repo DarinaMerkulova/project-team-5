@@ -7,10 +7,6 @@
   background-color: var(--main-bkg-color);
   /* outline: 1px solid rgb(236, 130, 9); */
 }
-.restorant-about > .container,
-.about-restourant > .container {
-  /* outline: 1px solid rgb(236, 130, 9); */
-}
 
 .hidden {
   position: absolute;
@@ -100,11 +96,17 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+@media screen and (max-width: 1023px) {
+  .about-restourant > .container {
+    overflow: hidden;
+}
+}
 @media screen and (max-width: 413px) {
   .slider-img-width {
     width: 145px;
     flex-shrink: 0;
   }
+  
 }
 .swiper {
   width: 100%;
