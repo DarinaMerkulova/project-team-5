@@ -72,9 +72,6 @@
 .restaurant-menu-list{
   margin-bottom: 20px;
 }
-.restaurant-menu-list:last-child{
-  margin-bottom: 0px;
-}
 .restaurant-menu-item {
   margin-bottom: 8px;
   display: grid;
@@ -143,7 +140,9 @@
     /* margin-right: 0;
     margin-left: 0; */
   }
-
+  .restaurant-menu-list:last-child{
+    margin-bottom: 0px;
+  }
   .restaurant-menu-item {
     gap: 47px;
   }
@@ -210,6 +209,9 @@
   .restaurant-menu-title-text {
     font-size: 24px;
     line-height: calc(28 / 24);
+  }
+  .restaurant-menu-list:last-child{
+    margin-bottom: 0px;
   }
 
   .restaurant-menu-text {
